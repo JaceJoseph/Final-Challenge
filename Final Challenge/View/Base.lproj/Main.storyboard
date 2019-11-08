@@ -158,10 +158,10 @@ Pastikan KTP dan SIM yang Anda bawa asli bukan fotokopi</string>
             </objects>
             <point key="canvasLocation" x="772.62079062957537" y="117.77343749999999"/>
         </scene>
-        <!--View Controller-->
+        <!--FotoKTP View Controller-->
         <scene sceneID="fxe-Jr-4F8">
             <objects>
-                <viewController id="YVE-dU-Ph1" sceneMemberID="viewController">
+                <viewController id="YVE-dU-Ph1" customClass="FotoKTPViewController" customModule="Final_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7KA-Pj-N1O">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -223,10 +223,10 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
             </objects>
             <point key="canvasLocation" x="1423.572474377745" y="117.77343749999999"/>
         </scene>
-        <!--View Controller-->
+        <!--Form View Controller-->
         <scene sceneID="MXn-Bq-CuF">
             <objects>
-                <viewController id="VPQ-61-LO6" sceneMemberID="viewController">
+                <viewController id="VPQ-61-LO6" customClass="FormViewController" customModule="Final_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NrM-GX-sU8">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -404,10 +404,10 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
             </objects>
             <point key="canvasLocation" x="1009" y="833"/>
         </scene>
-        <!--View Controller-->
+        <!--Instruksi View Controller-->
         <scene sceneID="GfJ-zY-Ave">
             <objects>
-                <viewController id="oOD-Pu-6vQ" sceneMemberID="viewController">
+                <viewController id="oOD-Pu-6vQ" customClass="InstruksiViewController" customModule="Final_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VhU-G2-82s">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -524,10 +524,10 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
             </objects>
             <point key="canvasLocation" x="1717" y="833"/>
         </scene>
-        <!--View Controller-->
+        <!--FotoSIM View Controller-->
         <scene sceneID="L6g-at-6hA">
             <objects>
-                <viewController id="IWl-4j-Vjw" sceneMemberID="viewController">
+                <viewController id="IWl-4j-Vjw" customClass="FotoSIMViewController" customModule="Final_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UYf-gB-25D">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
