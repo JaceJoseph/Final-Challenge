@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vq5-dT-1oU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d1z-H2-dXz">
     <device id="ipad12_9" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
@@ -172,6 +172,12 @@ Pastikan KTP dan SIM yang Anda bawa asli bukan fotokopi</string>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ato-I7-RKH">
                                 <rect key="frame" x="385" y="294" width="596" height="355"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JEY-jl-oHB">
+                                        <rect key="frame" x="0.0" y="0.0" width="596" height="355"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Foto KTP Anda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugj-TU-a6j">
@@ -194,16 +200,26 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 <rect key="frame" x="614" y="749" width="139" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="cam"/>
+                                <connections>
+                                    <action selector="takePhotoButton:" destination="YVE-dU-Ph1" eventType="touchUpInside" id="0nP-rR-9rt"/>
+                                </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2o-C0-ab9">
                                 <rect key="frame" x="932" y="798" width="49" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="lanjut"/>
+                                <connections>
+                                    <action selector="lanjutButton:" destination="YVE-dU-Ph1" eventType="touchUpInside" id="qc6-sm-GpH"/>
+                                    <action selector="takePhotoButton:" destination="YVE-dU-Ph1" eventType="touchUpInside" id="YIg-nc-Jpa"/>
+                                </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68N-JC-QG4">
                                 <rect key="frame" x="385" y="804" width="47" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="ulangi"/>
+                                <connections>
+                                    <action selector="ulangiButton:" destination="YVE-dU-Ph1" eventType="touchUpInside" id="c4s-eJ-b0v"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -216,6 +232,8 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                         <viewLayoutGuide key="safeArea" id="VEc-da-mVw"/>
                     </view>
                     <connections>
+                        <outlet property="cameraView" destination="Ato-I7-RKH" id="m5o-Qv-rxu"/>
+                        <outlet property="resultImageView" destination="JEY-jl-oHB" id="qHl-8U-aon"/>
                         <segue destination="IWl-4j-Vjw" kind="presentation" identifier="segueToFotoSIM" modalPresentationStyle="fullScreen" id="XGP-rr-sgp"/>
                     </connections>
                 </viewController>
@@ -539,6 +557,13 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                     <segue destination="d1z-H2-dXz" kind="embed" id="T7L-Qz-Jkt"/>
                                 </connections>
                             </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="INI LABEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbS-bF-SmC">
+                                <rect key="frame" x="474" y="20" width="785" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="O3F-Oe-J5J"/>
@@ -562,6 +587,12 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iAw-Qq-F84">
                                 <rect key="frame" x="385" y="294" width="596" height="355"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Qi-QW-vJj">
+                                        <rect key="frame" x="0.0" y="0.0" width="596" height="355"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Foto SIM Anda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Za-GU-S5a">
@@ -584,16 +615,25 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 <rect key="frame" x="614" y="749" width="139" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="cam"/>
+                                <connections>
+                                    <action selector="takePhotoButton:" destination="IWl-4j-Vjw" eventType="touchUpInside" id="Bh7-pt-jDQ"/>
+                                </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pz-TU-ADW">
                                 <rect key="frame" x="932" y="798" width="49" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="lanjut"/>
+                                <connections>
+                                    <action selector="lanjutButton:" destination="IWl-4j-Vjw" eventType="touchUpInside" id="pdc-bS-U3K"/>
+                                </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfz-JX-8oJ">
                                 <rect key="frame" x="385" y="804" width="47" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="ulangi"/>
+                                <connections>
+                                    <action selector="ulangiButton:" destination="IWl-4j-Vjw" eventType="touchUpInside" id="as4-Op-e5l"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -607,6 +647,8 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                     </view>
                     <navigationItem key="navigationItem" id="PXX-yj-hz2"/>
                     <connections>
+                        <outlet property="cameraView" destination="iAw-Qq-F84" id="Ov2-eZ-hcM"/>
+                        <outlet property="resultImageView" destination="7Qi-QW-vJj" id="uql-3E-o3A"/>
                         <segue destination="VPQ-61-LO6" kind="presentation" identifier="segueToForm" modalPresentationStyle="fullScreen" id="QYM-qu-4Cz"/>
                     </connections>
                 </viewController>
@@ -702,11 +744,28 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                         <outletCollection property="bendaTersedia" destination="Hxx-El-4ZJ" collectionClass="NSMutableArray" id="jhT-bS-Js9"/>
                         <outletCollection property="indikatorAngka" destination="eIi-e9-WOq" collectionClass="NSMutableArray" id="MCn-EL-fCq"/>
                         <outletCollection property="indikatorAngka" destination="mfR-2k-g5z" collectionClass="NSMutableArray" id="X3g-th-ywZ"/>
+                        <segue destination="ufY-XR-IbW" kind="presentation" identifier="nextContainer" modalPresentationStyle="fullScreen" id="rQA-iT-Rvx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ed-x9-jnV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2115" y="2203"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4x5-NF-XHe">
+            <objects>
+                <viewController id="ufY-XR-IbW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0jv-GW-kJA">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="mZg-8H-UeJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="30J-Sg-47o"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uh0-xV-Beo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2768" y="2203"/>
         </scene>
     </scenes>
     <resources>

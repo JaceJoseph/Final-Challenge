@@ -93,10 +93,11 @@ class Case1ViewController: UIViewController {
             }
             if nilai == 99 {nilai = 100}
             print(nilai)
-            performSegue(withIdentifier: "testSegue", sender: self)
+            //performSegue(withIdentifier: "testSegue", sender: self)
         }else{
             print("Not yet")
         }
+        self.performSegue(withIdentifier: "nextContainer", sender: self)
     }
     
     @IBAction func resetButtonTapped(_ sender: UIButton) {

@@ -7,24 +7,107 @@
 //
 
 import UIKit
+import AVFoundation
 
 class FotoSIMViewController: UIViewController {
+    
+    let cameraSession = AVCaptureSession()
+    let captureSession = AVCaptureSession()
+    let movieOutput = AVCaptureMovieFileOutput()
+    var previewLayer: AVCaptureVideoPreviewLayer!
+    var activeInput: AVCaptureDeviceInput!
+    
+    var outputURL: URL!
+    
+    var photoOutput = AVCapturePhotoOutput()
 
+    @IBOutlet weak var resultImageView: UIImageView!
+
+    @IBAction func lanjutButton(_ sender: UIButton) {
+    }
+    @IBAction func ulangiButton(_ sender: UIButton) {
+    }
+    @IBAction func takePhotoButton(_ sender: UIButton) {
+        let settings = AVCapturePhotoSettings(format: [AVVideoCodecKey: AVVideoCodecType.jpeg])
+        self.photoOutput.capturePhoto(with: settings, delegate: self)
+    }
+    @IBOutlet weak var cameraView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        if setupSession() {
+            setupPreview()
+            startSession()
+        }
+        
+        self.resultImageView.isHidden = true
     }
     
+}
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+// MARK: SETUP CAMERA PREVIEW
+extension FotoSIMViewController {
+    
+    func videoOrientationFromCurrentDeviceOrientation() -> AVCaptureVideoOrientation {
+        switch UIApplication.shared.statusBarOrientation {
+        case .portrait:
+            return AVCaptureVideoOrientation.portrait
+        case .landscapeLeft:
+            return AVCaptureVideoOrientation.landscapeLeft
+        case .landscapeRight:
+            return AVCaptureVideoOrientation.landscapeRight
+        case .portraitUpsideDown:
+            return AVCaptureVideoOrientation.portraitUpsideDown
+        default:
+            // Can this happen?
+            return AVCaptureVideoOrientation.portrait
+        }
     }
-    */
+    
+    func setupSession() -> Bool {
+        captureSession.sessionPreset = AVCaptureSession.Preset.low
+        // Setup Camera
+        let camera = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back)!
+            do {
+                let input = try AVCaptureDeviceInput(device: camera)
+                if captureSession.canAddInput(input), captureSession.canAddOutput(photoOutput){
+                    captureSession.addInput(input)
+                    captureSession.addOutput(photoOutput)
+                    activeInput = input
+                }
+            } catch {
+                print("Error setting device camera input: \(error)")
+                return false
+            }
+            return true
+    }
+    
+    func setupPreview() {
+        previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
+        previewLayer.connection?.videoOrientation = self.videoOrientationFromCurrentDeviceOrientation()
+        previewLayer.frame = cameraView.bounds
+        previewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
+        cameraView.layer.addSublayer(previewLayer)
+    }
 
+    func startSession() {
+        if !captureSession.isRunning {
+            DispatchQueue.main.async {
+                self.captureSession.startRunning()
+            }
+        }
+    }
+}
+
+extension FotoSIMViewController: AVCapturePhotoCaptureDelegate {
+    func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
+        print("processing photo")
+        guard let imageData = photo.fileDataRepresentation() else { return }
+        let image = UIImage(data: imageData)
+        resultImageView.image = image
+        self.captureSession.stopRunning()
+        self.resultImageView.isHidden = false
+    }
 }
