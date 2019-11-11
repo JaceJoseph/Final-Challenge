@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vq5-dT-1oU">
     <device id="ipad12_9" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
@@ -524,6 +524,30 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
             </objects>
             <point key="canvasLocation" x="1717" y="833"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="oGe-mc-KJl">
+            <objects>
+                <viewController id="vq5-dT-1oU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ftC-f2-pl2">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="45J-g4-YlP">
+                                <rect key="frame" x="0.0" y="256" width="1366" height="768"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="d1z-H2-dXz" kind="embed" id="T7L-Qz-Jkt"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="O3F-Oe-J5J"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wfE-xN-CkJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2114.9341142020498" y="1547.4609375"/>
+        </scene>
         <!--FotoSIM View Controller-->
         <scene sceneID="L6g-at-6hA">
             <objects>
@@ -590,8 +614,104 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
             </objects>
             <point key="canvasLocation" x="2060.9077598828694" y="117.77343749999999"/>
         </scene>
+        <!--Case1 View Controller-->
+        <scene sceneID="aXC-S3-9pZ">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="d1z-H2-dXz" customClass="Case1ViewController" customModule="Final_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gXu-aY-wcY">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gris-2" translatesAutoresizingMaskIntoConstraints="NO" id="WIs-nW-Afy">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="573"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XlI-l0-RfT">
+                                <rect key="frame" x="20" y="599" width="220" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Group" translatesAutoresizingMaskIntoConstraints="NO" id="bY6-ab-P1G">
+                                        <rect key="frame" x="37" y="10" width="175" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Group" translatesAutoresizingMaskIntoConstraints="NO" id="Lzs-5j-pdF">
+                                        <rect key="frame" x="8" y="10" width="59" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                            <view tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k3l-rJ-OYM">
+                                <rect key="frame" x="289" y="599" width="220" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Group" translatesAutoresizingMaskIntoConstraints="NO" id="j7m-1N-WBY">
+                                        <rect key="frame" x="37" y="10" width="175" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Group" translatesAutoresizingMaskIntoConstraints="NO" id="eIi-e9-WOq">
+                                        <rect key="frame" x="8" y="10" width="59" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hxx-El-4ZJ">
+                                <rect key="frame" x="546" y="599" width="220" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Group" translatesAutoresizingMaskIntoConstraints="NO" id="EXO-0d-CjX">
+                                        <rect key="frame" x="37" y="10" width="175" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Group" translatesAutoresizingMaskIntoConstraints="NO" id="mfR-2k-g5z">
+                                        <rect key="frame" x="8" y="10" width="59" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNB-Kn-o35">
+                                <rect key="frame" x="942" y="654" width="72" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="FINISH">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="finishButtonTapped:" destination="d1z-H2-dXz" eventType="touchUpInside" id="wRE-tI-C0d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tY8-Kf-JtA">
+                                <rect key="frame" x="842" y="654" width="69" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="RESET">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButtonTapped:" destination="d1z-H2-dXz" eventType="touchUpInside" id="Jda-IK-5YD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="PUO-DL-dvs"/>
+                    </view>
+                    <connections>
+                        <outlet property="caseBackground" destination="WIs-nW-Afy" id="AZt-cw-Vqy"/>
+                        <outletCollection property="indikatorAngka" destination="Lzs-5j-pdF" collectionClass="NSMutableArray" id="4Gn-9c-SHI"/>
+                        <outletCollection property="bendaTersedia" destination="XlI-l0-RfT" collectionClass="NSMutableArray" id="3jS-Xy-cq5"/>
+                        <outletCollection property="bendaTersedia" destination="k3l-rJ-OYM" collectionClass="NSMutableArray" id="Lo9-qM-BQp"/>
+                        <outletCollection property="bendaTersedia" destination="Hxx-El-4ZJ" collectionClass="NSMutableArray" id="jhT-bS-Js9"/>
+                        <outletCollection property="indikatorAngka" destination="eIi-e9-WOq" collectionClass="NSMutableArray" id="MCn-EL-fCq"/>
+                        <outletCollection property="indikatorAngka" destination="mfR-2k-g5z" collectionClass="NSMutableArray" id="X3g-th-ywZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ed-x9-jnV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2115" y="2203"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Gris-2" width="2000" height="1132"/>
+        <image name="Group" width="80" height="94"/>
         <image name="Group 7" width="495" height="495"/>
         <image name="Shadows" width="1366" height="1024"/>
         <image name="cam" width="139" height="139"/>

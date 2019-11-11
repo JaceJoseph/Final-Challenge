@@ -19,6 +19,7 @@
 		70362D3B2373B48700928516 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70362D392373B48700928516 /* LaunchScreen.storyboard */; };
 		70362D432373B4B100928516 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70362D422373B4B100928516 /* UIExtension.swift */; };
 		70362D452373BAC800928516 /* KodePerusahaanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70362D442373BAC800928516 /* KodePerusahaanViewController.swift */; };
+		70375D91237821CE00C98CC2 /* Case1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70375D90237821CE00C98CC2 /* Case1ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		70362D3C2373B48700928516 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70362D422373B4B100928516 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
 		70362D442373BAC800928516 /* KodePerusahaanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KodePerusahaanViewController.swift; sourceTree = "<group>"; };
+		70375D90237821CE00C98CC2 /* Case1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case1ViewController.swift; sourceTree = "<group>"; };
 		78F0A15F8638B1060607E6B6 /* Pods-Final Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Final Challenge.release.xcconfig"; path = "Target Support Files/Pods-Final Challenge/Pods-Final Challenge.release.xcconfig"; sourceTree = "<group>"; };
 		8DDEF09846A3547A2A5FA638 /* Pods-Final Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Final Challenge.debug.xcconfig"; path = "Target Support Files/Pods-Final Challenge/Pods-Final Challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		E9BC2C71D507C22D965226D6 /* Pods_Final_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Final_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +62,7 @@
 				1608E758237505D40060156B /* FotoSIMViewController.swift */,
 				1608E75A237505EF0060156B /* FormViewController.swift */,
 				1608E75C237506180060156B /* InstruksiViewController.swift */,
+				70375D90237821CE00C98CC2 /* Case1ViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1608E757237505BA0060156B /* FotoKTPViewController.swift in Sources */,
+				70375D91237821CE00C98CC2 /* Case1ViewController.swift in Sources */,
 				70362D452373BAC800928516 /* KodePerusahaanViewController.swift in Sources */,
 				1608E75B237505EF0060156B /* FormViewController.swift in Sources */,
 				1608E75D237506180060156B /* InstruksiViewController.swift in Sources */,
