@@ -7,24 +7,93 @@
 //
 
 import UIKit
+import AVFoundation
 
 class InstruksiViewController: UIViewController {
+    let cameraSession = AVCaptureSession()
+    let captureSession = AVCaptureSession()
+    let movieOutput = AVCaptureMovieFileOutput()
+    var previewLayer: AVCaptureVideoPreviewLayer!
+    var activeInput: AVCaptureDeviceInput!
 
+    @IBOutlet weak var cameraView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if setupSession() {
+            setupPreview()
+            startSession()
+        }
     }
     
+    func setupSession() -> Bool {
+        captureSession.sessionPreset = AVCaptureSession.Preset.high
+        // Setup Camera
+        let camera = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .front)!
+        do {
+            let input = try AVCaptureDeviceInput(device: camera)
+            if captureSession.canAddInput(input) {
+                captureSession.addInput(input)
+                activeInput = input
+            }
+        } catch {
+            print("Error setting device video input: \(error)")
+            return false
+        }
+        // Setup Microphone
+        let microphone = AVCaptureDevice.default(for: AVMediaType.audio)!
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        do {
+            let micInput = try AVCaptureDeviceInput(device: microphone)
+            if captureSession.canAddInput(micInput) {
+                captureSession.addInput(micInput)
+            }
+        } catch {
+            print("Error setting device audio input: \(error)")
+            return false
+        }
+        // Movie output
+        if captureSession.canAddOutput(movieOutput) {
+            captureSession.addOutput(movieOutput)
+        }
+        return true
     }
-    */
+    
+    func setupPreview() {
+        // Configure previewLayer
+        previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
+        previewLayer.frame = cameraView.bounds
+        previewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
+        previewLayer.connection?.videoOrientation = self.currentVideoOrientation()
+        cameraView.layer.addSublayer(previewLayer)
+    }
 
+    func startSession() {
+        if !captureSession.isRunning {
+            DispatchQueue.main.async {
+                self.captureSession.startRunning()
+            }
+       }
+    }
+    
+    func currentVideoOrientation() -> AVCaptureVideoOrientation {
+       var orientation: AVCaptureVideoOrientation
+
+        switch UIApplication.shared.statusBarOrientation {
+           case .portrait:
+               orientation = AVCaptureVideoOrientation.portrait
+           case .landscapeRight:
+               orientation = AVCaptureVideoOrientation.landscapeRight
+           case .portraitUpsideDown:
+               orientation = AVCaptureVideoOrientation.portraitUpsideDown
+            case .landscapeLeft:
+                orientation = AVCaptureVideoOrientation.landscapeLeft
+            default:
+                orientation = AVCaptureVideoOrientation.landscapeRight
+        }
+
+        return orientation
+    }
+    
 }

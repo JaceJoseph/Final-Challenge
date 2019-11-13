@@ -11,6 +11,7 @@
 		1608E759237505D40060156B /* FotoSIMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608E758237505D40060156B /* FotoSIMViewController.swift */; };
 		1608E75B237505EF0060156B /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608E75A237505EF0060156B /* FormViewController.swift */; };
 		1608E75D237506180060156B /* InstruksiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608E75C237506180060156B /* InstruksiViewController.swift */; };
+		166BF4A7237BE13200BAC7DE /* Test1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166BF4A6237BE13200BAC7DE /* Test1ViewController.swift */; };
 		4D51A26C7F430FFBB9F98930 /* Pods_Final_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9BC2C71D507C22D965226D6 /* Pods_Final_Challenge.framework */; };
 		700828462379681100F102B0 /* Case2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700828452379681100F102B0 /* Case2ViewController.swift */; };
 		700828482379682000F102B0 /* Case3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700828472379682000F102B0 /* Case3ViewController.swift */; };
@@ -29,6 +30,7 @@
 		1608E758237505D40060156B /* FotoSIMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoSIMViewController.swift; sourceTree = "<group>"; };
 		1608E75A237505EF0060156B /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		1608E75C237506180060156B /* InstruksiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstruksiViewController.swift; sourceTree = "<group>"; };
+		166BF4A6237BE13200BAC7DE /* Test1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test1ViewController.swift; sourceTree = "<group>"; };
 		700828452379681100F102B0 /* Case2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case2ViewController.swift; sourceTree = "<group>"; };
 		700828472379682000F102B0 /* Case3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case3ViewController.swift; sourceTree = "<group>"; };
 		70362D2B2373B48600928516 /* Final Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +71,7 @@
 				70375D90237821CE00C98CC2 /* Case1ViewController.swift */,
 				700828452379681100F102B0 /* Case2ViewController.swift */,
 				700828472379682000F102B0 /* Case3ViewController.swift */,
+				166BF4A6237BE13200BAC7DE /* Test1ViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				166BF4A7237BE13200BAC7DE /* Test1ViewController.swift in Sources */,
 				1608E757237505BA0060156B /* FotoKTPViewController.swift in Sources */,
 				70375D91237821CE00C98CC2 /* Case1ViewController.swift in Sources */,
 				70362D452373BAC800928516 /* KodePerusahaanViewController.swift in Sources */,
