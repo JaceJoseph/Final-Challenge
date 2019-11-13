@@ -17,6 +17,7 @@ class Case1ViewController: UIViewController {
     
     var posisiAwalBenda:[CGPoint] = []
     var urutanBenda:[Int]=[]
+    var counterBenda = 1
     
     
     override func viewDidLoad() {
@@ -45,11 +46,11 @@ class Case1ViewController: UIViewController {
         case .ended:
             if (fileView?.frame.intersects(caseBackground.frame))! {
                 if let editIndikatorIndex = fileView?.tag{
-                    if indikatorAngka[editIndikatorIndex].isHidden == true{
+                    if !urutanBenda.contains(editIndikatorIndex){
+                        indikatorAngka[editIndikatorIndex].image = UIImage(named: "urutan\(counterBenda)")
                         indikatorAngka[editIndikatorIndex].isHidden = false
-                        if urutanBenda.contains(editIndikatorIndex) == false{
-                            urutanBenda.append(editIndikatorIndex)
-                        }
+                        urutanBenda.append(editIndikatorIndex)
+                        counterBenda+=1
                     }
                 }
                 returnViewToOrigin(view: fileView!)
@@ -82,22 +83,29 @@ class Case1ViewController: UIViewController {
     }
     @IBAction func finishButtonTapped(_ sender: UIButton) {
         print(urutanBenda)
-        if urutanBenda.count == bendaTersedia.count{
-            let kunciJawaban:[Int] = [2,1,0]
-            var nilai = 0
-            
-            for index in kunciJawaban.indices{
-                if kunciJawaban[index] == urutanBenda[index]{
-                    nilai += 33
-                }
-            }
-            if nilai == 99 {nilai = 100}
-            print(nilai)
-            //performSegue(withIdentifier: "testSegue", sender: self)
-        }else{
-            print("Not yet")
+        var score = 0
+        var kunciJawaban:[Int] = []
+
+        if self.title == "caseBanKempes"{
+            kunciJawaban = [4,1,2,3,0]
+        }else if self.title == "caseCuciMobil"{
+            kunciJawaban = [1,0,3,2]
         }
-        self.performSegue(withIdentifier: "nextContainer", sender: self)
+   
+        for index in urutanBenda.indices{
+            if urutanBenda[index] == kunciJawaban[index]{
+                score += 20
+            }
+        }
+        
+        print(score)
+        
+        if self.title == "caseBanKempes"{
+            self.performSegue(withIdentifier: "nextContainer", sender: self)
+        }else if self.title == "caseCuciMobil"{
+            self.performSegue(withIdentifier: "testSegue4", sender: self)
+        }
+       
     }
     
     @IBAction func resetButtonTapped(_ sender: UIButton) {
@@ -106,5 +114,6 @@ class Case1ViewController: UIViewController {
         }
         
         urutanBenda.removeAll()
+        counterBenda = 1
     }
 }

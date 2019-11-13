@@ -22,11 +22,15 @@ class Case3ViewController: UIViewController {
         print("Correct")
         score = 100
         print(score)
+        
+        performSegue(withIdentifier: "testSegue3", sender: self)
     }
     
     
     @IBAction func platNomorSalahTapped(_ sender: Any) {
         print("Wrong")
+        
+        performSegue(withIdentifier: "testSegue3", sender: self)
     }
     
 }
