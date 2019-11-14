@@ -32,4 +32,6 @@ class Case2ViewController: UIViewController {
         performSegue(withIdentifier: "testSegue2", sender: self)
     }
     
+    @IBAction func toCasePedal(_ unwindSegue: UIStoryboardSegue) {
+    }
 }

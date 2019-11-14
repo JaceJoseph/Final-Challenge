@@ -129,4 +129,7 @@ class Case1ViewController: UIViewController {
         urutanBenda.removeAll()
         counterBenda = 1
     }
+    
+    @IBAction func toCaseCuciMobil(_ unwindSegue: UIStoryboardSegue) {
+    }
 }
