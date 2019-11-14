@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oOD-Pu-6vQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vq5-dT-1oU">
     <device id="ipad12_9" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,13 +19,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="84" translatesAutoresizingMaskIntoConstraints="NO" id="rDl-Zi-Gpx">
-                                <rect key="frame" x="331" y="232" width="704" height="560"/>
+                                <rect key="frame" x="435.5" y="287" width="495" height="450"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="easy" translatesAutoresizingMaskIntoConstraints="NO" id="zva-ag-MUP">
-                                        <rect key="frame" x="0.0" y="0.0" width="704" height="220"/>
+                                        <rect key="frame" x="71.5" y="0.0" width="352" height="110"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="78" translatesAutoresizingMaskIntoConstraints="NO" id="Tft-RZ-5Mv">
-                                        <rect key="frame" x="104.5" y="304" width="495" height="256"/>
+                                        <rect key="frame" x="0.0" y="194" width="495" height="256"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Masukkan Kode Perusahaan" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aLL-pl-DFp" customClass="RoundedTextField" customModule="Final_Challenge" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="495" height="89"/>
@@ -205,12 +205,11 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2o-C0-ab9">
-                                <rect key="frame" x="932" y="798" width="49" height="73"/>
+                                <rect key="frame" x="933" y="798" width="49" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="lanjut"/>
                                 <connections>
-                                    <action selector="lanjutButton:" destination="YVE-dU-Ph1" eventType="touchUpInside" id="qc6-sm-GpH"/>
-                                    <action selector="takePhotoButton:" destination="YVE-dU-Ph1" eventType="touchUpInside" id="YIg-nc-Jpa"/>
+                                    <action selector="lanjutButton:" destination="YVE-dU-Ph1" eventType="touchUpInside" id="Ckf-ic-RAh"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68N-JC-QG4">
@@ -233,7 +232,9 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                     </view>
                     <connections>
                         <outlet property="cameraView" destination="Ato-I7-RKH" id="m5o-Qv-rxu"/>
+                        <outlet property="lanjutOutlet" destination="I2o-C0-ab9" id="0is-Fe-hsw"/>
                         <outlet property="resultImageView" destination="JEY-jl-oHB" id="qHl-8U-aon"/>
+                        <outlet property="ulangiOutlet" destination="68N-JC-QG4" id="yDs-9f-GC5"/>
                         <segue destination="IWl-4j-Vjw" kind="presentation" identifier="segueToFotoSIM" modalPresentationStyle="fullScreen" id="XGP-rr-sgp"/>
                     </connections>
                 </viewController>
@@ -337,6 +338,9 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="VPQ-61-LO6" id="6kc-1b-yNq"/>
+                                                        </connections>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hms-bE-xNF" customClass="RoundedTextField" customModule="Final_Challenge" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="414" width="397" height="61"/>
@@ -346,6 +350,9 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="VPQ-61-LO6" id="tzE-G8-S8w"/>
+                                                        </connections>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oQE-eT-wpv" customClass="RoundedTextField" customModule="Final_Challenge" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="507" width="397" height="61"/>
@@ -355,6 +362,9 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="VPQ-61-LO6" id="8Rm-9l-hfu"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
@@ -388,6 +398,9 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                         <state key="normal" title="Simpan">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="saveButton:" destination="VPQ-61-LO6" eventType="touchUpInside" id="Ayh-9n-5IF"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -415,6 +428,12 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                         <viewLayoutGuide key="safeArea" id="y6v-ND-dDe"/>
                     </view>
                     <connections>
+                        <outlet property="alamatTextField" destination="Jbd-kF-8r2" id="TNd-O8-8l2"/>
+                        <outlet property="namaTextField" destination="w3C-p0-5SX" id="Z0B-Cy-MWm"/>
+                        <outlet property="noHPTextField" destination="wwd-Hx-qsl" id="GwB-Cu-2ZQ"/>
+                        <outlet property="noKTPTextField" destination="hms-bE-xNF" id="yYg-mZ-KfU"/>
+                        <outlet property="noSIMTextField" destination="oQE-eT-wpv" id="CNF-cJ-Gsg"/>
+                        <outlet property="ttlTextField" destination="Sd9-B9-qfS" id="0rB-ix-bbL"/>
                         <segue destination="oOD-Pu-6vQ" kind="presentation" modalPresentationStyle="fullScreen" id="0SC-8Q-hIl"/>
                     </connections>
                 </viewController>
@@ -657,7 +676,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="lanjut"/>
                                 <connections>
-                                    <action selector="lanjutButton:" destination="IWl-4j-Vjw" eventType="touchUpInside" id="pdc-bS-U3K"/>
+                                    <action selector="lanjutButton:" destination="IWl-4j-Vjw" eventType="touchUpInside" id="3hC-Ji-e6d"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfz-JX-8oJ">
@@ -665,7 +684,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="ulangi"/>
                                 <connections>
-                                    <action selector="ulangiButton:" destination="IWl-4j-Vjw" eventType="touchUpInside" id="as4-Op-e5l"/>
+                                    <action selector="ulangiButton:" destination="IWl-4j-Vjw" eventType="touchUpInside" id="DI4-7A-bh5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -681,7 +700,9 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                     <navigationItem key="navigationItem" id="PXX-yj-hz2"/>
                     <connections>
                         <outlet property="cameraView" destination="iAw-Qq-F84" id="Ov2-eZ-hcM"/>
+                        <outlet property="lanjutOutlet" destination="9pz-TU-ADW" id="Cby-zn-7gr"/>
                         <outlet property="resultImageView" destination="7Qi-QW-vJj" id="uql-3E-o3A"/>
+                        <outlet property="ulangiOutlet" destination="mfz-JX-8oJ" id="p0N-Nx-oZW"/>
                         <segue destination="VPQ-61-LO6" kind="presentation" identifier="segueToForm" modalPresentationStyle="fullScreen" id="QYM-qu-4Cz"/>
                     </connections>
                 </viewController>

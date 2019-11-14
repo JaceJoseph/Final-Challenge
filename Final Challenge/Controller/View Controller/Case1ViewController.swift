@@ -33,7 +33,20 @@ class Case1ViewController: UIViewController {
     
     func addPanView(view:UIView){
         let pan = UIPanGestureRecognizer(target: self, action: #selector(Case1ViewController.handlePan(sender:)))
-        view.addGestureRecognizer(pan)
+        let tap = UITapGestureRecognizer(target: self, action: #selector(Case1ViewController.selectedObject(sender:)))
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func selectedObject(sender: UITapGestureRecognizer) {
+        let fileView = sender.view
+        if let editIndikatorIndex = fileView?.tag {
+            if !urutanBenda.contains(editIndikatorIndex) {
+                indikatorAngka[editIndikatorIndex].image = UIImage(named: "urutan\(counterBenda)")
+                indikatorAngka[editIndikatorIndex].isHidden = false
+                urutanBenda.append(editIndikatorIndex)
+                counterBenda+=1
+            }
+        }
     }
     
     @objc func handlePan(sender:UIPanGestureRecognizer){

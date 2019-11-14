@@ -23,7 +23,10 @@ class FotoSIMViewController: UIViewController {
 
     @IBOutlet weak var resultImageView: UIImageView!
 
+    @IBOutlet weak var ulangiOutlet: UIButton!
+    @IBOutlet weak var lanjutOutlet: UIButton!
     @IBAction func lanjutButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "segueToForm", sender: self)
     }
     @IBAction func ulangiButton(_ sender: UIButton) {
     }
@@ -109,5 +112,7 @@ extension FotoSIMViewController: AVCapturePhotoCaptureDelegate {
         resultImageView.image = image
         self.captureSession.stopRunning()
         self.resultImageView.isHidden = false
+        self.lanjutOutlet.isHidden = false
+        self.ulangiOutlet.isHidden = false
     }
 }
