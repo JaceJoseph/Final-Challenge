@@ -35,3 +35,9 @@ class RoundedView:UIView{
         self.layer.cornerRadius = 10
     }
 }
+
+class TransparentView:UIView{
+    override func awakeFromNib() {
+        self.backgroundColor = UIColor.black.withAlphaComponent(0.55)
+    }
+}
