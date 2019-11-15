@@ -161,9 +161,6 @@ Pastikan KTP dan SIM yang Anda bawa asli bukan fotokopi</string>
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shadows" translatesAutoresizingMaskIntoConstraints="NO" id="ZPd-mX-cB8">
-                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ato-I7-RKH">
                                 <rect key="frame" x="385" y="294" width="596" height="355"/>
                                 <subviews>
@@ -226,14 +223,10 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                         <constraints>
                             <constraint firstItem="0qK-DT-1I8" firstAttribute="centerX" secondItem="7KA-Pj-N1O" secondAttribute="centerX" id="2XH-vT-InA"/>
                             <constraint firstItem="68N-JC-QG4" firstAttribute="top" secondItem="Ato-I7-RKH" secondAttribute="bottom" constant="151" id="3fE-TG-InX"/>
-                            <constraint firstItem="VEc-da-mVw" firstAttribute="bottom" secondItem="ZPd-mX-cB8" secondAttribute="bottom" id="7TV-tb-v5p"/>
                             <constraint firstItem="I2o-C0-ab9" firstAttribute="leading" secondItem="zJ4-Yq-ah6" secondAttribute="trailing" constant="179.5" id="CQa-0Q-Cem"/>
                             <constraint firstItem="Ato-I7-RKH" firstAttribute="top" secondItem="0qK-DT-1I8" secondAttribute="bottom" constant="77.5" id="Cnn-xH-kOW"/>
-                            <constraint firstItem="ZPd-mX-cB8" firstAttribute="top" secondItem="VEc-da-mVw" secondAttribute="top" id="Ksv-AE-4nO"/>
                             <constraint firstItem="zJ4-Yq-ah6" firstAttribute="top" secondItem="Ato-I7-RKH" secondAttribute="bottom" constant="118" id="U3X-8C-x2J"/>
                             <constraint firstItem="VEc-da-mVw" firstAttribute="bottom" secondItem="I2o-C0-ab9" secondAttribute="bottom" constant="151" id="Vhu-cq-68F"/>
-                            <constraint firstItem="ZPd-mX-cB8" firstAttribute="leading" secondItem="VEc-da-mVw" secondAttribute="leading" id="Wqg-XN-Dw3"/>
-                            <constraint firstItem="ZPd-mX-cB8" firstAttribute="trailing" secondItem="VEc-da-mVw" secondAttribute="trailing" id="cjd-uD-9hl"/>
                             <constraint firstItem="zJ4-Yq-ah6" firstAttribute="leading" secondItem="68N-JC-QG4" secondAttribute="trailing" constant="181.5" id="jet-IG-iAK"/>
                             <constraint firstItem="Ato-I7-RKH" firstAttribute="centerX" secondItem="7KA-Pj-N1O" secondAttribute="centerX" id="n6U-zH-H60"/>
                             <constraint firstItem="VEc-da-mVw" firstAttribute="bottom" secondItem="68N-JC-QG4" secondAttribute="bottom" constant="157" id="pXO-gN-0Gj"/>
@@ -777,9 +770,6 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shadows" translatesAutoresizingMaskIntoConstraints="NO" id="IN6-oi-XYQ">
-                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iAw-Qq-F84">
                                 <rect key="frame" x="385" y="294" width="596" height="355"/>
                                 <subviews>
@@ -842,20 +832,16 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                         <constraints>
                             <constraint firstItem="iAw-Qq-F84" firstAttribute="centerX" secondItem="UYf-gB-25D" secondAttribute="centerX" id="6ZO-s7-ENh"/>
                             <constraint firstItem="fxG-Zc-ybs" firstAttribute="centerX" secondItem="UYf-gB-25D" secondAttribute="centerX" id="F8r-LF-IZK"/>
-                            <constraint firstItem="IN6-oi-XYQ" firstAttribute="leading" secondItem="ImY-ra-F4Q" secondAttribute="leading" id="Fsj-jC-PVd"/>
                             <constraint firstItem="oLW-af-ud6" firstAttribute="centerX" secondItem="UYf-gB-25D" secondAttribute="centerX" id="Jw0-5r-S1f"/>
                             <constraint firstItem="oLW-af-ud6" firstAttribute="leading" secondItem="mfz-JX-8oJ" secondAttribute="trailing" constant="181.5" id="MNV-qV-GRE"/>
                             <constraint firstItem="iAw-Qq-F84" firstAttribute="top" secondItem="fxG-Zc-ybs" secondAttribute="bottom" constant="77.5" id="O3C-bA-rCZ"/>
                             <constraint firstItem="oLW-af-ud6" firstAttribute="top" secondItem="iAw-Qq-F84" secondAttribute="bottom" constant="118" id="VZX-Be-PvM"/>
                             <constraint firstItem="ImY-ra-F4Q" firstAttribute="bottom" secondItem="9pz-TU-ADW" secondAttribute="bottom" constant="153" id="ZED-rk-Gme"/>
                             <constraint firstItem="ImY-ra-F4Q" firstAttribute="bottom" secondItem="oLW-af-ud6" secondAttribute="bottom" constant="118" id="c5B-tB-DTj"/>
-                            <constraint firstItem="ImY-ra-F4Q" firstAttribute="bottom" secondItem="IN6-oi-XYQ" secondAttribute="bottom" id="fYp-Ph-FTO"/>
-                            <constraint firstItem="IN6-oi-XYQ" firstAttribute="top" secondItem="ImY-ra-F4Q" secondAttribute="top" id="fxB-We-LGT"/>
                             <constraint firstItem="9pz-TU-ADW" firstAttribute="leading" secondItem="oLW-af-ud6" secondAttribute="trailing" constant="179.5" id="gce-qX-u2s"/>
                             <constraint firstItem="fxG-Zc-ybs" firstAttribute="top" secondItem="ImY-ra-F4Q" secondAttribute="top" constant="103" id="jhC-w9-Uh5"/>
                             <constraint firstItem="9pz-TU-ADW" firstAttribute="top" secondItem="iAw-Qq-F84" secondAttribute="bottom" constant="149" id="t5N-bf-4IT"/>
                             <constraint firstItem="ImY-ra-F4Q" firstAttribute="bottom" secondItem="mfz-JX-8oJ" secondAttribute="bottom" constant="156" id="wcq-Ba-RCQ"/>
-                            <constraint firstItem="ImY-ra-F4Q" firstAttribute="trailing" secondItem="IN6-oi-XYQ" secondAttribute="trailing" id="ynl-Lo-uNd"/>
                             <constraint firstItem="mfz-JX-8oJ" firstAttribute="top" secondItem="iAw-Qq-F84" secondAttribute="bottom" constant="152" id="z9m-Dg-nWr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ImY-ra-F4Q"/>
@@ -1384,7 +1370,7 @@ mobil manakah yang harus digunakan?</string>
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="769"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scene" translatesAutoresizingMaskIntoConstraints="NO" id="Uts-1B-8nH">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mobilkotor" translatesAutoresizingMaskIntoConstraints="NO" id="Uts-1B-8nH">
                                 <rect key="frame" x="0.0" y="0.0" width="1366" height="550"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1676,7 +1662,7 @@ sesuai dengan urutannya.</string>
                                         <rect key="frame" x="616" y="0.0" width="495" height="210"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYO-Ca-14Q" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="495" height="89"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="495" height="87"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="495" id="SGd-QX-6hR"/>
@@ -1691,7 +1677,7 @@ sesuai dengan urutannya.</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfD-uu-NXa" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="123" width="495" height="87"/>
+                                                <rect key="frame" x="0.0" y="121" width="495" height="89"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="89" id="O8a-w9-mR5"/>
@@ -1937,16 +1923,16 @@ sesuai dengan urutannya.</string>
         <image name="artwork" width="1366" height="570"/>
         <image name="back" width="62" height="62"/>
         <image name="ban" width="185" height="183"/>
-        <image name="bankempes2" width="1366" height="620"/>
+        <image name="bankempes2" width="1366" height="619"/>
         <image name="cam" width="139" height="139"/>
         <image name="dongkrak" width="222" height="81"/>
         <image name="garisputus2" width="436" height="206"/>
         <image name="ktp" width="211" height="132"/>
         <image name="lanjut" width="49" height="73"/>
         <image name="maps" width="1362" height="786"/>
+        <image name="mobilkotor" width="1366" height="609"/>
         <image name="pedal copy" width="245.5" height="103"/>
-        <image name="scene" width="1366" height="609"/>
-        <image name="scene14" width="1366" height="780"/>
+        <image name="scene14" width="1366" height="786"/>
         <image name="scene5-1" width="1364" height="604"/>
         <image name="segitiga" width="208" height="132"/>
         <image name="siapkerja" width="823" height="115"/>
