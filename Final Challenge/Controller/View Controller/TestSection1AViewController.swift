@@ -10,6 +10,7 @@ import UIKit
 
 class TestSection1AViewController: UIViewController {
     
+    var delegate: SegueHandler?
     var questions = [Question]()
     var counter = 0
 
@@ -79,7 +80,7 @@ class TestSection1AViewController: UIViewController {
         if counter >= self.questions.count - 1 {
             print("pertanyaan abis")
             uploadScoreToFirebase()
-            performSegue(withIdentifier: "goToSection2", sender: self)
+            delegate?.segueToNext("goToSection2")
         } else {
             counter += 1
             showQuestion()
@@ -102,7 +103,7 @@ class TestSection1AViewController: UIViewController {
         if counter >= self.questions.count - 1 {
             print("pertanyaan abis")
             uploadScoreToFirebase()
-            performSegue(withIdentifier: "goToSection2", sender: self)
+            delegate?.segueToNext("goToSection2")
         } else {
             counter += 1
             showQuestion()

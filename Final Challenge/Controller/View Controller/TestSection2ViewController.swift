@@ -9,7 +9,11 @@
 import UIKit
 import AVFoundation
 
-class TestSection2ViewController: UIViewController {
+protocol SegueHandler: class {
+    func segueToNext(identifier: String)
+}
+
+class TestSection2ViewController: UIViewController,SegueHandler {
     let cameraSession = AVCaptureSession()
     let captureSession = AVCaptureSession()
     let movieOutput = AVCaptureMovieFileOutput()
@@ -179,6 +183,18 @@ extension TestSection2ViewController {
         }
 
         return nil
+    }
+    
+    func segueToNext(identifier: String) {
+        self.performSegueWithIdentifier(identifier, sender: self)
+    }
+    
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "embedSegue" {
+            let dvc = segue.destinationViewController as! TestSection1AViewController
+            dvc.delegate = self
+        }
     }
 }
 
