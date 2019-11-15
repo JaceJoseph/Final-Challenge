@@ -29,6 +29,7 @@
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Masukkan Kode Perusahaan" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aLL-pl-DFp" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="495" height="89"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="89" id="WrR-C1-g0J"/>
                                                 </constraints>
@@ -1545,50 +1546,55 @@ sesuai dengan urutannya.</string>
                                     <constraint firstAttribute="height" constant="387" id="0fr-1A-yLS"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="q7I-bK-Se3">
-                                <rect key="frame" x="392" y="274" width="582" height="112.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="erI-lp-j3d">
+                                <rect key="frame" x="392" y="248" width="582" height="273.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selamat Telah Menyelesaikan Tes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2l5-3f-5Cs">
-                                        <rect key="frame" x="73.5" y="0.0" width="435.5" height="33.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silahkan kembalikan iPad kepada HR perusahaan dan tunggu pengumuman hasil tes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWr-Ia-e2M">
-                                        <rect key="frame" x="0.0" y="41.5" width="582" height="71"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="q7I-bK-Se3">
+                                        <rect key="frame" x="0.0" y="0.0" width="582" height="112.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selamat Telah Menyelesaikan Tes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2l5-3f-5Cs">
+                                                <rect key="frame" x="73.5" y="0.0" width="435.5" height="33.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silahkan kembalikan iPad kepada HR perusahaan dan tunggu pengumuman hasil tes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWr-Ia-e2M">
+                                                <rect key="frame" x="0.0" y="41.5" width="582" height="71"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="71" id="Fpk-Pk-OED"/>
+                                                    <constraint firstAttribute="width" constant="582" id="j3a-b1-9TJ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHD-Uh-Wby" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
+                                        <rect key="frame" x="29.5" y="182.5" width="523" height="91"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="71" id="Fpk-Pk-OED"/>
-                                            <constraint firstAttribute="width" constant="582" id="j3a-b1-9TJ"/>
+                                            <constraint firstAttribute="width" constant="523" id="eXb-pE-nDZ"/>
+                                            <constraint firstAttribute="height" constant="91" id="inv-Ec-L4n"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                        <state key="normal" title="Selesai">
+                                            <color key="titleColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="completeButton:" destination="aCq-jN-50t" eventType="touchUpInside" id="eI6-sa-sWf"/>
+                                            <segue destination="Nn7-Mi-TMT" kind="unwind" unwindAction="backToOrigin:" id="HhV-w8-Qkz"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHD-Uh-Wby" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
-                                <rect key="frame" x="421.5" y="457" width="523" height="91"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="523" id="eXb-pE-nDZ"/>
-                                    <constraint firstAttribute="height" constant="91" id="inv-Ec-L4n"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
-                                <state key="normal" title="Selesai">
-                                    <color key="titleColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="completeButton:" destination="aCq-jN-50t" eventType="touchUpInside" id="eI6-sa-sWf"/>
-                                    <segue destination="Nn7-Mi-TMT" kind="unwind" unwindAction="backToOrigin:" id="HhV-w8-Qkz"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="erI-lp-j3d" firstAttribute="centerX" secondItem="GFm-yn-hmW" secondAttribute="centerX" id="Aqw-W2-Mce"/>
                             <constraint firstItem="5Sg-qv-Vnh" firstAttribute="leading" secondItem="3wV-fy-plU" secondAttribute="leading" id="TdM-hF-SXP"/>
-                            <constraint firstItem="UHD-Uh-Wby" firstAttribute="top" secondItem="5Sg-qv-Vnh" secondAttribute="bottom" constant="70" id="fea-hc-UOL"/>
-                            <constraint firstItem="UHD-Uh-Wby" firstAttribute="centerX" secondItem="GFm-yn-hmW" secondAttribute="centerX" id="jSM-j1-xOK"/>
                             <constraint firstItem="5Sg-qv-Vnh" firstAttribute="top" secondItem="3wV-fy-plU" secondAttribute="top" id="kcP-jz-q5W"/>
+                            <constraint firstItem="erI-lp-j3d" firstAttribute="centerY" secondItem="GFm-yn-hmW" secondAttribute="centerY" id="m2W-SP-nmT"/>
                             <constraint firstItem="5Sg-qv-Vnh" firstAttribute="trailing" secondItem="3wV-fy-plU" secondAttribute="trailing" id="pm6-6O-q1q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3wV-fy-plU"/>
