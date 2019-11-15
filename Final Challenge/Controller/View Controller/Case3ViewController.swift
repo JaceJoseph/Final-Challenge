@@ -23,9 +23,16 @@ class Case3ViewController: UIViewController {
         score = 100
         print(score)
         
+        let currentScore = UserDefaults.standard.integer(forKey: "scoreSection2")
+        UserDefaults.standard.set(currentScore + score, forKey: "scoreSection2")
+        DatabaseHandler.updateScoreSection2Data(scoreSection2: UserDefaults.standard.integer(forKey: "scoreSection2"))
+        
         performSegue(withIdentifier: "testSegue3", sender: self)
     }
     
+    func updateScore() {
+        
+    }
     
     @IBAction func platNomorSalahTapped(_ sender: Any) {
         print("Wrong")

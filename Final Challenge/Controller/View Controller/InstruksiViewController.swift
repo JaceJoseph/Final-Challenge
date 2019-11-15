@@ -17,6 +17,9 @@ class InstruksiViewController: UIViewController {
     var activeInput: AVCaptureDeviceInput!
 
     @IBOutlet weak var cameraView: UIView!
+    @IBAction func mulaiTestButton(_ sender: RoundedButton) {
+        self.performSegue(withIdentifier: "mulaiTest", sender: self)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

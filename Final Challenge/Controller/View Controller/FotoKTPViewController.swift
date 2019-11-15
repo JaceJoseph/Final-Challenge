@@ -68,7 +68,7 @@ extension FotoKTPViewController {
     }
     
     func setupSession() -> Bool {
-        captureSession.sessionPreset = AVCaptureSession.Preset.low
+        captureSession.sessionPreset = AVCaptureSession.Preset.high
         // Setup Camera
         let camera = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back)!
             do {

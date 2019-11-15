@@ -1,5 +1,5 @@
 //
-//  Test1ViewController.swift
+//  TestSection2ViewController.swift
 //  Final Challenge
 //
 //  Created by Tommy Ryanto on 12/11/19.
@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class Test1ViewController: UIViewController {
+class TestSection2ViewController: UIViewController {
     let cameraSession = AVCaptureSession()
     let captureSession = AVCaptureSession()
     let movieOutput = AVCaptureMovieFileOutput()
@@ -38,7 +38,7 @@ class Test1ViewController: UIViewController {
 }
 
 // MARK: CONFIGURE TIMER
-extension Test1ViewController {
+extension TestSection2ViewController {
     func setupTimeLimit() {
         minutes = 45
         seconds = 0
@@ -74,7 +74,7 @@ extension Test1ViewController {
 }
 
 // MARK: SETTING UP THE CAMERA SESSION
-extension Test1ViewController {
+extension TestSection2ViewController {
     func setupSession() -> Bool {
         captureSession.sessionPreset = AVCaptureSession.Preset.high
         // Setup Camera
@@ -183,7 +183,7 @@ extension Test1ViewController {
 }
 
 // MARK: HANDLING THE VIDEO OUTPUT
-extension Test1ViewController: AVCaptureFileOutputRecordingDelegate {
+extension TestSection2ViewController: AVCaptureFileOutputRecordingDelegate {
     func fileOutput(_ output: AVCaptureFileOutput, didStartRecordingTo fileURL: URL, from connections: [AVCaptureConnection]) {
         
     }

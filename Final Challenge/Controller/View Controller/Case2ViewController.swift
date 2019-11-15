@@ -23,6 +23,9 @@ class Case2ViewController: UIViewController {
         score = 100
         print(score)
         
+        let currentScore = UserDefaults.standard.integer(forKey: "scoreSection2")
+        UserDefaults.standard.set(currentScore + score, forKey: "scoreSection2")
+        
         performSegue(withIdentifier: "testSegue2", sender: self)
     }
     

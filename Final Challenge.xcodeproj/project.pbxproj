@@ -11,8 +11,13 @@
 		1608E759237505D40060156B /* FotoSIMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608E758237505D40060156B /* FotoSIMViewController.swift */; };
 		1608E75B237505EF0060156B /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608E75A237505EF0060156B /* FormViewController.swift */; };
 		1608E75D237506180060156B /* InstruksiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1608E75C237506180060156B /* InstruksiViewController.swift */; };
-		166BF4A7237BE13200BAC7DE /* Test1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166BF4A6237BE13200BAC7DE /* Test1ViewController.swift */; };
+		166BF4A7237BE13200BAC7DE /* TestSection2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166BF4A6237BE13200BAC7DE /* TestSection2ViewController.swift */; };
 		168E6E02237C39CB00B90358 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 168E6E01237C39CB00B90358 /* GoogleService-Info.plist */; };
+		168E6E04237D421A00B90358 /* DatabaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168E6E03237D421A00B90358 /* DatabaseHandler.swift */; };
+		168E6E06237D428800B90358 /* ObjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168E6E05237D428800B90358 /* ObjectModel.swift */; };
+		168E6E09237D49A800B90358 /* TestSection1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168E6E08237D49A800B90358 /* TestSection1ViewController.swift */; };
+		168E6E0B237D6E5300B90358 /* TestSection1AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168E6E0A237D6E5300B90358 /* TestSection1AViewController.swift */; };
+		168E6E0E237D709A00B90358 /* Final-Challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 168E6E0C237D709A00B90358 /* Final-Challenge.xcdatamodeld */; };
 		4D51A26C7F430FFBB9F98930 /* Pods_Final_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9BC2C71D507C22D965226D6 /* Pods_Final_Challenge.framework */; };
 		700828462379681100F102B0 /* Case2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700828452379681100F102B0 /* Case2ViewController.swift */; };
 		700828482379682000F102B0 /* Case3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700828472379682000F102B0 /* Case3ViewController.swift */; };
@@ -31,11 +36,16 @@
 		1608E758237505D40060156B /* FotoSIMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoSIMViewController.swift; sourceTree = "<group>"; };
 		1608E75A237505EF0060156B /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		1608E75C237506180060156B /* InstruksiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstruksiViewController.swift; sourceTree = "<group>"; };
-		166BF4A6237BE13200BAC7DE /* Test1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test1ViewController.swift; sourceTree = "<group>"; };
+		166BF4A6237BE13200BAC7DE /* TestSection2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSection2ViewController.swift; sourceTree = "<group>"; };
 		168E6E01237C39CB00B90358 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		168E6E03237D421A00B90358 /* DatabaseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHandler.swift; sourceTree = "<group>"; };
+		168E6E05237D428800B90358 /* ObjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectModel.swift; sourceTree = "<group>"; };
+		168E6E08237D49A800B90358 /* TestSection1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSection1ViewController.swift; sourceTree = "<group>"; };
+		168E6E0A237D6E5300B90358 /* TestSection1AViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSection1AViewController.swift; sourceTree = "<group>"; };
+		168E6E0D237D709A00B90358 /* Final-Challenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Final-Challenge.xcdatamodel"; sourceTree = "<group>"; };
 		700828452379681100F102B0 /* Case2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case2ViewController.swift; sourceTree = "<group>"; };
 		700828472379682000F102B0 /* Case3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case3ViewController.swift; sourceTree = "<group>"; };
-		70362D2B2373B48600928516 /* Final Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70362D2B2373B48600928516 /* Siap Kerja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Siap Kerja.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70362D2E2373B48600928516 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70362D302373B48600928516 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		70362D352373B48600928516 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -73,7 +83,9 @@
 				70375D90237821CE00C98CC2 /* Case1ViewController.swift */,
 				700828452379681100F102B0 /* Case2ViewController.swift */,
 				700828472379682000F102B0 /* Case3ViewController.swift */,
-				166BF4A6237BE13200BAC7DE /* Test1ViewController.swift */,
+				166BF4A6237BE13200BAC7DE /* TestSection2ViewController.swift */,
+				168E6E08237D49A800B90358 /* TestSection1ViewController.swift */,
+				168E6E0A237D6E5300B90358 /* TestSection1AViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -81,6 +93,9 @@
 		16B966C523740B6F00019F75 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				168E6E0C237D709A00B90358 /* Final-Challenge.xcdatamodeld */,
+				168E6E03237D421A00B90358 /* DatabaseHandler.swift */,
+				168E6E05237D428800B90358 /* ObjectModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -118,7 +133,7 @@
 		70362D2C2373B48600928516 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				70362D2B2373B48600928516 /* Final Challenge.app */,
+				70362D2B2373B48600928516 /* Siap Kerja.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,7 +187,7 @@
 			);
 			name = "Final Challenge";
 			productName = "Final Challenge";
-			productReference = 70362D2B2373B48600928516 /* Final Challenge.app */;
+			productReference = 70362D2B2373B48600928516 /* Siap Kerja.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -269,18 +284,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				166BF4A7237BE13200BAC7DE /* Test1ViewController.swift in Sources */,
+				166BF4A7237BE13200BAC7DE /* TestSection2ViewController.swift in Sources */,
 				1608E757237505BA0060156B /* FotoKTPViewController.swift in Sources */,
 				70375D91237821CE00C98CC2 /* Case1ViewController.swift in Sources */,
 				70362D452373BAC800928516 /* KodePerusahaanViewController.swift in Sources */,
+				168E6E06237D428800B90358 /* ObjectModel.swift in Sources */,
+				168E6E0E237D709A00B90358 /* Final-Challenge.xcdatamodeld in Sources */,
 				1608E75B237505EF0060156B /* FormViewController.swift in Sources */,
+				168E6E0B237D6E5300B90358 /* TestSection1AViewController.swift in Sources */,
 				700828482379682000F102B0 /* Case3ViewController.swift in Sources */,
 				1608E75D237506180060156B /* InstruksiViewController.swift in Sources */,
 				70362D2F2373B48600928516 /* AppDelegate.swift in Sources */,
 				70362D312373B48600928516 /* SceneDelegate.swift in Sources */,
 				1608E759237505D40060156B /* FotoSIMViewController.swift in Sources */,
+				168E6E04237D421A00B90358 /* DatabaseHandler.swift in Sources */,
 				70362D432373B4B100928516 /* UIExtension.swift in Sources */,
 				700828462379681100F102B0 /* Case2ViewController.swift in Sources */,
+				168E6E09237D49A800B90358 /* TestSection1ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +454,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "JaceJoseph.Final-Challenge";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Siap Kerja";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -454,7 +474,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "JaceJoseph.Final-Challenge";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Siap Kerja";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -482,6 +502,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		168E6E0C237D709A00B90358 /* Final-Challenge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				168E6E0D237D709A00B90358 /* Final-Challenge.xcdatamodel */,
+			);
+			currentVersion = 168E6E0D237D709A00B90358 /* Final-Challenge.xcdatamodel */;
+			path = "Final-Challenge.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 70362D232373B48600928516 /* Project object */;
 }

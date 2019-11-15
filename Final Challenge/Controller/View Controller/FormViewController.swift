@@ -11,7 +11,6 @@ import FirebaseDatabase
 
 class FormViewController: UIViewController {
     
-    var ref: DatabaseReference!
     var activeTextField = UITextField()
     
     @IBOutlet weak var namaTextField: RoundedTextField!
@@ -21,15 +20,10 @@ class FormViewController: UIViewController {
     @IBOutlet weak var noKTPTextField: RoundedTextField!
     @IBOutlet weak var noSIMTextField: RoundedTextField!
     @IBAction func saveButton(_ sender: RoundedButton) {
-        ref = Database.database().reference()
-        ref.child("Users").child(noKTPTextField.text!).setValue([
-            "name": namaTextField.text!,
-            "ttl": ttlTextField.text!,
-            "alamat": alamatTextField.text!,
-            "noHP" : noHPTextField.text!,
-            "noKTP": noKTPTextField.text!,
-            "noSIM": noSIMTextField.text!
-        ])
+        let user = User(name: namaTextField.text, ttl: ttlTextField.text, alamat: alamatTextField.text, noHP: noHPTextField.text, noKTP: noKTPTextField.text, noSIM: noSIMTextField.text)
+        DatabaseHandler.saveUserData(user: user) {
+            self.performSegue(withIdentifier: "moveToInstruction", sender: self)
+        }
     }
     
     override func viewDidLoad() {

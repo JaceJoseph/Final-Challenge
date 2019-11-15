@@ -112,6 +112,8 @@ class Case1ViewController: UIViewController {
         }
         
         print(score)
+        let currentScore = UserDefaults.standard.integer(forKey: "scoreSection2")
+        UserDefaults.standard.set(currentScore + score, forKey: "scoreSection2")
         
         if self.title == "caseBanKempes"{
             self.performSegue(withIdentifier: "nextContainer", sender: self)
