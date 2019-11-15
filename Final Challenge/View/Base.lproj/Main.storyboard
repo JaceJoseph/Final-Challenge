@@ -10,7 +10,7 @@
         <!--Kode Perusahaan View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="KodePerusahaanViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="KodePerusahaanViewController" customModule="Final_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,7 +27,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="78" translatesAutoresizingMaskIntoConstraints="NO" id="Tft-RZ-5Mv">
                                         <rect key="frame" x="0.0" y="194" width="495" height="256"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Masukkan Kode Perusahaan" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aLL-pl-DFp" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Masukkan Kode Perusahaan" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aLL-pl-DFp" customClass="RoundedTextField" customModule="Final_Challenge" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="495" height="89"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="89" id="WrR-C1-g0J"/>
@@ -36,7 +36,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuM-KB-esf" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuM-KB-esf" customClass="RoundedButton" customModule="Final_Challenge" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="167" width="495" height="89"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -123,7 +123,7 @@ Pastikan KTP dan SIM yang Anda bawa asli bukan fotokopi</string>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1su-gU-QEC" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1su-gU-QEC" customClass="RoundedButton" customModule="Final_Challenge" customModuleProvider="target">
                                         <rect key="frame" x="43.5" y="371" width="495" height="89"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -161,7 +161,7 @@ Pastikan KTP dan SIM yang Anda bawa asli bukan fotokopi</string>
         <!--FotoKTP View Controller-->
         <scene sceneID="fxe-Jr-4F8">
             <objects>
-                <viewController id="YVE-dU-Ph1" customClass="FotoKTPViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="YVE-dU-Ph1" customClass="FotoKTPViewController" customModule="Final_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7KA-Pj-N1O">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -245,7 +245,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
         <!--Form View Controller-->
         <scene sceneID="MXn-Bq-CuF">
             <objects>
-                <viewController id="VPQ-61-LO6" customClass="FormViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VPQ-61-LO6" customClass="FormViewController" customModule="Final_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NrM-GX-sU8">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -303,7 +303,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="dJy-ls-6ca">
                                                 <rect key="frame" x="291" y="0.0" width="397" height="568"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w3C-p0-5SX" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w3C-p0-5SX" customClass="RoundedTextField" customModule="Final_Challenge" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="397" height="61"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="61" id="7uU-Ir-lh8"/>
@@ -312,7 +312,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sd9-B9-qfS" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sd9-B9-qfS" customClass="RoundedTextField" customModule="Final_Challenge" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="93" width="397" height="61"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="397" id="tEH-0Z-9Uu"/>
@@ -321,7 +321,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jbd-kF-8r2" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jbd-kF-8r2" customClass="RoundedTextField" customModule="Final_Challenge" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="186" width="397" height="103"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="103" id="29Y-Eh-BmN"/>
@@ -330,7 +330,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wwd-Hx-qsl" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wwd-Hx-qsl" customClass="RoundedTextField" customModule="Final_Challenge" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="321" width="397" height="61"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="61" id="Hu2-n0-f2U"/>
@@ -342,7 +342,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                             <outlet property="delegate" destination="VPQ-61-LO6" id="6kc-1b-yNq"/>
                                                         </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hms-bE-xNF" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hms-bE-xNF" customClass="RoundedTextField" customModule="Final_Challenge" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="414" width="397" height="61"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="61" id="35d-2V-NS2"/>
@@ -354,7 +354,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                             <outlet property="delegate" destination="VPQ-61-LO6" id="tzE-G8-S8w"/>
                                                         </connections>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oQE-eT-wpv" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oQE-eT-wpv" customClass="RoundedTextField" customModule="Final_Challenge" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="507" width="397" height="61"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="397" id="sfb-G5-c3F"/>
@@ -387,7 +387,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZ5-FT-V4t" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZ5-FT-V4t" customClass="RoundedButton" customModule="Final_Challenge" customModuleProvider="target">
                                         <rect key="frame" x="256" y="787" width="343" height="60"/>
                                         <color key="backgroundColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -444,7 +444,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
         <!--Instruksi View Controller-->
         <scene sceneID="GfJ-zY-Ave">
             <objects>
-                <viewController id="oOD-Pu-6vQ" customClass="InstruksiViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oOD-Pu-6vQ" customClass="InstruksiViewController" customModule="Final_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VhU-G2-82s">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -526,7 +526,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lci-69-56c" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lci-69-56c" customClass="RoundedButton" customModule="Final_Challenge" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="588.5" width="510" height="90"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -571,7 +571,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
         <!--Test Section2 View Controller-->
         <scene sceneID="oGe-mc-KJl">
             <objects>
-                <viewController id="vq5-dT-1oU" customClass="TestSection2ViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vq5-dT-1oU" customClass="TestSection2ViewController" customModule="Final_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ftC-f2-pl2">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -633,7 +633,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
         <!--FotoSIM View Controller-->
         <scene sceneID="L6g-at-6hA">
             <objects>
-                <viewController id="IWl-4j-Vjw" customClass="FotoSIMViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IWl-4j-Vjw" customClass="FotoSIMViewController" customModule="Final_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UYf-gB-25D">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -718,7 +718,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
         <!--caseBanKempes-->
         <scene sceneID="aXC-S3-9pZ">
             <objects>
-                <viewController title="caseBanKempes" definesPresentationContext="YES" modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="d1z-H2-dXz" customClass="Case1ViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="caseBanKempes" definesPresentationContext="YES" modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="d1z-H2-dXz" customClass="Case1ViewController" customModule="Final_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gXu-aY-wcY">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="769"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -797,7 +797,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                     </imageView>
                                 </subviews>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNB-Kn-o35" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNB-Kn-o35" customClass="RoundedButton" customModule="Final_Challenge" customModuleProvider="target">
                                 <rect key="frame" x="1154" y="665" width="170" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -809,7 +809,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                     <action selector="finishButtonTapped:" destination="d1z-H2-dXz" eventType="touchUpInside" id="wRE-tI-C0d"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tY8-Kf-JtA" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tY8-Kf-JtA" customClass="RoundedButton" customModule="Final_Challenge" customModuleProvider="target">
                                 <rect key="frame" x="1154" y="586" width="170" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -821,7 +821,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                     <action selector="resetButtonTapped:" destination="d1z-H2-dXz" eventType="touchUpInside" id="Jda-IK-5YD"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gSa-s4-Lde" customClass="TransparentView" customModule="Siap_Kerja" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gSa-s4-Lde" customClass="TransparentView" customModule="Final_Challenge" customModuleProvider="target">
                                 <rect key="frame" x="711" y="0.0" width="655" height="209"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -872,7 +872,7 @@ serep sesuai dengan alat dan urutan yang benar.</string>
         <!--Case2 View Controller-->
         <scene sceneID="4x5-NF-XHe">
             <objects>
-                <viewController definesPresentationContext="YES" id="ufY-XR-IbW" customClass="Case2ViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController definesPresentationContext="YES" id="ufY-XR-IbW" customClass="Case2ViewController" customModule="Final_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0jv-GW-kJA">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="769"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -881,7 +881,7 @@ serep sesuai dengan alat dan urutan yang benar.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="1366" height="552"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4N6-oH-T9o" customClass="TransparentView" customModule="Siap_Kerja" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4N6-oH-T9o" customClass="TransparentView" customModule="Final_Challenge" customModuleProvider="target">
                                 <rect key="frame" x="711" y="0.0" width="655" height="209"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -936,7 +936,7 @@ Apakah yang akan anda lakukan?</string>
                     </view>
                     <navigationItem key="navigationItem" id="30J-Sg-47o"/>
                     <connections>
-                        <segue destination="sVo-pB-ee9" kind="presentation" identifier="testSegue2" modalPresentationStyle="currentContext" id="50K-Mg-Dae"/>
+                        <segue destination="peE-KF-RS0" kind="presentation" identifier="testSegue2" modalPresentationStyle="currentContext" id="m4h-rH-yzH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uh0-xV-Beo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -944,57 +944,82 @@ Apakah yang akan anda lakukan?</string>
             </objects>
             <point key="canvasLocation" x="2767.6427525622253" y="2202.83203125"/>
         </scene>
-        <!--View Controller-->
+        <!--Case4 View Controller-->
         <scene sceneID="hxH-G5-Z42">
             <objects>
-                <viewController id="Vxy-Sp-3g3" sceneMemberID="viewController">
+                <viewController definesPresentationContext="YES" id="Vxy-Sp-3g3" customClass="Case4ViewController" customModule="Siap_Kerja" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ph5-bf-Nup">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="769"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wQB-lm-6fZ">
-                                <rect key="frame" x="20" y="20" width="680" height="714"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maps" translatesAutoresizingMaskIntoConstraints="NO" id="xGM-Vy-J79">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="769"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4rd-8X-ekF" customClass="TransparentView" customModule="Final_Challenge" customModuleProvider="target">
+                                <rect key="frame" x="711" y="0.0" width="655" height="209"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </mapView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eir-nj-Xgm">
-                                <rect key="frame" x="813" y="113" width="515" height="34"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMi-c2-dHg">
+                                        <rect key="frame" x="23" y="77" width="601" height="106"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Anda akan pergi mengantar atasan anda dari Senen menuju Menteng dan anda diminta untuk menggunakan aplikasi peta untuk mendapatkan jalur tercepat. Pilihlah jalur tercepat pada peta yang akan anda lalui.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pertanyaan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzo-eI-uu0">
+                                        <rect key="frame" x="23" y="37" width="119" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jrd-xd-bgD">
+                                <rect key="frame" x="478" y="88" width="102" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KBq-Bq-DLS">
-                                <rect key="frame" x="813" y="20" width="515" height="34"/>
+                                <connections>
+                                    <action selector="jawabanBenarTapped:" destination="Vxy-Sp-3g3" eventType="touchUpInside" id="fTr-YY-aJX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="di9-Fl-buJ">
+                                <rect key="frame" x="529" y="455" width="105" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tujuan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boq-Kz-18Q">
-                                <rect key="frame" x="724" y="120" width="63" height="27"/>
+                                <connections>
+                                    <action selector="jawabanSalahTapped:" destination="Vxy-Sp-3g3" eventType="touchUpInside" id="yQC-xQ-S0g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZj-6u-dZn">
+                                <rect key="frame" x="529" y="655" width="98" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkW-p0-ne7">
-                                <rect key="frame" x="724" y="27" width="47" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <connections>
+                                    <action selector="jawabanSalahTapped:" destination="Vxy-Sp-3g3" eventType="touchUpInside" id="vED-Yv-DJO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="K24-Ap-h5v" firstAttribute="trailing" secondItem="xGM-Vy-J79" secondAttribute="trailing" id="1Wn-IY-gKQ"/>
+                            <constraint firstItem="xGM-Vy-J79" firstAttribute="top" secondItem="K24-Ap-h5v" secondAttribute="top" id="2JP-mV-ZMe"/>
+                            <constraint firstItem="K24-Ap-h5v" firstAttribute="bottom" secondItem="xGM-Vy-J79" secondAttribute="bottom" id="hXr-nc-DiC"/>
+                            <constraint firstItem="xGM-Vy-J79" firstAttribute="leading" secondItem="K24-Ap-h5v" secondAttribute="leading" id="hfK-Ne-1lq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="K24-Ap-h5v"/>
                     </view>
+                    <connections>
+                        <segue destination="sVo-pB-ee9" kind="presentation" identifier="testSegue4" modalPresentationStyle="currentContext" id="K7d-jP-yNQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8LF-qf-Rrv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2767.6427525622253" y="2714.94140625"/>
+            <point key="canvasLocation" x="2114.9341142020498" y="2787.59765625"/>
         </scene>
         <!--Case3 View Controller-->
         <scene sceneID="aCR-hw-aCD">
             <objects>
-                <viewController definesPresentationContext="YES" id="sVo-pB-ee9" customClass="Case3ViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController definesPresentationContext="YES" id="sVo-pB-ee9" customClass="Case3ViewController" customModule="Final_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="679-hc-OEs">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="769"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1002,7 +1027,7 @@ Apakah yang akan anda lakukan?</string>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scene14" translatesAutoresizingMaskIntoConstraints="NO" id="Dwj-FG-Mb7">
                                 <rect key="frame" x="0.0" y="0.0" width="1366" height="769"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IaH-nR-FZs" customClass="TransparentView" customModule="Siap_Kerja" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IaH-nR-FZs" customClass="TransparentView" customModule="Final_Challenge" customModuleProvider="target">
                                 <rect key="frame" x="711" y="0.0" width="655" height="209"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -1077,19 +1102,16 @@ mobil manakah yang harus digunakan?</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5yh-xU-2vN"/>
                     </view>
-                    <connections>
-                        <segue destination="peE-KF-RS0" kind="presentation" identifier="testSegue3" modalPresentationStyle="currentContext" id="uXf-vI-Z8r"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g1n-yc-TQw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="oWT-M8-nYs" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3430.8931185944361" y="2202.83203125"/>
+            <point key="canvasLocation" x="2768" y="2788"/>
         </scene>
         <!--caseCuciMobil-->
         <scene sceneID="MYz-Ks-kCH">
             <objects>
-                <viewController title="caseCuciMobil" definesPresentationContext="YES" modalPresentationStyle="fullScreen" id="peE-KF-RS0" customClass="Case1ViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="caseCuciMobil" definesPresentationContext="YES" modalPresentationStyle="fullScreen" id="peE-KF-RS0" customClass="Case1ViewController" customModule="Final_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dnn-f4-WMr">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="769"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1103,7 +1125,7 @@ mobil manakah yang harus digunakan?</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="back"/>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EQf-1N-WjK" customClass="TransparentView" customModule="Siap_Kerja" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EQf-1N-WjK" customClass="TransparentView" customModule="Final_Challenge" customModuleProvider="target">
                                 <rect key="frame" x="711" y="0.0" width="655" height="209"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -1170,7 +1192,7 @@ sesuai dengan urutannya.</string>
                                     </imageView>
                                 </subviews>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wni-qb-Hf1" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wni-qb-Hf1" customClass="RoundedButton" customModule="Final_Challenge" customModuleProvider="target">
                                 <rect key="frame" x="1154" y="665" width="170" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1182,7 +1204,7 @@ sesuai dengan urutannya.</string>
                                     <action selector="finishButtonTapped:" destination="peE-KF-RS0" eventType="touchUpInside" id="Q6P-AX-gEy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ui-s7-ewW" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ui-s7-ewW" customClass="RoundedButton" customModule="Final_Challenge" customModuleProvider="target">
                                 <rect key="frame" x="1154" y="586" width="170" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1230,13 +1252,13 @@ sesuai dengan urutannya.</string>
                         <outletCollection property="indikatorAngka" destination="9vw-xb-VWA" collectionClass="NSMutableArray" id="pyR-RO-KgR"/>
                         <outletCollection property="bendaTersedia" destination="mKs-8y-aUd" collectionClass="NSMutableArray" id="K9i-lR-PoV"/>
                         <outletCollection property="indikatorAngka" destination="rEo-Iu-98n" collectionClass="NSMutableArray" id="k7B-m8-uLF"/>
-                        <segue destination="Vxy-Sp-3g3" kind="presentation" identifier="testSegue4" modalPresentationStyle="currentContext" id="ZYR-5B-vu7"/>
+                        <segue destination="Vxy-Sp-3g3" kind="presentation" identifier="testSegue3" modalPresentationStyle="currentContext" id="ejn-SX-1xk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WGg-uy-YuD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="PCb-xk-9G3" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2115" y="2715"/>
+            <point key="canvasLocation" x="3415" y="2203"/>
         </scene>
         <!--Test Section1A View Controller-->
         <scene sceneID="c64-vg-uUy">
@@ -1257,7 +1279,7 @@ sesuai dengan urutannya.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9Y-FU-SDy" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9Y-FU-SDy" customClass="RoundedButton" customModule="Final_Challenge" customModuleProvider="target">
                                 <rect key="frame" x="128" y="530" width="495" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1269,7 +1291,7 @@ sesuai dengan urutannya.</string>
                                     <action selector="option3Button:" destination="E7C-au-dYa" eventType="touchUpInside" id="EeR-h3-0Rd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cB5-Rv-Qah" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cB5-Rv-Qah" customClass="RoundedButton" customModule="Final_Challenge" customModuleProvider="target">
                                 <rect key="frame" x="128" y="409" width="495" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1281,7 +1303,7 @@ sesuai dengan urutannya.</string>
                                     <action selector="option1Button:" destination="E7C-au-dYa" eventType="touchUpInside" id="s92-G8-TaJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYO-Ca-14Q" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYO-Ca-14Q" customClass="RoundedButton" customModule="Final_Challenge" customModuleProvider="target">
                                 <rect key="frame" x="744" y="408" width="495" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1293,7 +1315,7 @@ sesuai dengan urutannya.</string>
                                     <action selector="option2Button:" destination="E7C-au-dYa" eventType="touchUpInside" id="Dou-E5-eWa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfD-uu-NXa" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfD-uu-NXa" customClass="RoundedButton" customModule="Final_Challenge" customModuleProvider="target">
                                 <rect key="frame" x="743" y="531" width="495" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1321,7 +1343,7 @@ sesuai dengan urutannya.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l4O-m1-vVZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="558" y="2222"/>
+            <point key="canvasLocation" x="1401" y="2222"/>
         </scene>
     </scenes>
     <resources>
@@ -1342,6 +1364,7 @@ sesuai dengan urutannya.</string>
         <image name="garisputus2" width="436" height="206"/>
         <image name="ktp" width="211" height="132"/>
         <image name="lanjut" width="49" height="73"/>
+        <image name="maps" width="1362" height="786"/>
         <image name="pedal copy" width="245.5" height="103"/>
         <image name="scene" width="1366" height="609"/>
         <image name="scene14" width="1366" height="780"/>

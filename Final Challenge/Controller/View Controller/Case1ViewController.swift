@@ -118,7 +118,7 @@ class Case1ViewController: UIViewController {
         if self.title == "caseBanKempes"{
             self.performSegue(withIdentifier: "nextContainer", sender: self)
         }else if self.title == "caseCuciMobil"{
-            self.performSegue(withIdentifier: "testSegue4", sender: self)
+            self.performSegue(withIdentifier: "testSegue3", sender: self)
         }
        
     }
