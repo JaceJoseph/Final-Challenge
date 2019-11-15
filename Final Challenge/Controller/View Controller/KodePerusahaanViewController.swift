@@ -9,6 +9,9 @@
 import UIKit
 
 class KodePerusahaanViewController: UIViewController {
+    
+    @IBAction func backToOrigin(_ sender: UIStoryboardSegue) {
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

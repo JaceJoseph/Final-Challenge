@@ -18,6 +18,7 @@
 		168E6E09237D49A800B90358 /* TestSection1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168E6E08237D49A800B90358 /* TestSection1ViewController.swift */; };
 		168E6E0B237D6E5300B90358 /* TestSection1AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168E6E0A237D6E5300B90358 /* TestSection1AViewController.swift */; };
 		168E6E0E237D709A00B90358 /* Final-Challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 168E6E0C237D709A00B90358 /* Final-Challenge.xcdatamodeld */; };
+		16CEC22A237EBB8100A4CF34 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CEC229237EBB8100A4CF34 /* EndViewController.swift */; };
 		4D51A26C7F430FFBB9F98930 /* Pods_Final_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9BC2C71D507C22D965226D6 /* Pods_Final_Challenge.framework */; };
 		700828462379681100F102B0 /* Case2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700828452379681100F102B0 /* Case2ViewController.swift */; };
 		700828482379682000F102B0 /* Case3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700828472379682000F102B0 /* Case3ViewController.swift */; };
@@ -44,6 +45,7 @@
 		168E6E08237D49A800B90358 /* TestSection1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSection1ViewController.swift; sourceTree = "<group>"; };
 		168E6E0A237D6E5300B90358 /* TestSection1AViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSection1AViewController.swift; sourceTree = "<group>"; };
 		168E6E0D237D709A00B90358 /* Final-Challenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Final-Challenge.xcdatamodel"; sourceTree = "<group>"; };
+		16CEC229237EBB8100A4CF34 /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
 		700828452379681100F102B0 /* Case2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case2ViewController.swift; sourceTree = "<group>"; };
 		700828472379682000F102B0 /* Case3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case3ViewController.swift; sourceTree = "<group>"; };
 		70362D2B2373B48600928516 /* Siap Kerja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Siap Kerja.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +91,7 @@
 				168E6E08237D49A800B90358 /* TestSection1ViewController.swift */,
 				168E6E0A237D6E5300B90358 /* TestSection1AViewController.swift */,
 				70FDE3E0237E531700A5C759 /* Case4ViewController.swift */,
+				16CEC229237EBB8100A4CF34 /* EndViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				70362D432373B4B100928516 /* UIExtension.swift in Sources */,
 				700828462379681100F102B0 /* Case2ViewController.swift in Sources */,
 				168E6E09237D49A800B90358 /* TestSection1ViewController.swift in Sources */,
+				16CEC22A237EBB8100A4CF34 /* EndViewController.swift in Sources */,
 				70FDE3E1237E531700A5C759 /* Case4ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

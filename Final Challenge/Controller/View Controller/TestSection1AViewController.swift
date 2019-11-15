@@ -16,6 +16,12 @@ class TestSection1AViewController: UIViewController {
 
     @IBOutlet weak var soalImage: UIImageView!
     @IBOutlet var option1ButtonOutlet: [RoundedButton]!
+    /*
+     [0]: bawah kiri
+     [1]: atas kiri
+     [2]: atas kanan
+     [3]: bawah kanan
+     */
     @IBOutlet weak var pertanyaanLabel: UILabel!
     
     @IBAction func option1Button(_ sender: RoundedButton) {
@@ -68,10 +74,16 @@ class TestSection1AViewController: UIViewController {
             print("gak ada image")
             self.soalImage.isHidden = true
         }
+        /*
+        [0]: bawah kiri: option 3
+        [1]: atas kiri: option1
+        [2]: atas kanan: option2
+        [3]: bawah kanan: option4
+        */
         print(questions[counter].soal!)
-        option1ButtonOutlet[0].setTitle(questions[counter].option1, for: .normal)
-        option1ButtonOutlet[1].setTitle(questions[counter].option2, for: .normal)
-        option1ButtonOutlet[2].setTitle(questions[counter].option3, for: .normal)
+        option1ButtonOutlet[0].setTitle(questions[counter].option3, for: .normal)
+        option1ButtonOutlet[1].setTitle(questions[counter].option1, for: .normal)
+        option1ButtonOutlet[2].setTitle(questions[counter].option2, for: .normal)
         option1ButtonOutlet[3].setTitle(questions[counter].option4, for: .normal)
     }
     
@@ -80,7 +92,7 @@ class TestSection1AViewController: UIViewController {
         if counter >= self.questions.count - 1 {
             print("pertanyaan abis")
             uploadScoreToFirebase()
-            delegate?.segueToNext("goToSection2")
+            delegate?.segueToNext(identifier: "goToSection2")
         } else {
             counter += 1
             showQuestion()
@@ -103,7 +115,7 @@ class TestSection1AViewController: UIViewController {
         if counter >= self.questions.count - 1 {
             print("pertanyaan abis")
             uploadScoreToFirebase()
-            delegate?.segueToNext("goToSection2")
+            delegate?.segueToNext(identifier: "goToSection2")
         } else {
             counter += 1
             showQuestion()

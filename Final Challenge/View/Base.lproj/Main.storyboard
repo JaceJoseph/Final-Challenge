@@ -19,13 +19,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="84" translatesAutoresizingMaskIntoConstraints="NO" id="rDl-Zi-Gpx">
-                                <rect key="frame" x="435.5" y="287" width="495" height="450"/>
+                                <rect key="frame" x="271.5" y="284.5" width="823" height="455"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="easy" translatesAutoresizingMaskIntoConstraints="NO" id="zva-ag-MUP">
-                                        <rect key="frame" x="71.5" y="0.0" width="352" height="110"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="siapkerja" translatesAutoresizingMaskIntoConstraints="NO" id="zva-ag-MUP">
+                                        <rect key="frame" x="0.0" y="0.0" width="823.00000000000023" height="115"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="78" translatesAutoresizingMaskIntoConstraints="NO" id="Tft-RZ-5Mv">
-                                        <rect key="frame" x="0.0" y="194" width="495" height="256"/>
+                                        <rect key="frame" x="164" y="199" width="495" height="256"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Masukkan Kode Perusahaan" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aLL-pl-DFp" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="495" height="89"/>
@@ -546,7 +546,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                         </state>
                                         <connections>
                                             <action selector="mulaiTestButton:" destination="oOD-Pu-6vQ" eventType="touchUpInside" id="nQl-MS-Sy6"/>
-                                            <segue destination="3VQ-DY-bfw" kind="presentation" modalPresentationStyle="formSheet" id="Hxd-Ew-kqe"/>
+                                            <segue destination="3VQ-DY-bfw" kind="presentation" identifier="mulaiTest" modalPresentationStyle="formSheet" id="Hxd-Ew-kqe"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1368,7 +1368,7 @@ mobil manakah yang harus digunakan?</string>
                         <viewLayoutGuide key="safeArea" id="5yh-xU-2vN"/>
                     </view>
                     <connections>
-                        <segue destination="aCq-jN-50t" kind="presentation" identifier="testSelesai" modalPresentationStyle="fullScreen" id="9LI-2l-XDb"/>
+                        <segue destination="aCq-jN-50t" kind="presentation" identifier="testSegue3" modalPresentationStyle="fullScreen" id="9LI-2l-XDb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g1n-yc-TQw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1545,10 +1545,10 @@ sesuai dengan urutannya.</string>
             </objects>
             <point key="canvasLocation" x="3072" y="3393"/>
         </scene>
-        <!--View Controller-->
+        <!--End View Controller-->
         <scene sceneID="cRp-2n-fsy">
             <objects>
-                <viewController id="aCq-jN-50t" sceneMemberID="viewController">
+                <viewController id="aCq-jN-50t" customClass="EndViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GFm-yn-hmW">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="769"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1591,6 +1591,10 @@ sesuai dengan urutannya.</string>
                                 <state key="normal" title="Selesai">
                                     <color key="titleColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="completeButton:" destination="aCq-jN-50t" eventType="touchUpInside" id="eI6-sa-sWf"/>
+                                    <segue destination="Nn7-Mi-TMT" kind="unwind" unwindAction="backToOrigin:" id="HhV-w8-Qkz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1605,6 +1609,7 @@ sesuai dengan urutannya.</string>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yfs-cJ-UNS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Nn7-Mi-TMT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3445.827232796486" y="3968.8476562499995"/>
         </scene>
@@ -1935,7 +1940,6 @@ sesuai dengan urutannya.</string>
         <image name="bankempes2" width="1366" height="620"/>
         <image name="cam" width="139" height="139"/>
         <image name="dongkrak" width="222" height="81"/>
-        <image name="easy" width="352" height="110"/>
         <image name="garisputus2" width="436" height="206"/>
         <image name="ktp" width="211" height="132"/>
         <image name="lanjut" width="49" height="73"/>
@@ -1945,6 +1949,7 @@ sesuai dengan urutannya.</string>
         <image name="scene14" width="1366" height="780"/>
         <image name="scene5-1" width="1364" height="604"/>
         <image name="segitiga" width="208" height="132"/>
+        <image name="siapkerja" width="823" height="115"/>
         <image name="ulangi" width="47" height="67"/>
         <image name="urutan1" width="48" height="48"/>
         <image name="urutan2" width="48" height="48"/>

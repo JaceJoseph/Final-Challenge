@@ -186,13 +186,12 @@ extension TestSection2ViewController {
     }
     
     func segueToNext(identifier: String) {
-        self.performSegueWithIdentifier(identifier, sender: self)
+        self.performSegue(withIdentifier: identifier, sender: self)
     }
     
-
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "embedSegue" {
-            let dvc = segue.destinationViewController as! TestSection1AViewController
+            let dvc = segue.destination as! TestSection1AViewController
             dvc.delegate = self
         }
     }
