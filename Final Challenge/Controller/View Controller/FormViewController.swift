@@ -25,7 +25,7 @@ class FormViewController: UIViewController {
     @IBAction func saveButton(_ sender: RoundedButton) {
         let user = User(name: namaTextField.text, ttl: ttlTextField.text, alamat: alamatTextField.text, noHP: noHPTextField.text, noKTP: noKTPTextField.text, noSIM: noSIMTextField.text)
         DatabaseHandler.saveUserData(user: user) {
-            self.performSegue(withIdentifier: "moveToInstruction", sender: self)
+            self.performSegue(withIdentifier: "toKategori", sender: self)
         }
     }
     

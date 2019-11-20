@@ -44,7 +44,7 @@ class TestSection2ViewController: UIViewController,SegueHandler {
 // MARK: CONFIGURE TIMER
 extension TestSection2ViewController {
     func setupTimeLimit() {
-        minutes = 45
+        minutes = 15
         seconds = 0
         updateLabel()
         configureTimer()

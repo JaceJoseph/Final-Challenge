@@ -49,7 +49,7 @@ class FotoSIMViewController: UIViewController {
     @IBOutlet weak var cameraView: UIView!
     
     @IBAction func lanjutButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "toKategori", sender: self)
+        performSegue(withIdentifier: "toForm", sender: self)
     }
     
     @IBAction func ulangiButton(_ sender: UIButton) {

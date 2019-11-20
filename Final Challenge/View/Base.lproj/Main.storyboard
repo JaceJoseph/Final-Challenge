@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YVE-dU-Ph1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad10_5" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -161,12 +161,12 @@
                     </view>
                     <connections>
                         <outlet property="categoryCollectionView" destination="3xd-oQ-vrc" id="07U-hO-DKL"/>
-                        <segue destination="VPQ-61-LO6" kind="presentation" identifier="toForm" modalPresentationStyle="fullScreen" id="XCE-xF-3yU"/>
+                        <segue destination="oOD-Pu-6vQ" kind="presentation" identifier="toInstruksi" modalPresentationStyle="fullScreen" id="4yp-oy-Fo9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="omd-v0-BiB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="159.71223021582733" y="870.50359712230227"/>
+            <point key="canvasLocation" x="772" y="804"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Kc6-Uf-mAh">
@@ -432,7 +432,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="dJy-ls-6ca">
                                                                 <rect key="frame" x="221" y="0.0" width="331" height="475"/>
                                                                 <subviews>
-                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w3C-p0-5SX" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nama Anda" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w3C-p0-5SX" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="331" height="52.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                         <textInputTraits key="textInputTraits"/>
@@ -440,7 +440,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                                             <outlet property="delegate" destination="VPQ-61-LO6" id="dn7-4q-1hI"/>
                                                                         </connections>
                                                                     </textField>
-                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sd9-B9-qfS" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="DD/MM/YYYY" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sd9-B9-qfS" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="84.5" width="331" height="52.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -448,7 +448,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                                             <outlet property="delegate" destination="VPQ-61-LO6" id="y1l-oz-Yab"/>
                                                                         </connections>
                                                                     </textField>
-                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jbd-kF-8r2" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="JL.Tempat Tinggal" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jbd-kF-8r2" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="169" width="331" height="52.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                         <textInputTraits key="textInputTraits"/>
@@ -456,7 +456,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                                             <outlet property="delegate" destination="VPQ-61-LO6" id="G2c-en-cgm"/>
                                                                         </connections>
                                                                     </textField>
-                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wwd-Hx-qsl" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0123456789" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wwd-Hx-qsl" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="253.5" width="331" height="52.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
@@ -464,7 +464,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                                             <outlet property="delegate" destination="VPQ-61-LO6" id="6kc-1b-yNq"/>
                                                                         </connections>
                                                                     </textField>
-                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hms-bE-xNF" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="32048023840" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hms-bE-xNF" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="338" width="331" height="52.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
@@ -472,7 +472,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                                             <outlet property="delegate" destination="VPQ-61-LO6" id="tzE-G8-S8w"/>
                                                                         </connections>
                                                                     </textField>
-                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oQE-eT-wpv" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="83748236482" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oQE-eT-wpv" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="422.5" width="331" height="52.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
@@ -545,12 +545,12 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                         <outlet property="noKTPTextField" destination="hms-bE-xNF" id="yYg-mZ-KfU"/>
                         <outlet property="noSIMTextField" destination="oQE-eT-wpv" id="CNF-cJ-Gsg"/>
                         <outlet property="ttlTextField" destination="Sd9-B9-qfS" id="0rB-ix-bbL"/>
-                        <segue destination="oOD-Pu-6vQ" kind="presentation" identifier="moveToInstruction" modalPresentationStyle="fullScreen" id="0SC-8Q-hIl"/>
+                        <segue destination="3i6-LY-euQ" kind="presentation" identifier="toKategori" modalPresentationStyle="fullScreen" id="m7F-A1-BOH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hnz-Wf-uft" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1009" y="833"/>
+            <point key="canvasLocation" x="3" y="804"/>
         </scene>
         <!--Instruksi View Controller-->
         <scene sceneID="GfJ-zY-Ave">
@@ -661,7 +661,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1QL-gu-2Ip" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1716.9838945827232" y="832.6171875"/>
+            <point key="canvasLocation" x="1545" y="804"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mFk-r8-N9g">
@@ -779,7 +779,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jx2-X2-1hS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2431.6251830161054" y="819.7265625"/>
+            <point key="canvasLocation" x="2335" y="804"/>
         </scene>
         <!--Test Section2 View Controller-->
         <scene sceneID="oGe-mc-KJl">
@@ -802,39 +802,50 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                     <constraint firstAttribute="width" constant="300" id="CJg-Ua-hzA"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="aIw-PH-7kH">
-                                <rect key="frame" x="879" y="40" width="178.5" height="56.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="TTN-Ob-qfN">
+                                <rect key="frame" x="694.5" y="50" width="367.5" height="90"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jey-np-XnV">
-                                        <rect key="frame" x="0.0" y="0.0" width="58" height="56.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Section 1 | Pengetahuan Dasar" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXV-7R-a8i">
+                                        <rect key="frame" x="0.0" y="0.0" width="367.5" height="33.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMe-bE-fDJ">
-                                        <rect key="frame" x="83" y="0.0" width="12.5" height="56.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="47"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgA-cG-x2W">
-                                        <rect key="frame" x="120.5" y="0.0" width="58" height="56.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="47"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="aIw-PH-7kH">
+                                        <rect key="frame" x="189" y="33.5" width="178.5" height="56.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jey-np-XnV">
+                                                <rect key="frame" x="0.0" y="0.0" width="58" height="56.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMe-bE-fDJ">
+                                                <rect key="frame" x="83" y="0.0" width="12.5" height="56.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgA-cG-x2W">
+                                                <rect key="frame" x="120.5" y="0.0" width="58" height="56.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="45J-g4-YlP" firstAttribute="trailing" secondItem="O3F-Oe-J5J" secondAttribute="trailing" id="096-mQ-Okv"/>
                             <constraint firstItem="U9E-OV-ohc" firstAttribute="leading" secondItem="O3F-Oe-J5J" secondAttribute="leading" constant="20" id="BSP-Ec-IPJ"/>
+                            <constraint firstItem="TTN-Ob-qfN" firstAttribute="top" secondItem="O3F-Oe-J5J" secondAttribute="top" constant="50" id="OBf-N1-glb"/>
+                            <constraint firstItem="O3F-Oe-J5J" firstAttribute="trailing" secondItem="TTN-Ob-qfN" secondAttribute="trailing" constant="50" id="RHh-oq-exz"/>
                             <constraint firstItem="45J-g4-YlP" firstAttribute="top" secondItem="U9E-OV-ohc" secondAttribute="bottom" constant="10" id="Xjd-Cu-WkL"/>
                             <constraint firstItem="45J-g4-YlP" firstAttribute="leading" secondItem="O3F-Oe-J5J" secondAttribute="leading" id="ZdK-DE-2wV"/>
                             <constraint firstItem="U9E-OV-ohc" firstAttribute="top" secondItem="O3F-Oe-J5J" secondAttribute="top" constant="10" id="dGd-LE-9yn"/>
-                            <constraint firstItem="O3F-Oe-J5J" firstAttribute="trailing" secondItem="aIw-PH-7kH" secondAttribute="trailing" constant="54.5" id="h3h-B3-qBw"/>
-                            <constraint firstItem="45J-g4-YlP" firstAttribute="top" secondItem="aIw-PH-7kH" secondAttribute="bottom" constant="93.5" id="jTn-E3-XvJ"/>
                             <constraint firstItem="45J-g4-YlP" firstAttribute="bottom" secondItem="O3F-Oe-J5J" secondAttribute="bottom" id="lkf-28-Vx9"/>
                             <constraint firstItem="45J-g4-YlP" firstAttribute="top" secondItem="O3F-Oe-J5J" secondAttribute="top" constant="190" id="oWE-fc-XcX"/>
                         </constraints>
@@ -951,7 +962,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                         <outlet property="lanjutOutlet" destination="9pz-TU-ADW" id="Cby-zn-7gr"/>
                         <outlet property="resultImageView" destination="7Qi-QW-vJj" id="uql-3E-o3A"/>
                         <outlet property="ulangiOutlet" destination="mfz-JX-8oJ" id="p0N-Nx-oZW"/>
-                        <segue destination="3i6-LY-euQ" kind="presentation" identifier="toKategori" modalPresentationStyle="fullScreen" id="Fb1-Vh-JxT"/>
+                        <segue destination="VPQ-61-LO6" kind="presentation" identifier="toForm" modalPresentationStyle="fullScreen" id="SqS-fP-puh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jF3-nB-qfA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2036,45 +2047,56 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                     <constraint firstAttribute="width" constant="300" id="Nkw-g7-Tzg"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="mSl-Mb-YKp">
-                                <rect key="frame" x="879" y="40" width="178.5" height="56.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xlr-EI-NyU">
-                                        <rect key="frame" x="0.0" y="0.0" width="58" height="56.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="47"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nv0-3A-uKd">
-                                        <rect key="frame" x="83" y="0.0" width="12.5" height="56.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="47"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqN-aC-IRi">
-                                        <rect key="frame" x="120.5" y="0.0" width="58" height="56.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="47"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gc8-hc-iyf">
                                 <rect key="frame" x="0.0" y="190" width="1112" height="644"/>
                                 <connections>
                                     <segue destination="d1z-H2-dXz" kind="embed" id="242-AM-eNq"/>
                                 </connections>
                             </containerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="qfb-kA-Q4Z">
+                                <rect key="frame" x="677.5" y="50" width="384.5" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Section 2 | Pemecahan Masalah" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UeK-YW-KN8">
+                                        <rect key="frame" x="0.0" y="0.0" width="384.5" height="33.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="mSl-Mb-YKp">
+                                        <rect key="frame" x="206" y="33.5" width="178.5" height="56.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xlr-EI-NyU">
+                                                <rect key="frame" x="0.0" y="0.0" width="58" height="56.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nv0-3A-uKd">
+                                                <rect key="frame" x="83" y="0.0" width="12.5" height="56.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqN-aC-IRi">
+                                                <rect key="frame" x="120.5" y="0.0" width="58" height="56.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0025027303489999998" green="0.22714132070000001" blue="0.35295593739999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Gc8-hc-iyf" firstAttribute="trailing" secondItem="cdm-mC-rRV" secondAttribute="trailing" id="1JB-yN-Dj9"/>
                             <constraint firstItem="Gc8-hc-iyf" firstAttribute="bottom" secondItem="cdm-mC-rRV" secondAttribute="bottom" id="1KG-UW-0Q4"/>
-                            <constraint firstItem="Gc8-hc-iyf" firstAttribute="top" secondItem="mSl-Mb-YKp" secondAttribute="bottom" constant="93.5" id="85j-T0-FDi"/>
+                            <constraint firstItem="qfb-kA-Q4Z" firstAttribute="top" secondItem="cdm-mC-rRV" secondAttribute="top" constant="50" id="IYl-XO-Wfa"/>
                             <constraint firstItem="Gc8-hc-iyf" firstAttribute="bottom" secondItem="cdm-mC-rRV" secondAttribute="bottom" id="Jzy-Gu-N6e"/>
                             <constraint firstItem="Gc8-hc-iyf" firstAttribute="top" secondItem="cdm-mC-rRV" secondAttribute="top" constant="190" id="K1M-l0-PGT"/>
+                            <constraint firstItem="cdm-mC-rRV" firstAttribute="trailing" secondItem="qfb-kA-Q4Z" secondAttribute="trailing" constant="50" id="LE6-3f-VhN"/>
                             <constraint firstItem="SMM-bB-55O" firstAttribute="leading" secondItem="cdm-mC-rRV" secondAttribute="leading" constant="20" id="NRk-Um-KnV"/>
-                            <constraint firstItem="cdm-mC-rRV" firstAttribute="trailing" secondItem="mSl-Mb-YKp" secondAttribute="trailing" constant="54.5" id="Qxk-ae-Yek"/>
                             <constraint firstItem="Gc8-hc-iyf" firstAttribute="leading" secondItem="cdm-mC-rRV" secondAttribute="leading" id="Rdo-ot-PLt"/>
                             <constraint firstItem="Gc8-hc-iyf" firstAttribute="top" secondItem="SMM-bB-55O" secondAttribute="bottom" constant="10" id="Vd1-sL-2E5"/>
                             <constraint firstItem="Gc8-hc-iyf" firstAttribute="bottom" secondItem="cdm-mC-rRV" secondAttribute="bottom" id="hW6-sx-DtY"/>
