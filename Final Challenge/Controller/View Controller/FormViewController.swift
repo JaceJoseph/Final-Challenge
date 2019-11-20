@@ -29,9 +29,20 @@ class FormViewController: UIViewController {
         }
     }
     
+    func updateDataAutoComplete() {
+        print(UserDefaults.standard.string(forKey: "nama"))
+        self.namaTextField.text = UserDefaults.standard.string(forKey: "nama")
+        self.noKTPTextField.text = UserDefaults.standard.string(forKey: "NIK")
+        self.alamatTextField.text = UserDefaults.standard.string(forKey: "alamat")
+        UserDefaults.standard.removeObject(forKey: "nama")
+        UserDefaults.standard.removeObject(forKey: "NIK")
+        UserDefaults.standard.removeObject(forKey: "alamat")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        updateDataAutoComplete()
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }

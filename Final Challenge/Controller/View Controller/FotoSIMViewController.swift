@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import Vision
 
 class FotoSIMViewController: UIViewController {
     
@@ -16,25 +17,53 @@ class FotoSIMViewController: UIViewController {
     let movieOutput = AVCaptureMovieFileOutput()
     var previewLayer: AVCaptureVideoPreviewLayer!
     var activeInput: AVCaptureDeviceInput!
-    
     var outputURL: URL!
-    
     var photoOutput = AVCapturePhotoOutput()
-
+    
+    //variables for vision text
+    var tempatIndex: Int?
+    var tglLahirIndex: Int?
+    
+    lazy var textDetectionRequest: VNRecognizeTextRequest = {
+       let request = VNRecognizeTextRequest(completionHandler: self.handleDetectedText)
+       request.recognitionLevel = .accurate
+       request.recognitionLanguages = ["id"]
+       return request
+    }()
+    var detectedText = [String]()
+    var textRecognitionRequest = VNRecognizeTextRequest(completionHandler: nil)
+    private let textRecognitionWorkQueue = DispatchQueue(label: "MyVisionScannerQueue", qos: .userInitiated, attributes: [], autoreleaseFrequency: .workItem)
+    var noSim: String?
+    var namaUser: String?
+    var alamatUser: String?
+    var tempatTinggal: String?
+    var jenisKelamin: String?
+    var tempatUser: String?
+    var tanggalLahirUser: String?
+    var berlaku: String?
+    var bufferText: String?
+    
     @IBOutlet weak var resultImageView: UIImageView!
-
     @IBOutlet weak var ulangiOutlet: UIButton!
     @IBOutlet weak var lanjutOutlet: UIButton!
+    @IBOutlet weak var cameraView: UIView!
+    
     @IBAction func lanjutButton(_ sender: UIButton) {
         performSegue(withIdentifier: "toKategori", sender: self)
     }
+    
     @IBAction func ulangiButton(_ sender: UIButton) {
+        self.resultImageView.isHidden = true
+        if setupSession() {
+            setupPreview()
+            startSession()
+        }
     }
+    
     @IBAction func takePhotoButton(_ sender: UIButton) {
         let settings = AVCapturePhotoSettings(format: [AVVideoCodecKey: AVVideoCodecType.jpeg])
         self.photoOutput.capturePhoto(with: settings, delegate: self)
     }
-    @IBOutlet weak var cameraView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -105,14 +134,116 @@ extension FotoSIMViewController {
 }
 
 extension FotoSIMViewController: AVCapturePhotoCaptureDelegate {
+    
+    
     func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
         print("processing photo")
         guard let imageData = photo.fileDataRepresentation() else { return }
         let image = UIImage(data: imageData)
         resultImageView.image = image
         self.captureSession.stopRunning()
+        self.readText()
         self.resultImageView.isHidden = false
         self.lanjutOutlet.isHidden = false
         self.ulangiOutlet.isHidden = false
+    }
+}
+
+extension FotoSIMViewController {
+    func readText() {
+        self.detectedText.removeAll()
+        processImage()
+    }
+    
+    func processImage() {
+        guard let image = self.resultImageView.image, let cgImage = image.cgImage else { return }
+        let requests = [textDetectionRequest]
+        let imageRequestHandler = VNImageRequestHandler(cgImage: cgImage, orientation: .up, options: [:])
+        DispatchQueue.global(qos: .userInitiated).async {
+            do {
+                try imageRequestHandler.perform(requests)
+            } catch let error {
+                print(error)
+            }
+        }
+    }
+    
+    func handleDetectedText(request: VNRequest?, error: Error?) {
+        if let error = error {
+            print(error.localizedDescription)
+        }
+        guard let results = request?.results, results.count > 0 else {
+            print("No text detected")
+            return
+        }
+        
+        for result in results {
+            if let observation = result as? VNRecognizedTextObservation {
+                for text in observation.topCandidates(1) {
+                    print("Text: \(text.string)")
+                    self.detectedText.append(text.string)
+                }
+            }
+        }
+        
+        var counter = 0
+        for validate in self.detectedText {
+            print("Text \(counter): \(validate)")
+            counter += 1
+        }
+        
+        DispatchQueue.main.async {
+            for (counter, text) in self.detectedText.enumerated() {
+
+                /*var namaUser: String?
+                var alamatUser: String?
+                var tempatUser: String?
+                var tanggalLahirUser: String?*/
+                if text.uppercased().contains("NAMA") {
+                    self.bufferText = text.replacingOccurrences(of: "Nama", with: "")
+                    self.removeBuffer()
+                    self.namaUser = self.bufferText
+                    self.namaUser = "Nama: \(self.bufferText!)"
+                } else if text.uppercased().contains("ALAMAT") {
+                    self.bufferText = text.replacingOccurrences(of: "Alamat", with: "")
+                    self.removeBuffer()
+                    self.alamatUser = self.bufferText
+                    self.alamatUser = "Alamat: \(self.bufferText ?? "")"
+                } else if text.uppercased().contains("PRIA") {
+                    self.jenisKelamin = "Jenis Kelamin: PRIA"
+                } else if text.uppercased().contains("WANITA") {
+                    self.jenisKelamin = "Jenis Kelamin: WANITA"
+                } else if text.uppercased().contains("TEMPAT") {
+                    self.tempatUser = self.detectedText[counter+1]
+                } else if text.uppercased().contains("LAHIR") {
+                    self.tanggalLahirUser = self.detectedText[counter+1]
+                } else if text.uppercased().contains("BERLAKU") {
+                    self.bufferText = text.replacingOccurrences(of: "Berlaku", with: "")
+                    self.bufferText = self.bufferText?.replacingOccurrences(of: "s/d", with: "")
+                    self.bufferText = self.bufferText?.replacingOccurrences(of: "sid", with: "")
+                    self.removeBuffer()
+                    self.berlaku = self.bufferText
+                } else if text.uppercased().contains("KAPOLRES") {
+                    var tanggalBerlaku = self.detectedText[counter-1].suffix(11)
+                    var tahunPembuatan = tanggalBerlaku.suffix(5)
+                    if tahunPembuatan.contains(".") || tahunPembuatan.contains(" ") {
+                        tahunPembuatan = "\(tahunPembuatan.replacingOccurrences(of: ".", with: ""))"
+                        tahunPembuatan = "\(tahunPembuatan.replacingOccurrences(of: " ", with: ""))"
+                        var tahunBerlaku = 0
+                        if let tahunPembuatanInteger = Int(tahunPembuatan) {
+                            tahunBerlaku = tahunPembuatanInteger + 5
+                            tanggalBerlaku = "\(tanggalBerlaku.replacingOccurrences(of: "\(tahunPembuatan)", with: "\(tahunBerlaku)"))"
+                            self.berlaku = "\(tanggalBerlaku)"
+                        }
+                    }
+                } else if text.uppercased().contains("SIM") {
+                    self.noSim = "\(text.suffix(12))"
+                }
+            }
+        }
+    }
+    
+    func removeBuffer() {
+        bufferText = bufferText?.replacingOccurrences(of: ":", with: "")
     }
 }
