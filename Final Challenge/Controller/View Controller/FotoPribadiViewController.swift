@@ -32,7 +32,7 @@ class FotoPribadiViewController: UIViewController {
     @IBOutlet weak var ulangiOutlet: UIButton!
     @IBOutlet weak var lanjutOutlet: UIButton!
     @IBAction func lanjutButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "segueToFotoSIM", sender: self)
+        performSegue(withIdentifier: "toIntroFotoKTP", sender: self)
     }
     
     

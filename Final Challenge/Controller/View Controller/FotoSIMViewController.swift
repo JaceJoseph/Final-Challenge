@@ -26,7 +26,7 @@ class FotoSIMViewController: UIViewController {
     @IBOutlet weak var ulangiOutlet: UIButton!
     @IBOutlet weak var lanjutOutlet: UIButton!
     @IBAction func lanjutButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "segueToForm", sender: self)
+        performSegue(withIdentifier: "toKategori", sender: self)
     }
     @IBAction func ulangiButton(_ sender: UIButton) {
     }

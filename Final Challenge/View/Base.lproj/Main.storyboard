@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VPQ-61-LO6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad10_5" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -72,27 +73,100 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="Q56-av-W6o" kind="presentation" identifier="segueToIntroFoto" modalPresentationStyle="fullScreen" id="dxf-PN-xvA"/>
+                        <segue destination="J3y-d5-7WU" kind="presentation" identifier="toIntroFotoDiri" modalPresentationStyle="fullScreen" id="yPe-Zw-QBe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="97" y="118"/>
         </scene>
-        <!--View Controller-->
+        <!--Category Picker View Controller-->
         <scene sceneID="Jvc-8I-1RK">
             <objects>
-                <viewController id="3i6-LY-euQ" sceneMemberID="viewController">
+                <viewController id="3i6-LY-euQ" customClass="CategoryPickerViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t4J-mD-e4x">
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shadows" translatesAutoresizingMaskIntoConstraints="NO" id="E4M-8J-a9z">
+                                <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3xd-oQ-vrc">
+                                <rect key="frame" x="0.0" y="177.5" width="1112" height="606.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Le2-ky-mwM">
+                                    <size key="itemSize" width="344" height="493"/>
+                                    <size key="estimatedItemSize" width="344" height="493"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoryCell" id="LNz-oD-JbP" customClass="CategoryCollectionViewCell" customModule="Siap_Kerja" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="57" width="344" height="493"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9AV-AZ-fYY">
+                                            <rect key="frame" x="0.0" y="0.0" width="344" height="493"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="category" translatesAutoresizingMaskIntoConstraints="NO" id="hKb-Pt-VZy">
+                                                    <rect key="frame" x="16" y="18" width="304" height="467"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="344" height="493"/>
+                                        <connections>
+                                            <outlet property="categoryImage" destination="hKb-Pt-VZy" id="PBz-e0-X1o"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="3i6-LY-euQ" id="JrO-gM-aIn"/>
+                                    <outlet property="delegate" destination="3i6-LY-euQ" id="MQT-uT-iSX"/>
+                                </connections>
+                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vcX-BW-wdF">
+                                <rect key="frame" x="393" y="70" width="326.5" height="87.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kategori" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8z-VT-z3d">
+                                        <rect key="frame" x="0.0" y="0.0" width="326.5" height="41"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pilih pekerjaan yang anda inginkan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18w-Ra-OFb">
+                                        <rect key="frame" x="0.0" y="61" width="326.5" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="E4M-8J-a9z" firstAttribute="top" secondItem="z8K-0a-3ew" secondAttribute="top" id="66d-Lw-N70"/>
+                            <constraint firstItem="E4M-8J-a9z" firstAttribute="leading" secondItem="z8K-0a-3ew" secondAttribute="leading" id="8NG-ym-3ww"/>
+                            <constraint firstItem="3xd-oQ-vrc" firstAttribute="top" secondItem="vcX-BW-wdF" secondAttribute="bottom" constant="20" id="8Vk-Yp-CnT"/>
+                            <constraint firstAttribute="bottom" secondItem="E4M-8J-a9z" secondAttribute="bottom" id="8pT-Wf-q51"/>
+                            <constraint firstAttribute="trailing" secondItem="E4M-8J-a9z" secondAttribute="trailing" id="Uux-WC-E2W"/>
+                            <constraint firstItem="vcX-BW-wdF" firstAttribute="centerX" secondItem="t4J-mD-e4x" secondAttribute="centerX" id="bbk-eO-nRo"/>
+                            <constraint firstItem="3xd-oQ-vrc" firstAttribute="leading" secondItem="z8K-0a-3ew" secondAttribute="leading" id="ho8-cD-ldS"/>
+                            <constraint firstItem="z8K-0a-3ew" firstAttribute="bottom" secondItem="3xd-oQ-vrc" secondAttribute="bottom" constant="50" id="m1W-Ql-gFp"/>
+                            <constraint firstItem="vcX-BW-wdF" firstAttribute="top" secondItem="z8K-0a-3ew" secondAttribute="top" constant="70" id="sAf-bA-YMI"/>
+                            <constraint firstItem="3xd-oQ-vrc" firstAttribute="trailing" secondItem="z8K-0a-3ew" secondAttribute="trailing" id="yJQ-Sn-o2q"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="z8K-0a-3ew"/>
                     </view>
+                    <connections>
+                        <outlet property="categoryCollectionView" destination="3xd-oQ-vrc" id="07U-hO-DKL"/>
+                        <segue destination="VPQ-61-LO6" kind="presentation" identifier="toForm" modalPresentationStyle="fullScreen" id="XCE-xF-3yU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="omd-v0-BiB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="286.51079136690646" y="822.30215827338134"/>
+            <point key="canvasLocation" x="159.71223021582733" y="870.50359712230227"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Kc6-Uf-mAh">
@@ -369,7 +443,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sd9-B9-qfS" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="84.5" width="331" height="52.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                                        <textInputTraits key="textInputTraits"/>
+                                                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                                         <connections>
                                                                             <outlet property="delegate" destination="VPQ-61-LO6" id="y1l-oz-Yab"/>
                                                                         </connections>
@@ -385,7 +459,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wwd-Hx-qsl" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="253.5" width="331" height="52.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                                        <textInputTraits key="textInputTraits"/>
+                                                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
                                                                         <connections>
                                                                             <outlet property="delegate" destination="VPQ-61-LO6" id="6kc-1b-yNq"/>
                                                                         </connections>
@@ -393,7 +467,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hms-bE-xNF" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="338" width="331" height="52.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                                        <textInputTraits key="textInputTraits"/>
+                                                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                                         <connections>
                                                                             <outlet property="delegate" destination="VPQ-61-LO6" id="tzE-G8-S8w"/>
                                                                         </connections>
@@ -401,7 +475,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oQE-eT-wpv" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="422.5" width="331" height="52.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                                        <textInputTraits key="textInputTraits"/>
+                                                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                                         <connections>
                                                                             <outlet property="delegate" destination="VPQ-61-LO6" id="8Rm-9l-hfu"/>
                                                                         </connections>
@@ -674,10 +748,10 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5v8-zm-ry0" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
-                                <rect key="frame" x="30" y="501" width="480" height="89"/>
+                                <rect key="frame" x="30" y="535" width="480" height="55"/>
                                 <color key="backgroundColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="89" id="eCq-NF-TzP"/>
+                                    <constraint firstAttribute="height" constant="55" id="eCq-NF-TzP"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <state key="normal" title="Mulai Sekarang">
@@ -877,7 +951,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                         <outlet property="lanjutOutlet" destination="9pz-TU-ADW" id="Cby-zn-7gr"/>
                         <outlet property="resultImageView" destination="7Qi-QW-vJj" id="uql-3E-o3A"/>
                         <outlet property="ulangiOutlet" destination="mfz-JX-8oJ" id="p0N-Nx-oZW"/>
-                        <segue destination="VPQ-61-LO6" kind="presentation" identifier="segueToForm" modalPresentationStyle="fullScreen" id="QYM-qu-4Cz"/>
+                        <segue destination="3i6-LY-euQ" kind="presentation" identifier="toKategori" modalPresentationStyle="fullScreen" id="Fb1-Vh-JxT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jF3-nB-qfA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1235,7 +1309,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 <rect key="frame" x="450" y="0.0" width="662" height="211"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0eM-RV-Z9B">
-                                        <rect key="frame" x="0.0" y="74.5" width="84.5" height="62"/>
+                                        <rect key="frame" x="0.0" y="43.5" width="84.5" height="124"/>
                                         <state key="normal" image="back"/>
                                         <connections>
                                             <segue destination="g5P-Op-xnB" kind="unwind" unwindAction="toCaseCuciMobil:" id="1q1-lX-8kW"/>
@@ -1363,7 +1437,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 <rect key="frame" x="450" y="0.0" width="662" height="185"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqB-j7-uMc">
-                                        <rect key="frame" x="0.0" y="61.5" width="100.5" height="62"/>
+                                        <rect key="frame" x="0.0" y="30.5" width="100.5" height="124"/>
                                         <state key="normal" image="back"/>
                                         <connections>
                                             <segue destination="oWT-M8-nYs" kind="unwind" unwindAction="toMap:" id="dVY-VH-ocz"/>
@@ -1447,7 +1521,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 <rect key="frame" x="450" y="0.0" width="662" height="185"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkz-bX-tmR">
-                                        <rect key="frame" x="0.0" y="61.5" width="68" height="62"/>
+                                        <rect key="frame" x="0.0" y="30.5" width="68" height="124"/>
                                         <state key="normal" image="back"/>
                                         <connections>
                                             <segue destination="PCb-xk-9G3" kind="unwind" unwindAction="toCasePedal:" id="idb-ce-Hzh"/>
@@ -1914,10 +1988,10 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulH-ge-yY5" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
-                                <rect key="frame" x="30" y="501" width="480" height="89"/>
+                                <rect key="frame" x="30" y="535" width="480" height="55"/>
                                 <color key="backgroundColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="89" id="ssY-Ry-dlg"/>
+                                    <constraint firstAttribute="height" constant="55" id="ssY-Ry-dlg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <state key="normal" title="Mulai Sekarang">
@@ -2116,11 +2190,86 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                         <outlet property="lanjutOutlet" destination="UpW-Fs-cS6" id="hr4-7e-GIj"/>
                         <outlet property="resultImageView" destination="f0r-93-W2h" id="llH-Vi-6NV"/>
                         <outlet property="ulangiOutlet" destination="gMH-FE-3VM" id="H0h-Y3-G4M"/>
+                        <segue destination="Q56-av-W6o" kind="presentation" identifier="toIntroFotoKTP" modalPresentationStyle="fullScreen" id="Wc6-95-zQk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uTv-jV-afV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1410" y="-617"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rEX-TU-PdX">
+            <objects>
+                <viewController id="J3y-d5-7WU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="icW-oK-o8K">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shadows" translatesAutoresizingMaskIntoConstraints="NO" id="pCR-B2-0Yy">
+                                <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="ylM-LI-iAK">
+                                <rect key="frame" x="296.5" y="209.5" width="519" height="415.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foto" translatesAutoresizingMaskIntoConstraints="NO" id="bK4-F2-ot4">
+                                        <rect key="frame" x="154.5" y="0.0" width="210" height="132"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rPw-OU-fp8">
+                                        <rect key="frame" x="0.0" y="182" width="519" height="94.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foto Diri" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VcA-Sg-lcf">
+                                                <rect key="frame" x="205" y="0.0" width="109" height="33.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwE-3N-FG1">
+                                                <rect key="frame" x="0.0" y="41.5" width="519" height="53"/>
+                                                <string key="text">Mohon siapkan diri Anda dan berikan foto terbaik Anda
+Pastikan wajah Anda terlihat dengan jelas pada kamera</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dsp-5C-zQk" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="326.5" width="519" height="89"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="89" id="xpk-Sy-MiG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                        <state key="normal" title="Lanjut">
+                                            <color key="titleColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="qf4-Eo-7yi" kind="presentation" modalPresentationStyle="fullScreen" id="xnl-iS-L9j"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Dsp-5C-zQk" firstAttribute="leading" secondItem="ylM-LI-iAK" secondAttribute="leading" id="cea-BZ-bl9"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dsp-5C-zQk" secondAttribute="trailing" id="fFX-bs-PuI"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="ylM-LI-iAK" firstAttribute="centerY" secondItem="icW-oK-o8K" secondAttribute="centerY" id="0dZ-ec-8DJ"/>
+                            <constraint firstItem="pCR-B2-0Yy" firstAttribute="top" secondItem="xie-o9-QPX" secondAttribute="top" id="3EO-i5-fO7"/>
+                            <constraint firstItem="pCR-B2-0Yy" firstAttribute="leading" secondItem="xie-o9-QPX" secondAttribute="leading" id="CLL-81-lKy"/>
+                            <constraint firstAttribute="bottom" secondItem="pCR-B2-0Yy" secondAttribute="bottom" id="ade-2A-yXZ"/>
+                            <constraint firstAttribute="trailing" secondItem="pCR-B2-0Yy" secondAttribute="trailing" id="h9j-fG-P7g"/>
+                            <constraint firstItem="ylM-LI-iAK" firstAttribute="centerX" secondItem="icW-oK-o8K" secondAttribute="centerX" id="rxE-d9-djA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xie-o9-QPX"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QvZ-5Z-RGM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DUC-E1-Mws" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="745" y="-617"/>
         </scene>
     </scenes>
     <resources>
@@ -2137,15 +2286,17 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
         <image name="ban" width="185" height="183"/>
         <image name="bankempes2" width="1366" height="619"/>
         <image name="cam" width="139" height="139"/>
+        <image name="category" width="407" height="551"/>
         <image name="dongkrak" width="222" height="81"/>
+        <image name="foto" width="210" height="132"/>
         <image name="garisputus2" width="436" height="206"/>
         <image name="gas" width="74" height="168"/>
         <image name="ktp" width="211" height="132"/>
         <image name="lanjut" width="49" height="73"/>
-        <image name="maps" width="1362" height="786"/>
+        <image name="maps" width="1362" height="697"/>
         <image name="mobilkotor" width="1366" height="609"/>
         <image name="rem" width="161" height="141"/>
-        <image name="scene14" width="1366" height="786"/>
+        <image name="scene14" width="1365" height="777"/>
         <image name="scene5-1" width="1364" height="604"/>
         <image name="segitiga" width="208" height="132"/>
         <image name="siapkerja" width="823" height="115"/>

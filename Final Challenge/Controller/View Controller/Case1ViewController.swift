@@ -109,6 +109,9 @@ class Case1ViewController: UIViewController {
             if urutanBenda[index] == kunciJawaban[index]{
                 score += 20
             }
+            if index == 1 && urutanBenda[index] == 1{
+                score += 20
+            }
         }
         
         print(score)

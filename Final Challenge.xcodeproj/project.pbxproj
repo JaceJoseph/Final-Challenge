@@ -23,6 +23,8 @@
 		700828462379681100F102B0 /* Case2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700828452379681100F102B0 /* Case2ViewController.swift */; };
 		700828482379682000F102B0 /* Case3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700828472379682000F102B0 /* Case3ViewController.swift */; };
 		701276DC2384F3A1006BD0E7 /* FotoPribadiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701276DB2384F3A1006BD0E7 /* FotoPribadiViewController.swift */; };
+		701276DE23851AC2006BD0E7 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701276DD23851AC2006BD0E7 /* CategoryCollectionViewCell.swift */; };
+		701276E023851B56006BD0E7 /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701276DF23851B56006BD0E7 /* CategoryPickerViewController.swift */; };
 		70362D2F2373B48600928516 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70362D2E2373B48600928516 /* AppDelegate.swift */; };
 		70362D312373B48600928516 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70362D302373B48600928516 /* SceneDelegate.swift */; };
 		70362D362373B48600928516 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70362D342373B48600928516 /* Main.storyboard */; };
@@ -50,6 +52,8 @@
 		700828452379681100F102B0 /* Case2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case2ViewController.swift; sourceTree = "<group>"; };
 		700828472379682000F102B0 /* Case3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case3ViewController.swift; sourceTree = "<group>"; };
 		701276DB2384F3A1006BD0E7 /* FotoPribadiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoPribadiViewController.swift; sourceTree = "<group>"; };
+		701276DD23851AC2006BD0E7 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		701276DF23851B56006BD0E7 /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
 		70362D2B2373B48600928516 /* Siap Kerja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Siap Kerja.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70362D2E2373B48600928516 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70362D302373B48600928516 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 				70FDE3E0237E531700A5C759 /* Case4ViewController.swift */,
 				16CEC229237EBB8100A4CF34 /* EndViewController.swift */,
 				701276DB2384F3A1006BD0E7 /* FotoPribadiViewController.swift */,
+				701276DD23851AC2006BD0E7 /* CategoryCollectionViewCell.swift */,
+				701276DF23851B56006BD0E7 /* CategoryPickerViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -293,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				701276E023851B56006BD0E7 /* CategoryPickerViewController.swift in Sources */,
 				701276DC2384F3A1006BD0E7 /* FotoPribadiViewController.swift in Sources */,
 				166BF4A7237BE13200BAC7DE /* TestSection2ViewController.swift in Sources */,
 				1608E757237505BA0060156B /* FotoKTPViewController.swift in Sources */,
@@ -312,6 +319,7 @@
 				700828462379681100F102B0 /* Case2ViewController.swift in Sources */,
 				168E6E09237D49A800B90358 /* TestSection1ViewController.swift in Sources */,
 				16CEC22A237EBB8100A4CF34 /* EndViewController.swift in Sources */,
+				701276DE23851AC2006BD0E7 /* CategoryCollectionViewCell.swift in Sources */,
 				70FDE3E1237E531700A5C759 /* Case4ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
