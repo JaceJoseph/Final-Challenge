@@ -28,4 +28,7 @@ class Case4ViewController: UIViewController {
     @IBAction func jawabanSalahTapped(_ sender: Any) {
         performSegue(withIdentifier: "testSegue4", sender: self)
     }
+    
+    @IBAction func toMap(_ unwindSegue: UIStoryboardSegue) {
+    }
 }

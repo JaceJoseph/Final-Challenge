@@ -23,5 +23,8 @@ class KodePerusahaanViewController: UIViewController {
         //NOTE: Function to check the code
         performSegue(withIdentifier: "segueToIntroFoto", sender: self)
     }
+    
+    @IBAction func toKodePerusahaan(_ unwindSegue: UIStoryboardSegue) {
+    }
 
 }
