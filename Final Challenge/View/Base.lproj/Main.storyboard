@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad10_5" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -14,23 +14,23 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="KodePerusahaanViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shadows" translatesAutoresizingMaskIntoConstraints="NO" id="LQ9-LZ-wFK">
-                                <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="84" translatesAutoresizingMaskIntoConstraints="NO" id="rDl-Zi-Gpx">
-                                <rect key="frame" x="-267" y="132" width="1646" height="570"/>
+                                <rect key="frame" x="100.5" y="156.5" width="823" height="455"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="siapkerja" translatesAutoresizingMaskIntoConstraints="NO" id="zva-ag-MUP">
-                                        <rect key="frame" x="0.0" y="0.0" width="1646" height="230"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="823.00000000000023" height="115"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="78" translatesAutoresizingMaskIntoConstraints="NO" id="Tft-RZ-5Mv">
-                                        <rect key="frame" x="150" y="314" width="1346" height="256"/>
+                                        <rect key="frame" x="150" y="199" width="523" height="256"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Masukkan Kode Perusahaan" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aLL-pl-DFp" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="1346" height="89"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="523" height="89"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="89" id="r0C-DX-QZd"/>
@@ -39,7 +39,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuM-KB-esf" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="167" width="1346" height="89"/>
+                                                <rect key="frame" x="0.0" y="167" width="523" height="89"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="89" id="1VH-OQ-hAd"/>
@@ -85,14 +85,14 @@
             <objects>
                 <viewController id="3i6-LY-euQ" customClass="CategoryPickerViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t4J-mD-e4x">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shadows" translatesAutoresizingMaskIntoConstraints="NO" id="E4M-8J-a9z">
-                                <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3xd-oQ-vrc">
-                                <rect key="frame" x="0.0" y="177.5" width="1112" height="606.5"/>
+                                <rect key="frame" x="0.0" y="177.5" width="1024" height="540.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Le2-ky-mwM">
                                     <size key="itemSize" width="344" height="493"/>
@@ -103,7 +103,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoryCell" id="LNz-oD-JbP" customClass="CategoryCollectionViewCell" customModule="Siap_Kerja" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="57" width="344" height="493"/>
+                                        <rect key="frame" x="0.0" y="24" width="344" height="493"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9AV-AZ-fYY">
                                             <rect key="frame" x="0.0" y="0.0" width="344" height="493"/>
@@ -127,7 +127,7 @@
                                 </connections>
                             </collectionView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vcX-BW-wdF">
-                                <rect key="frame" x="393" y="70" width="326.5" height="87.5"/>
+                                <rect key="frame" x="349" y="70" width="326.5" height="87.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kategori" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8z-VT-z3d">
                                         <rect key="frame" x="0.0" y="0.0" width="326.5" height="41"/>
@@ -173,14 +173,14 @@
             <objects>
                 <viewController id="Q56-av-W6o" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WFb-r6-YtW">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shadows" translatesAutoresizingMaskIntoConstraints="NO" id="Pt5-u3-FX5">
-                                <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Cah-aW-9Ia">
-                                <rect key="frame" x="280" y="209.5" width="552.5" height="415.5"/>
+                                <rect key="frame" x="236" y="176.5" width="552.5" height="415.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ktp" translatesAutoresizingMaskIntoConstraints="NO" id="aVG-QG-HsM">
                                         <rect key="frame" x="170.5" y="0.0" width="211" height="132"/>
@@ -247,14 +247,14 @@ Pastikan KTP dan SIM yang Anda bawa asli bukan fotokopi</string>
             <objects>
                 <viewController id="YVE-dU-Ph1" customClass="FotoKTPViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7KA-Pj-N1O">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ato-I7-RKH">
-                                <rect key="frame" x="250" y="235" width="612" height="364"/>
+                                <rect key="frame" x="250" y="228" width="524" height="312"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JEY-jl-oHB">
-                                        <rect key="frame" x="0.0" y="0.0" width="612" height="364"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="524" height="312"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -267,7 +267,7 @@ Pastikan KTP dan SIM yang Anda bawa asli bukan fotokopi</string>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="0qK-DT-1I8">
-                                <rect key="frame" x="301.5" y="81.5" width="509" height="113.5"/>
+                                <rect key="frame" x="257.5" y="74.5" width="509" height="113.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foto KTP Anda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugj-TU-a6j">
                                         <rect key="frame" x="158" y="0.0" width="193" height="33.5"/>
@@ -286,7 +286,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJ4-Yq-ah6">
-                                <rect key="frame" x="486.5" y="629" width="139" height="139"/>
+                                <rect key="frame" x="442.5" y="590" width="139" height="139"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="139" id="lam-Y6-Age"/>
                                     <constraint firstAttribute="height" constant="139" id="mtV-pX-Zl7"/>
@@ -297,7 +297,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2o-C0-ab9">
-                                <rect key="frame" x="813" y="649" width="49" height="73"/>
+                                <rect key="frame" x="725" y="610" width="49" height="73"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="49" id="Drg-vl-rAV"/>
                                     <constraint firstAttribute="height" constant="73" id="OqJ-Ez-67w"/>
@@ -308,7 +308,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68N-JC-QG4">
-                                <rect key="frame" x="250" y="649" width="47" height="67"/>
+                                <rect key="frame" x="250" y="610" width="47" height="67"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="47" id="5AF-dG-p9s"/>
                                     <constraint firstAttribute="height" constant="67" id="V2e-KO-5Cq"/>
@@ -322,16 +322,16 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                         <color key="backgroundColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="68N-JC-QG4" firstAttribute="leading" secondItem="VEc-da-mVw" secondAttribute="leading" constant="250" id="0mo-dJ-9Q5"/>
-                            <constraint firstItem="I2o-C0-ab9" firstAttribute="top" secondItem="Ato-I7-RKH" secondAttribute="bottom" constant="50" id="3Dk-RP-SNe"/>
+                            <constraint firstItem="I2o-C0-ab9" firstAttribute="top" secondItem="Ato-I7-RKH" secondAttribute="bottom" constant="70" id="3Dk-RP-SNe"/>
                             <constraint firstItem="VEc-da-mVw" firstAttribute="trailing" secondItem="I2o-C0-ab9" secondAttribute="trailing" constant="250" id="FRs-Bn-Rx9"/>
                             <constraint firstItem="Ato-I7-RKH" firstAttribute="top" secondItem="0qK-DT-1I8" secondAttribute="bottom" constant="40" id="J55-8X-vBp"/>
                             <constraint firstItem="Ato-I7-RKH" firstAttribute="centerY" secondItem="7KA-Pj-N1O" secondAttribute="centerY" id="JKF-Je-r1o"/>
                             <constraint firstItem="zJ4-Yq-ah6" firstAttribute="centerX" secondItem="7KA-Pj-N1O" secondAttribute="centerX" id="aYi-bs-1jK"/>
                             <constraint firstItem="Ato-I7-RKH" firstAttribute="leading" secondItem="VEc-da-mVw" secondAttribute="leading" constant="250" id="de6-Ul-m8X"/>
                             <constraint firstItem="VEc-da-mVw" firstAttribute="trailing" secondItem="Ato-I7-RKH" secondAttribute="trailing" constant="250" id="epA-EO-4iI"/>
-                            <constraint firstItem="zJ4-Yq-ah6" firstAttribute="top" secondItem="Ato-I7-RKH" secondAttribute="bottom" constant="30" id="f3N-Au-BEL"/>
+                            <constraint firstItem="zJ4-Yq-ah6" firstAttribute="top" secondItem="Ato-I7-RKH" secondAttribute="bottom" constant="50" id="f3N-Au-BEL"/>
                             <constraint firstItem="0qK-DT-1I8" firstAttribute="centerX" secondItem="7KA-Pj-N1O" secondAttribute="centerX" id="r18-4E-ZVf"/>
-                            <constraint firstItem="68N-JC-QG4" firstAttribute="top" secondItem="Ato-I7-RKH" secondAttribute="bottom" constant="50" id="rGd-YA-qvl"/>
+                            <constraint firstItem="68N-JC-QG4" firstAttribute="top" secondItem="Ato-I7-RKH" secondAttribute="bottom" constant="70" id="rGd-YA-qvl"/>
                             <constraint firstItem="Ato-I7-RKH" firstAttribute="centerX" secondItem="7KA-Pj-N1O" secondAttribute="centerX" id="xk2-Ok-S4E"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VEc-da-mVw"/>
@@ -353,32 +353,32 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
             <objects>
                 <viewController id="VPQ-61-LO6" customClass="FormViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NrM-GX-sU8">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shadows" translatesAutoresizingMaskIntoConstraints="NO" id="VfR-lw-j5b">
-                                <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DVA-Qn-PSZ">
-                                <rect key="frame" x="200" y="80" width="712" height="754"/>
+                                <rect key="frame" x="200" y="80" width="624" height="688"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="zAA-eF-Act">
-                                        <rect key="frame" x="80" y="40" width="552" height="654"/>
+                                        <rect key="frame" x="80" y="40" width="464" height="588"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YjZ-Ni-Zaf">
-                                                <rect key="frame" x="0.0" y="0.0" width="552" height="570"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="464" height="504"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ykn-HB-97H">
-                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="75"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="66.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No. Form" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gw-Gt-ZxW">
-                                                                <rect key="frame" x="0.0" y="0.0" width="97" height="31.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="97" height="27.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kode Form" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppn-ei-omF">
-                                                                <rect key="frame" x="0.0" y="36.5" width="144" height="38.5"/>
+                                                                <rect key="frame" x="0.0" y="32.5" width="144" height="34"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -386,43 +386,43 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="7Ci-nQ-Yfa">
-                                                        <rect key="frame" x="0.0" y="95" width="552" height="475"/>
+                                                        <rect key="frame" x="0.0" y="86.5" width="464" height="417.5"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="65" translatesAutoresizingMaskIntoConstraints="NO" id="gHX-h7-B8q">
-                                                                <rect key="frame" x="0.0" y="0.0" width="121" height="475"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="121" height="417.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nama" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNx-SO-Xi6">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="121" height="25"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="121" height="15.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tanggal Lahir" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaA-4q-V2H">
-                                                                        <rect key="frame" x="0.0" y="90" width="121" height="25"/>
+                                                                        <rect key="frame" x="0.0" y="80.5" width="121" height="15.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alamat Tinggal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5w-sa-xzh">
-                                                                        <rect key="frame" x="0.0" y="180" width="121" height="25"/>
+                                                                        <rect key="frame" x="0.0" y="161" width="121" height="15"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No. HP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YsV-jf-HsE">
-                                                                        <rect key="frame" x="0.0" y="270" width="121" height="25"/>
+                                                                        <rect key="frame" x="0.0" y="241" width="121" height="15.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No. KTP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDL-Si-MZg">
-                                                                        <rect key="frame" x="0.0" y="360" width="121" height="25"/>
+                                                                        <rect key="frame" x="0.0" y="321.5" width="121" height="15.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No. SIM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tue-WF-3Le">
-                                                                        <rect key="frame" x="0.0" y="450" width="121" height="25"/>
+                                                                        <rect key="frame" x="0.0" y="402" width="121" height="15.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -430,10 +430,10 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="dJy-ls-6ca">
-                                                                <rect key="frame" x="221" y="0.0" width="331" height="475"/>
+                                                                <rect key="frame" x="221" y="0.0" width="243" height="417.5"/>
                                                                 <subviews>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nama Anda" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w3C-p0-5SX" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="331" height="52.5"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="243" height="43"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                         <connections>
@@ -441,7 +441,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                                         </connections>
                                                                     </textField>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="DD/MM/YYYY" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sd9-B9-qfS" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="84.5" width="331" height="52.5"/>
+                                                                        <rect key="frame" x="0.0" y="75" width="243" height="43"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                                         <connections>
@@ -449,7 +449,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                                         </connections>
                                                                     </textField>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="JL.Tempat Tinggal" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jbd-kF-8r2" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="169" width="331" height="52.5"/>
+                                                                        <rect key="frame" x="0.0" y="150" width="243" height="42.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                         <connections>
@@ -457,7 +457,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                                         </connections>
                                                                     </textField>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0123456789" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wwd-Hx-qsl" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="253.5" width="331" height="52.5"/>
+                                                                        <rect key="frame" x="0.0" y="224.5" width="243" height="43"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
                                                                         <connections>
@@ -465,7 +465,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                                         </connections>
                                                                     </textField>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="32048023840" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hms-bE-xNF" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="338" width="331" height="52.5"/>
+                                                                        <rect key="frame" x="0.0" y="299.5" width="243" height="43"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                                         <connections>
@@ -473,7 +473,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                                         </connections>
                                                                     </textField>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="83748236482" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oQE-eT-wpv" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="422.5" width="331" height="52.5"/>
+                                                                        <rect key="frame" x="0.0" y="374.5" width="243" height="43"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                                         <connections>
@@ -494,7 +494,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                 </constraints>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZ5-FT-V4t" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="595" width="552" height="59"/>
+                                                <rect key="frame" x="0.0" y="529" width="464" height="59"/>
                                                 <color key="backgroundColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="59" id="mCV-U2-aIL"/>
@@ -557,7 +557,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
             <objects>
                 <viewController id="oOD-Pu-6vQ" customClass="InstruksiViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VhU-G2-82s">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Shadows" translatesAutoresizingMaskIntoConstraints="NO" id="QN9-q2-xkI">
@@ -565,17 +565,17 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yd8-oP-kpm">
-                                <rect key="frame" x="40" y="30" width="388" height="196"/>
+                                <rect key="frame" x="40" y="30" width="300" height="218"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 7" translatesAutoresizingMaskIntoConstraints="NO" id="p57-5s-t68">
-                                <rect key="frame" x="40" y="376" width="408" height="408"/>
+                                <rect key="frame" x="40" y="398" width="320" height="320"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="p57-5s-t68" secondAttribute="height" multiplier="1:1" id="U7E-vQ-QcQ"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="N3O-LY-kNC">
-                                <rect key="frame" x="508" y="83.5" width="574" height="667.5"/>
+                                <rect key="frame" x="420" y="50.5" width="574" height="667.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Oql-Jo-IDe">
                                         <rect key="frame" x="0.0" y="0.0" width="574" height="538.5"/>
@@ -786,11 +786,11 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
             <objects>
                 <viewController id="vq5-dT-1oU" customClass="TestSection2ViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ftC-f2-pl2">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="45J-g4-YlP">
-                                <rect key="frame" x="0.0" y="190" width="1112" height="644"/>
+                                <rect key="frame" x="0.0" y="190" width="1024" height="578"/>
                                 <connections>
                                     <segue destination="E7C-au-dYa" kind="embed" identifier="embedSegue" id="g5F-W9-bQr"/>
                                 </connections>
@@ -803,7 +803,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="TTN-Ob-qfN">
-                                <rect key="frame" x="694.5" y="50" width="367.5" height="90"/>
+                                <rect key="frame" x="606.5" y="50" width="367.5" height="90"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Section 1 | Pengetahuan Dasar" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXV-7R-a8i">
                                         <rect key="frame" x="0.0" y="0.0" width="367.5" height="33.5"/>
@@ -868,14 +868,14 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
             <objects>
                 <viewController id="IWl-4j-Vjw" customClass="FotoSIMViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UYf-gB-25D">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iAw-Qq-F84">
-                                <rect key="frame" x="250" y="234.5" width="612" height="365"/>
+                                <rect key="frame" x="250" y="228" width="524" height="312"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Qi-QW-vJj">
-                                        <rect key="frame" x="0.0" y="0.0" width="612" height="365"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="524" height="312"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -888,7 +888,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="fxG-Zc-ybs">
-                                <rect key="frame" x="301.5" y="81" width="509" height="113.5"/>
+                                <rect key="frame" x="257.5" y="74.5" width="509" height="113.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foto SIM Anda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Za-GU-S5a">
                                         <rect key="frame" x="160" y="0.0" width="189.5" height="33.5"/>
@@ -907,7 +907,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLW-af-ud6">
-                                <rect key="frame" x="486.5" y="629.5" width="139" height="139"/>
+                                <rect key="frame" x="442.5" y="590" width="139" height="139"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="139" id="2Fo-n5-0Qe"/>
                                     <constraint firstAttribute="width" constant="139" id="nc3-ei-ZKn"/>
@@ -918,7 +918,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfz-JX-8oJ">
-                                <rect key="frame" x="250" y="649.5" width="47" height="67"/>
+                                <rect key="frame" x="250" y="610" width="47" height="67"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="67" id="nmT-Rg-GMd"/>
                                     <constraint firstAttribute="width" constant="47" id="rZV-ur-RHw"/>
@@ -929,7 +929,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pz-TU-ADW">
-                                <rect key="frame" x="813" y="649.5" width="49" height="73"/>
+                                <rect key="frame" x="725" y="610" width="49" height="73"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="73" id="eWv-GJ-5bU"/>
                                     <constraint firstAttribute="width" constant="49" id="nG7-e2-J6e"/>
@@ -946,12 +946,12 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                             <constraint firstItem="fxG-Zc-ybs" firstAttribute="centerX" secondItem="UYf-gB-25D" secondAttribute="centerX" id="Og8-XE-OMS"/>
                             <constraint firstItem="ImY-ra-F4Q" firstAttribute="trailing" secondItem="iAw-Qq-F84" secondAttribute="trailing" constant="250" id="Ta4-cm-ypC"/>
                             <constraint firstItem="mfz-JX-8oJ" firstAttribute="leading" secondItem="ImY-ra-F4Q" secondAttribute="leading" constant="250" id="ZQO-u4-AOl"/>
-                            <constraint firstItem="9pz-TU-ADW" firstAttribute="top" secondItem="iAw-Qq-F84" secondAttribute="bottom" constant="50" id="biq-gU-gzz"/>
+                            <constraint firstItem="9pz-TU-ADW" firstAttribute="top" secondItem="iAw-Qq-F84" secondAttribute="bottom" constant="70" id="biq-gU-gzz"/>
                             <constraint firstItem="oLW-af-ud6" firstAttribute="centerX" secondItem="UYf-gB-25D" secondAttribute="centerX" id="eSR-fB-uZe"/>
                             <constraint firstItem="ImY-ra-F4Q" firstAttribute="trailing" secondItem="9pz-TU-ADW" secondAttribute="trailing" constant="250" id="iDh-px-hXf"/>
                             <constraint firstItem="iAw-Qq-F84" firstAttribute="leading" secondItem="ImY-ra-F4Q" secondAttribute="leading" constant="250" id="jL3-6W-HaR"/>
-                            <constraint firstItem="oLW-af-ud6" firstAttribute="top" secondItem="iAw-Qq-F84" secondAttribute="bottom" constant="30" id="jkq-6p-6oa"/>
-                            <constraint firstItem="mfz-JX-8oJ" firstAttribute="top" secondItem="iAw-Qq-F84" secondAttribute="bottom" constant="50" id="m0o-lB-uTc"/>
+                            <constraint firstItem="oLW-af-ud6" firstAttribute="top" secondItem="iAw-Qq-F84" secondAttribute="bottom" constant="50" id="jkq-6p-6oa"/>
+                            <constraint firstItem="mfz-JX-8oJ" firstAttribute="top" secondItem="iAw-Qq-F84" secondAttribute="bottom" constant="70" id="m0o-lB-uTc"/>
                             <constraint firstItem="iAw-Qq-F84" firstAttribute="centerY" secondItem="UYf-gB-25D" secondAttribute="centerY" id="tx4-HI-U0M"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ImY-ra-F4Q"/>
@@ -974,17 +974,17 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
             <objects>
                 <viewController title="caseBanKempes" definesPresentationContext="YES" modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="d1z-H2-dXz" customClass="Case1ViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gXu-aY-wcY">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="644"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="578"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bankempes2" translatesAutoresizingMaskIntoConstraints="NO" id="WIs-nW-Afy">
-                                <rect key="frame" x="0.0" y="0.0" width="1112" height="499"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="433"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gSa-s4-Lde" customClass="TransparentView" customModule="Siap_Kerja" customModuleProvider="target">
-                                <rect key="frame" x="450" y="0.0" width="662" height="160"/>
+                                <rect key="frame" x="450" y="0.0" width="574" height="186"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="2Hv-ON-WfP">
-                                        <rect key="frame" x="20" y="10" width="622" height="140"/>
+                                        <rect key="frame" x="20" y="10" width="534" height="166"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pertanyaan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQ5-GO-cDd">
                                                 <rect key="frame" x="0.0" y="0.0" width="118.5" height="26.5"/>
@@ -993,7 +993,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ay-hd-Kbu">
-                                                <rect key="frame" x="0.0" y="34.5" width="616.5" height="105.5"/>
+                                                <rect key="frame" x="0.0" y="34.5" width="498" height="131.5"/>
                                                 <string key="text">Di perjalanan, mobil yang anda kendarai tiba-tiba mengalami ban kempes. Anda harus mengganti ban menjadi ban serep,untuk dapat melanjuti perjalanan. Ganti ban menjadi ban serep sesuai dengan alat dan urutan yang benar.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1011,7 +1011,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XlI-l0-RfT">
-                                <rect key="frame" x="48" y="509" width="188" height="125"/>
+                                <rect key="frame" x="-40" y="443" width="188" height="125"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dongkrak" translatesAutoresizingMaskIntoConstraints="NO" id="bY6-ab-P1G">
                                         <rect key="frame" x="37" y="10" width="137" height="116"/>
@@ -1027,7 +1027,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 </constraints>
                             </view>
                             <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k3l-rJ-OYM">
-                                <rect key="frame" x="241" y="509" width="194" height="125"/>
+                                <rect key="frame" x="153" y="443" width="194" height="125"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dongkrak(naik)" translatesAutoresizingMaskIntoConstraints="NO" id="j7m-1N-WBY">
                                         <rect key="frame" x="37" y="10" width="137" height="116"/>
@@ -1043,7 +1043,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 </constraints>
                             </view>
                             <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hxx-El-4ZJ">
-                                <rect key="frame" x="440" y="509" width="175" height="125"/>
+                                <rect key="frame" x="352" y="443" width="175" height="125"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Kunci" translatesAutoresizingMaskIntoConstraints="NO" id="EXO-0d-CjX">
                                         <rect key="frame" x="37" y="10" width="137.5" height="116.00000000000003"/>
@@ -1059,7 +1059,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 </constraints>
                             </view>
                             <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="51h-vB-DgO">
-                                <rect key="frame" x="620" y="509" width="174" height="125"/>
+                                <rect key="frame" x="532" y="443" width="174" height="125"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ban" translatesAutoresizingMaskIntoConstraints="NO" id="B4q-fw-894">
                                         <rect key="frame" x="37" y="10" width="137" height="116"/>
@@ -1075,7 +1075,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="o73-Fz-aou">
-                                <rect key="frame" x="983" y="509" width="109" height="105"/>
+                                <rect key="frame" x="895" y="443" width="109" height="105"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tY8-Kf-JtA" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="109" height="38"/>
@@ -1105,7 +1105,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 </constraints>
                             </stackView>
                             <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pYT-PP-Kzt">
-                                <rect key="frame" x="794" y="509" width="149" height="125"/>
+                                <rect key="frame" x="706" y="443" width="149" height="125"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="segitiga" translatesAutoresizingMaskIntoConstraints="NO" id="xdj-II-VaV">
                                         <rect key="frame" x="37" y="10" width="137" height="116"/>
@@ -1176,24 +1176,24 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
             <objects>
                 <viewController definesPresentationContext="YES" id="ufY-XR-IbW" customClass="Case2ViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0jv-GW-kJA">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="644"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="578"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scene5-1" translatesAutoresizingMaskIntoConstraints="NO" id="V5Y-92-1TZ">
-                                <rect key="frame" x="0.0" y="0.0" width="2728" height="469"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1364" height="403"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="jQY-Og-Rkd">
-                                <rect key="frame" x="300" y="288" width="512" height="336"/>
+                                <rect key="frame" x="373.5" y="390" width="277" height="168"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEX-Xj-8iO">
-                                        <rect key="frame" x="0.0" y="0.0" width="322" height="336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="161" height="168"/>
                                         <state key="normal" image="rem"/>
                                         <connections>
                                             <action selector="pedalRemTapped:" destination="ufY-XR-IbW" eventType="touchUpInside" id="coV-V8-m0p"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4N-TK-Wuy">
-                                        <rect key="frame" x="364" y="0.0" width="148" height="336"/>
+                                        <rect key="frame" x="203" y="0.0" width="74" height="168"/>
                                         <state key="normal" image="gas"/>
                                         <connections>
                                             <action selector="pedalGasTapped:" destination="ufY-XR-IbW" eventType="touchUpInside" id="QVW-VC-kQa"/>
@@ -1202,29 +1202,29 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="Tmb-S2-Rdk">
-                                <rect key="frame" x="450" y="0.0" width="662" height="158.5"/>
+                                <rect key="frame" x="450" y="0.0" width="574" height="258.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blW-Kz-NTe">
-                                        <rect key="frame" x="0.0" y="17.5" width="93.5" height="124"/>
+                                        <rect key="frame" x="0.0" y="98.5" width="75.5" height="62"/>
                                         <state key="normal" image="back"/>
                                         <connections>
                                             <segue destination="NKK-wN-dDl" kind="unwind" unwindAction="toCaseCuciMobil:" id="MwA-Ar-ZB7"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4N6-oH-T9o" customClass="TransparentView" customModule="Siap_Kerja" customModuleProvider="target">
-                                        <rect key="frame" x="127.5" y="0.0" width="534.5" height="158.5"/>
+                                        <rect key="frame" x="109.5" y="0.0" width="464.5" height="258.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="TgJ-Zq-VC4">
-                                                <rect key="frame" x="20" y="20" width="494.5" height="118.5"/>
+                                                <rect key="frame" x="20" y="20" width="424.5" height="218.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pertanyaan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4GW-EB-oog">
-                                                        <rect key="frame" x="0.0" y="0.0" width="118.5" height="31.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="118.5" height="105"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjb-uS-Lae">
-                                                        <rect key="frame" x="0.0" y="39.5" width="494.5" height="79"/>
+                                                        <rect key="frame" x="0.0" y="113" width="424.5" height="105.5"/>
                                                         <string key="text">Anda sedang berjalan menuju sebuah lampu merah. Kondisi saat itu lampu hijau dengan 1 detik dengan jarak 100m. Apakah yang akan anda lakukan?</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1272,17 +1272,17 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
             <objects>
                 <viewController definesPresentationContext="YES" id="Vxy-Sp-3g3" customClass="Case4ViewController" customModule="Siap_Kerja" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ph5-bf-Nup">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="644"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="578"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maps" translatesAutoresizingMaskIntoConstraints="NO" id="xGM-Vy-J79">
-                                <rect key="frame" x="0.0" y="0.0" width="1112" height="499"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="433"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="hfe-uM-LPH">
-                                <rect key="frame" x="50" y="529" width="1012" height="85"/>
+                                <rect key="frame" x="50" y="463" width="924" height="85"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jrd-xd-bgD" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="304" height="85"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="274.5" height="85"/>
                                         <color key="backgroundColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="Jalur A">
@@ -1293,7 +1293,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="di9-Fl-buJ" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
-                                        <rect key="frame" x="354" y="0.0" width="304" height="85"/>
+                                        <rect key="frame" x="324.5" y="0.0" width="275" height="85"/>
                                         <color key="backgroundColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="Jalur B">
@@ -1304,7 +1304,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZj-6u-dZn" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
-                                        <rect key="frame" x="708" y="0.0" width="304" height="85"/>
+                                        <rect key="frame" x="649.5" y="0.0" width="274.5" height="85"/>
                                         <color key="backgroundColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="Jalur C">
@@ -1317,29 +1317,29 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="D4u-9S-t6e">
-                                <rect key="frame" x="450" y="0.0" width="662" height="211"/>
+                                <rect key="frame" x="450" y="0.0" width="574" height="337.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0eM-RV-Z9B">
-                                        <rect key="frame" x="0.0" y="74.5" width="84.5" height="62"/>
+                                        <rect key="frame" x="0.0" y="138" width="73" height="62"/>
                                         <state key="normal" image="back"/>
                                         <connections>
                                             <segue destination="g5P-Op-xnB" kind="unwind" unwindAction="toCaseCuciMobil:" id="1q1-lX-8kW"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4rd-8X-ekF" customClass="TransparentView" customModule="Siap_Kerja" customModuleProvider="target">
-                                        <rect key="frame" x="118.5" y="0.0" width="543.5" height="211"/>
+                                        <rect key="frame" x="107" y="0.0" width="467" height="337.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eh1-eC-3aQ">
-                                                <rect key="frame" x="20" y="20" width="503.5" height="171"/>
+                                                <rect key="frame" x="20" y="20" width="427" height="297.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pertanyaan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzo-eI-uu0">
-                                                        <rect key="frame" x="0.0" y="0.0" width="118.5" height="31.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="118.5" height="158"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMi-c2-dHg">
-                                                        <rect key="frame" x="0.0" y="39.5" width="503.5" height="131.5"/>
+                                                        <rect key="frame" x="0.0" y="166" width="427" height="131.5"/>
                                                         <string key="text">Anda akan pergi mengantar atasan anda dari Senen menuju Menteng dan anda diminta untuk menggunakan aplikasi peta untuk mendapatkan jalur tercepat. Pilihlah jalur tercepat pada peta yang akan anda lalui.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1389,17 +1389,17 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
             <objects>
                 <viewController definesPresentationContext="YES" id="sVo-pB-ee9" customClass="Case3ViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="679-hc-OEs">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="644"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="578"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scene14" translatesAutoresizingMaskIntoConstraints="NO" id="Dwj-FG-Mb7">
-                                <rect key="frame" x="0.0" y="0.0" width="1112" height="499"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="433"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="t9L-bg-yNa">
-                                <rect key="frame" x="0.0" y="529" width="1112" height="85"/>
+                                <rect key="frame" x="0.0" y="463" width="1024" height="85"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vds-7K-wHc" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="259.5" height="85"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="237.5" height="85"/>
                                         <color key="backgroundColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="Mobil 1">
@@ -1410,7 +1410,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTx-FW-vCf" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
-                                        <rect key="frame" x="284.5" y="0.0" width="259" height="85"/>
+                                        <rect key="frame" x="262.5" y="0.0" width="237" height="85"/>
                                         <color key="backgroundColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="Mobil 2">
@@ -1421,7 +1421,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFg-7l-bjh" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
-                                        <rect key="frame" x="568.5" y="0.0" width="259.5" height="85"/>
+                                        <rect key="frame" x="524.5" y="0.0" width="237.5" height="85"/>
                                         <color key="backgroundColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="Mobil 3">
@@ -1432,7 +1432,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgy-KH-n4j" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
-                                        <rect key="frame" x="853" y="0.0" width="259" height="85"/>
+                                        <rect key="frame" x="787" y="0.0" width="237" height="85"/>
                                         <color key="backgroundColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="Mobil 4">
@@ -1445,29 +1445,29 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="zTl-ve-mcY">
-                                <rect key="frame" x="450" y="0.0" width="662" height="185"/>
+                                <rect key="frame" x="450" y="0.0" width="574" height="311"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqB-j7-uMc">
-                                        <rect key="frame" x="0.0" y="61.5" width="100.5" height="62"/>
+                                        <rect key="frame" x="0.0" y="124.5" width="62" height="62"/>
                                         <state key="normal" image="back"/>
                                         <connections>
                                             <segue destination="oWT-M8-nYs" kind="unwind" unwindAction="toMap:" id="dVY-VH-ocz"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IaH-nR-FZs" customClass="TransparentView" customModule="Siap_Kerja" customModuleProvider="target">
-                                        <rect key="frame" x="134.5" y="0.0" width="527.5" height="185"/>
+                                        <rect key="frame" x="96" y="0.0" width="478" height="311"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="i4n-Ct-icZ">
-                                                <rect key="frame" x="20" y="20" width="487.5" height="145"/>
+                                                <rect key="frame" x="20" y="20" width="438" height="271"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pertanyaan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0b1-SV-1As">
-                                                        <rect key="frame" x="0.0" y="0.0" width="118.5" height="31.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="118.5" height="131.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvq-kh-hdp">
-                                                        <rect key="frame" x="0.0" y="39.5" width="487.5" height="105.5"/>
+                                                        <rect key="frame" x="0.0" y="139.5" width="438" height="131.5"/>
                                                         <string key="text">Hari ini adalah hari Senin tanggal 5 November, dan anda harus mengantarkan atasan anda ke jalan Sudirman, yang dimana merupakan kawasan ganjil-genap, mobil manakah yang harus digunakan?</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1517,11 +1517,11 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
             <objects>
                 <viewController title="caseCuciMobil" definesPresentationContext="YES" modalPresentationStyle="fullScreen" id="peE-KF-RS0" customClass="Case1ViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dnn-f4-WMr">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="644"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="578"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mobilkotor" translatesAutoresizingMaskIntoConstraints="NO" id="Uts-1B-8nH">
-                                <rect key="frame" x="0.0" y="0.0" width="1112" height="494"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="428"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9g-tD-TLH">
                                 <rect key="frame" x="10" y="10" width="0.0" height="0.0"/>
@@ -1529,29 +1529,29 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 <state key="normal" image="back"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="RVj-sZ-YFN">
-                                <rect key="frame" x="450" y="0.0" width="662" height="185"/>
+                                <rect key="frame" x="450" y="0.0" width="574" height="337.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkz-bX-tmR">
-                                        <rect key="frame" x="0.0" y="61.5" width="68" height="62"/>
+                                        <rect key="frame" x="0.0" y="138" width="63" height="62"/>
                                         <state key="normal" image="back"/>
                                         <connections>
                                             <segue destination="PCb-xk-9G3" kind="unwind" unwindAction="toCasePedal:" id="idb-ce-Hzh"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EQf-1N-WjK" customClass="TransparentView" customModule="Siap_Kerja" customModuleProvider="target">
-                                        <rect key="frame" x="108" y="0.0" width="554" height="185"/>
+                                        <rect key="frame" x="103" y="0.0" width="471" height="337.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jY6-ri-e0c">
-                                                <rect key="frame" x="20" y="20" width="514" height="145"/>
+                                                <rect key="frame" x="20" y="20" width="431" height="297.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pertanyaan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hJ-ZA-CqZ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="118.5" height="31.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="118.5" height="158"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jep-Q4-kTI">
-                                                        <rect key="frame" x="0.0" y="39.5" width="514" height="105.5"/>
+                                                        <rect key="frame" x="0.0" y="166" width="431" height="131.5"/>
                                                         <string key="text">Anda diminta untuk membersihkan mobil sebelum mengantar atasan anda, dikarenakan mobil yang anda kendarai sudah kotor. Bersihkan mobil menggunakan alat-alat di bawah ini sesuai dengan urutannya.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1571,7 +1571,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Isf-57-DXL">
-                                <rect key="frame" x="100" y="504" width="187" height="130"/>
+                                <rect key="frame" x="12" y="438" width="187" height="130"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="700.700_db19d60f545641ac84ddc84d2c65c96f" translatesAutoresizingMaskIntoConstraints="NO" id="ETo-Z0-KAv">
                                         <rect key="frame" x="37" y="10" width="130" height="128"/>
@@ -1587,7 +1587,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 </constraints>
                             </view>
                             <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vxO-Sv-MRd">
-                                <rect key="frame" x="307" y="504" width="184" height="130"/>
+                                <rect key="frame" x="219" y="438" width="184" height="130"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Semprotan" translatesAutoresizingMaskIntoConstraints="NO" id="zuJ-Mu-kbE">
                                         <rect key="frame" x="37" y="10" width="147" height="128"/>
@@ -1603,7 +1603,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 </constraints>
                             </view>
                             <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y8O-WK-dQ6">
-                                <rect key="frame" x="511" y="504" width="204" height="130"/>
+                                <rect key="frame" x="423" y="438" width="204" height="130"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Vakum" translatesAutoresizingMaskIntoConstraints="NO" id="jYt-Mx-9Wg">
                                         <rect key="frame" x="37" y="10" width="147" height="128"/>
@@ -1619,7 +1619,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 </constraints>
                             </view>
                             <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mKs-8y-aUd">
-                                <rect key="frame" x="725" y="504" width="188" height="130"/>
+                                <rect key="frame" x="637" y="438" width="188" height="130"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Lap" translatesAutoresizingMaskIntoConstraints="NO" id="9IK-fZ-fi4">
                                         <rect key="frame" x="0.0" y="0.0" width="168" height="128"/>
@@ -1635,7 +1635,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="bLc-49-0Bi">
-                                <rect key="frame" x="953" y="504" width="109" height="107"/>
+                                <rect key="frame" x="865" y="438" width="109" height="107"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ui-s7-ewW" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="109" height="39"/>
@@ -1717,17 +1717,17 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
             <objects>
                 <viewController id="aCq-jN-50t" customClass="EndViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GFm-yn-hmW">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="644"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="578"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="artwork" translatesAutoresizingMaskIntoConstraints="NO" id="5Sg-qv-Vnh">
-                                <rect key="frame" x="0.0" y="0.0" width="1112" height="644"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="578"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="erI-lp-j3d">
-                                <rect key="frame" x="200" y="210.5" width="712" height="223.5"/>
+                                <rect key="frame" x="200" y="177.5" width="624" height="223.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="q7I-bK-Se3">
-                                        <rect key="frame" x="64.5" y="0.0" width="583.5" height="94.5"/>
+                                        <rect key="frame" x="20.5" y="0.0" width="583.5" height="94.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selamat Telah Menyelesaikan Tes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2l5-3f-5Cs">
                                                 <rect key="frame" x="74" y="0.0" width="435.5" height="33.5"/>
@@ -1744,7 +1744,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHD-Uh-Wby" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
-                                        <rect key="frame" x="250" y="164.5" width="212" height="59"/>
+                                        <rect key="frame" x="250" y="164.5" width="124" height="59"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="59" id="8le-0t-Wv9"/>
@@ -1788,33 +1788,33 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
             <objects>
                 <viewController definesPresentationContext="YES" modalPresentationStyle="currentContext" id="E7C-au-dYa" customClass="TestSection1AViewController" customModule="Siap_Kerja" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5cQ-hE-dDt">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="644"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="578"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="evn-dB-nmZ">
-                                <rect key="frame" x="150" y="76.5" width="812" height="491.5"/>
+                                <rect key="frame" x="150" y="43.5" width="724" height="491.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="garisputus2" translatesAutoresizingMaskIntoConstraints="NO" id="eaJ-Yh-nZG">
-                                        <rect key="frame" x="188" y="0.0" width="436" height="206"/>
+                                        <rect key="frame" x="144" y="0.0" width="436" height="206.00000000000006"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="206" id="OuG-Cr-p2i"/>
                                             <constraint firstAttribute="width" constant="436" id="TEP-i4-zHM"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pertanyaan yang akan diajukan" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eet-Va-qQR">
-                                        <rect key="frame" x="30" y="256" width="752" height="33.5"/>
+                                        <rect key="frame" x="30" y="256" width="664" height="33.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="121" translatesAutoresizingMaskIntoConstraints="NO" id="jF0-mJ-hpB">
-                                        <rect key="frame" x="0.0" y="339.5" width="812" height="152"/>
+                                        <rect key="frame" x="0.0" y="339.5" width="724" height="152"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="aLS-9o-qD4">
-                                                <rect key="frame" x="0.0" y="0.0" width="345.5" height="152"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="301.5" height="152"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cB5-Rv-Qah" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="345.5" height="60"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="301.5" height="60"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="kIb-Jd-0tC"/>
@@ -1828,7 +1828,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9Y-FU-SDy" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="92" width="345.5" height="60"/>
+                                                        <rect key="frame" x="0.0" y="92" width="301.5" height="60"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="sfm-SU-zS2"/>
@@ -1844,10 +1844,10 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="Df6-YU-qZH">
-                                                <rect key="frame" x="466.5" y="0.0" width="345.5" height="152"/>
+                                                <rect key="frame" x="422.5" y="0.0" width="301.5" height="152"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYO-Ca-14Q" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="345.5" height="60"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="301.5" height="60"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="zQp-6d-dLp"/>
@@ -1861,7 +1861,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfD-uu-NXa" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="92" width="345.5" height="60"/>
+                                                        <rect key="frame" x="0.0" y="92" width="301.5" height="60"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="9jC-Tc-xfX"/>
@@ -2037,7 +2037,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
             <objects>
                 <viewController id="2p1-MJ-kep" customClass="TestSection2ViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qdg-1N-yla">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SMM-bB-55O">
@@ -2048,13 +2048,13 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 </constraints>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gc8-hc-iyf">
-                                <rect key="frame" x="0.0" y="190" width="1112" height="644"/>
+                                <rect key="frame" x="0.0" y="190" width="1024" height="578"/>
                                 <connections>
                                     <segue destination="d1z-H2-dXz" kind="embed" id="242-AM-eNq"/>
                                 </connections>
                             </containerView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="qfb-kA-Q4Z">
-                                <rect key="frame" x="677.5" y="50" width="384.5" height="90"/>
+                                <rect key="frame" x="589.5" y="50" width="384.5" height="90"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Section 2 | Pemecahan Masalah" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UeK-YW-KN8">
                                         <rect key="frame" x="0.0" y="0.0" width="384.5" height="33.5"/>
@@ -2120,14 +2120,14 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
             <objects>
                 <viewController id="qf4-Eo-7yi" customClass="FotoPribadiViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wKY-LS-Xjx">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VJb-5m-UEW">
-                                <rect key="frame" x="250" y="235" width="612" height="364"/>
+                                <rect key="frame" x="250" y="228" width="524" height="312"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f0r-93-W2h">
-                                        <rect key="frame" x="0.0" y="0.0" width="612" height="364"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="524" height="312"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -2140,7 +2140,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="fhV-ek-yNA">
-                                <rect key="frame" x="215.5" y="108" width="681" height="87"/>
+                                <rect key="frame" x="171.5" y="101" width="681" height="87"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foto Wajah Anda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9B-sc-eny">
                                         <rect key="frame" x="230.5" y="0.0" width="220" height="33.5"/>
@@ -2157,7 +2157,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cE-Oa-B88">
-                                <rect key="frame" x="486.5" y="629" width="139" height="139"/>
+                                <rect key="frame" x="442.5" y="590" width="139" height="139"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="139" id="F1U-CC-WkV"/>
                                     <constraint firstAttribute="width" constant="139" id="XKv-Jx-t3X"/>
@@ -2168,7 +2168,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpW-Fs-cS6">
-                                <rect key="frame" x="813" y="649" width="49" height="73"/>
+                                <rect key="frame" x="725" y="610" width="49" height="73"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="73" id="BV0-my-1eU"/>
                                     <constraint firstAttribute="width" constant="49" id="JS4-0k-rGG"/>
@@ -2179,7 +2179,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMH-FE-3VM">
-                                <rect key="frame" x="250" y="649" width="47" height="67"/>
+                                <rect key="frame" x="250" y="610" width="47" height="67"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="67" id="1EB-MZ-WFP"/>
                                     <constraint firstAttribute="width" constant="47" id="qfY-AV-GxZ"/>
@@ -2195,15 +2195,15 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                             <constraint firstItem="bSv-IF-8ZZ" firstAttribute="trailing" secondItem="VJb-5m-UEW" secondAttribute="trailing" constant="250" id="CMi-Jj-2FL"/>
                             <constraint firstItem="gMH-FE-3VM" firstAttribute="leading" secondItem="bSv-IF-8ZZ" secondAttribute="leading" constant="250" id="K1t-Ls-eL6"/>
                             <constraint firstItem="VJb-5m-UEW" firstAttribute="leading" secondItem="bSv-IF-8ZZ" secondAttribute="leading" constant="250" id="N4h-eE-P7u"/>
-                            <constraint firstItem="gMH-FE-3VM" firstAttribute="top" secondItem="VJb-5m-UEW" secondAttribute="bottom" constant="50" id="Pz6-NQ-ABS"/>
+                            <constraint firstItem="gMH-FE-3VM" firstAttribute="top" secondItem="VJb-5m-UEW" secondAttribute="bottom" constant="70" id="Pz6-NQ-ABS"/>
                             <constraint firstItem="VJb-5m-UEW" firstAttribute="centerY" secondItem="wKY-LS-Xjx" secondAttribute="centerY" id="bTy-Pp-fTy"/>
                             <constraint firstItem="fhV-ek-yNA" firstAttribute="centerX" secondItem="wKY-LS-Xjx" secondAttribute="centerX" id="jiu-pw-Agv"/>
-                            <constraint firstItem="UpW-Fs-cS6" firstAttribute="top" secondItem="VJb-5m-UEW" secondAttribute="bottom" constant="50" id="lS3-r2-QWm"/>
+                            <constraint firstItem="UpW-Fs-cS6" firstAttribute="top" secondItem="VJb-5m-UEW" secondAttribute="bottom" constant="70" id="lS3-r2-QWm"/>
                             <constraint firstItem="VJb-5m-UEW" firstAttribute="top" secondItem="fhV-ek-yNA" secondAttribute="bottom" constant="40" id="ln9-kg-YyH"/>
                             <constraint firstItem="0cE-Oa-B88" firstAttribute="centerX" secondItem="wKY-LS-Xjx" secondAttribute="centerX" id="mJL-Af-UmR"/>
                             <constraint firstItem="VJb-5m-UEW" firstAttribute="centerX" secondItem="wKY-LS-Xjx" secondAttribute="centerX" id="oh7-P6-QlH"/>
                             <constraint firstItem="bSv-IF-8ZZ" firstAttribute="trailing" secondItem="UpW-Fs-cS6" secondAttribute="trailing" constant="250" id="tAF-Ya-CGc"/>
-                            <constraint firstItem="0cE-Oa-B88" firstAttribute="top" secondItem="VJb-5m-UEW" secondAttribute="bottom" constant="30" id="wdx-bO-dqB"/>
+                            <constraint firstItem="0cE-Oa-B88" firstAttribute="top" secondItem="VJb-5m-UEW" secondAttribute="bottom" constant="50" id="wdx-bO-dqB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bSv-IF-8ZZ"/>
                     </view>
@@ -2224,14 +2224,14 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
             <objects>
                 <viewController id="J3y-d5-7WU" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="icW-oK-o8K">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shadows" translatesAutoresizingMaskIntoConstraints="NO" id="pCR-B2-0Yy">
-                                <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="ylM-LI-iAK">
-                                <rect key="frame" x="296.5" y="209.5" width="519" height="415.5"/>
+                                <rect key="frame" x="252.5" y="176.5" width="519" height="415.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foto" translatesAutoresizingMaskIntoConstraints="NO" id="bK4-F2-ot4">
                                         <rect key="frame" x="154.5" y="0.0" width="210" height="132"/>
