@@ -12,7 +12,10 @@ import FirebaseDatabase
 class FormViewController: UIViewController {
     
     var activeTextField = UITextField()
+    var scroll = Bool()
+    @IBOutlet weak var formView: UIView!
     
+    @IBOutlet weak var inputStack: UIStackView!
     @IBOutlet weak var namaTextField: RoundedTextField!
     @IBOutlet weak var ttlTextField: RoundedTextField!
     @IBOutlet weak var alamatTextField: RoundedTextField!
@@ -41,9 +44,11 @@ class FormViewController: UIViewController {
         if let userInfo = notification.userInfo as? Dictionary<String, AnyObject> {
             let frame = userInfo[UIResponder.keyboardFrameEndUserInfoKey]
             let keyboardRect = frame?.cgRectValue
-            if let keyboardHeight = keyboardRect?.height as? CGFloat {
-                UIView.animate(withDuration: 1) {
-                    self.activeTextField.frame.origin.y += keyboardHeight-30
+            if self.scroll {
+                if let keyboardHeight = keyboardRect?.height as? CGFloat {
+                    UIView.animate(withDuration: 1) {
+                        self.formView.frame.origin.y += keyboardHeight-30
+                    }
                 }
             }
         }
@@ -53,9 +58,18 @@ class FormViewController: UIViewController {
         if let userInfo = notification.userInfo as? Dictionary<String, AnyObject> {
             let frame = userInfo[UIResponder.keyboardFrameEndUserInfoKey]
             let keyboardRect = frame?.cgRectValue
+            let yTextField = self.view.convert(activeTextField.frame.origin, from: inputStack).y
             if let keyboardHeight = keyboardRect?.height as? CGFloat {
-                UIView.animate(withDuration: 1) {
-                    self.activeTextField.frame.origin.y -= keyboardHeight-30
+                print("text field y: \(yTextField)")
+                print("view height: \(self.view.frame.height)")
+                print("keyboard height: \(keyboardHeight)")
+                if yTextField >= (self.view.frame.height - keyboardHeight) {
+                    self.scroll = true
+                    UIView.animate(withDuration: 1) {
+                        self.formView.frame.origin.y -= keyboardHeight-30
+                    }
+                } else {
+                    self.scroll = false
                 }
             }
         }

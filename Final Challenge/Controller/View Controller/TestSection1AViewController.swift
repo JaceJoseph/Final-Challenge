@@ -15,7 +15,10 @@ class TestSection1AViewController: UIViewController {
     var counter = 0
 
     @IBOutlet weak var soalImage: UIImageView!
-    @IBOutlet var option1ButtonOutlet: [RoundedButton]!
+    @IBOutlet weak var option1ButtonOutlet: RoundedButton!
+    @IBOutlet weak var option2ButtonOutlet: RoundedButton!
+    @IBOutlet weak var option3ButtonOutlet: RoundedButton!
+    @IBOutlet weak var option4ButtonOutlet: RoundedButton!
     /*
      [0]: bawah kiri
      [1]: atas kiri
@@ -81,10 +84,10 @@ class TestSection1AViewController: UIViewController {
         [3]: bawah kanan: option4
         */
         print(questions[counter].soal!)
-        option1ButtonOutlet[0].setTitle(questions[counter].option3, for: .normal)
-        option1ButtonOutlet[1].setTitle(questions[counter].option1, for: .normal)
-        option1ButtonOutlet[2].setTitle(questions[counter].option2, for: .normal)
-        option1ButtonOutlet[3].setTitle(questions[counter].option4, for: .normal)
+        option1ButtonOutlet.setTitle(questions[counter].option1, for: .normal)
+        option2ButtonOutlet.setTitle(questions[counter].option2, for: .normal)
+        option3ButtonOutlet.setTitle(questions[counter].option3, for: .normal)
+        option4ButtonOutlet.setTitle(questions[counter].option4, for: .normal)
     }
     
     func correct() {
