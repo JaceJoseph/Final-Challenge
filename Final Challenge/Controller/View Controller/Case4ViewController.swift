@@ -20,8 +20,8 @@ class Case4ViewController: UIViewController {
 
     @IBAction func jawabanBenarTapped(_ sender: Any) {
         score = 100
-        let currentScore = UserDefaults.standard.integer(forKey: "scoreSection2")
-        UserDefaults.standard.set(currentScore + score, forKey: "scoreSection2")
+//        let currentScore = UserDefaults.standard.integer(forKey: "scoreSection2")
+        UserDefaults.standard.set(score, forKey: "scoreSection2Question4")
         performSegue(withIdentifier: "testSegue4", sender: self)
     }
     
