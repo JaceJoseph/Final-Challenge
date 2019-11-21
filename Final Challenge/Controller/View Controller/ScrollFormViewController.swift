@@ -91,6 +91,8 @@ class ScrollFormViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboard), name: UIResponder.keyboardWillHideNotification, object: nil)
         
         NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboard), name: UIResponder.keyboardWillShowNotification, object: nil)
+        
+        updateDataAutoComplete()
     }
     
     @objc func handleKeyboard(notification:Notification){
