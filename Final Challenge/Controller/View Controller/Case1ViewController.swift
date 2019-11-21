@@ -97,21 +97,40 @@ class Case1ViewController: UIViewController {
     @IBAction func finishButtonTapped(_ sender: UIButton) {
         print(urutanBenda)
         var score = 0
+        var plusScore = 0
         var kunciJawaban:[Int] = []
+        var kunciJawaban2:[Int] = []
 
         if self.title == "caseBanKempes"{
             kunciJawaban = [4,1,2,3,0]
+            plusScore = 20
         }else if self.title == "caseCuciMobil"{
             kunciJawaban = [1,0,3,2]
+            kunciJawaban2 = [3,0,1,2]
+            plusScore = 25
         }
    
         for index in urutanBenda.indices{
             if urutanBenda[index] == kunciJawaban[index]{
-                score += 20
+                score += plusScore
             }
-            if index == 1 && urutanBenda[index] == 1 && self.title == "caseCuciMobil"{
-                score += 20
+        }
+        
+        var score2 = 0
+        
+        if self.title == "caseCuciMobil"{
+            for index in urutanBenda.indices{
+                if urutanBenda[index] == kunciJawaban2[index]{
+                    score2 += plusScore
+                }
             }
+        }
+        
+        print(score)
+        print(score2)
+        
+        if score2>score{
+            score = score2
         }
         
         print(score)
