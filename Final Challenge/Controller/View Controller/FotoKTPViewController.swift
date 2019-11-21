@@ -135,26 +135,28 @@ extension FotoKTPViewController: AVCapturePhotoCaptureDelegate {
         let image = UIImage(data: imageData)
         resultImageView.image = image
         self.captureSession.stopRunning()
-        processImage()
-        self.resultImageView.isHidden = false
-        self.lanjutOutlet.isHidden = false
-        self.ulangiOutlet.isHidden = false
+        processImage() {
+            DispatchQueue.main.async {
+                self.resultImageView.isHidden = false
+                self.lanjutOutlet.isHidden = false
+                self.ulangiOutlet.isHidden = false
+                UserDefaults.standard.set(imageData, forKey: "imageKTP")
+                print("KTP image added to user defaults successfully")
+            }
+        }
     }
 }
 
 extension FotoKTPViewController {
-    func readText() {
+    func processImage(completion: @escaping () -> ()) {
         self.detectedText.removeAll()
-        processImage()
-    }
-    
-    func processImage() {
         guard let image = self.resultImageView.image, let cgImage = image.cgImage else { return }
         let requests = [textDetectionRequest]
         let imageRequestHandler = VNImageRequestHandler(cgImage: cgImage, orientation: .up, options: [:])
         DispatchQueue.global(qos: .userInitiated).async {
             do {
                 try imageRequestHandler.perform(requests)
+                completion()
             } catch let error {
                 print(error)
             }

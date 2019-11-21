@@ -20,8 +20,12 @@ class DatabaseHandler {
             "alamat": user.alamat!,
             "noHP" : user.noHP!,
             "noKTP": user.noKTP!,
-            "noSIM": user.noSIM!
+            "noSIM": user.noSIM!,
+            "urlKTP": user.urlKTP!,
+            "urlSIM": user.urlSIM!,
+            "urlProfile": user.urlProfile!
         ])
+        print("account updated to firebase database.")
         UserDefaults.standard.set(user.noKTP, forKey: "idDatabaseCurrent")
         completion()
     }

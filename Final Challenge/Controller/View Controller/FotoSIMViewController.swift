@@ -134,34 +134,34 @@ extension FotoSIMViewController {
 }
 
 extension FotoSIMViewController: AVCapturePhotoCaptureDelegate {
-    
-    
     func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
         print("processing photo")
         guard let imageData = photo.fileDataRepresentation() else { return }
         let image = UIImage(data: imageData)
         resultImageView.image = image
         self.captureSession.stopRunning()
-        self.readText()
-        self.resultImageView.isHidden = false
-        self.lanjutOutlet.isHidden = false
-        self.ulangiOutlet.isHidden = false
+        self.processImage() {
+            DispatchQueue.main.async {
+                self.resultImageView.isHidden = false
+                self.lanjutOutlet.isHidden = false
+                self.ulangiOutlet.isHidden = false
+                UserDefaults.standard.set(imageData, forKey: "imageSIM")
+                print("sim image set to user defaults")
+            }
+        }
     }
 }
 
 extension FotoSIMViewController {
-    func readText() {
+    func processImage(completion: @escaping () -> ()) {
         self.detectedText.removeAll()
-        processImage()
-    }
-    
-    func processImage() {
         guard let image = self.resultImageView.image, let cgImage = image.cgImage else { return }
         let requests = [textDetectionRequest]
         let imageRequestHandler = VNImageRequestHandler(cgImage: cgImage, orientation: .up, options: [:])
         DispatchQueue.global(qos: .userInitiated).async {
             do {
                 try imageRequestHandler.perform(requests)
+                completion()
             } catch let error {
                 print(error)
             }

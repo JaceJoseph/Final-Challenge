@@ -15,6 +15,9 @@ struct User {
     var noHP : String?
     var noKTP: String?
     var noSIM: String?
+    var urlKTP: String?
+    var urlSIM: String?
+    var urlProfile: String?
 }
 
 struct Question {

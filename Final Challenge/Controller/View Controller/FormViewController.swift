@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseDatabase
+import FirebaseStorage
 
 class FormViewController: UIViewController {
     
@@ -23,10 +24,54 @@ class FormViewController: UIViewController {
     @IBOutlet weak var noKTPTextField: RoundedTextField!
     @IBOutlet weak var noSIMTextField: RoundedTextField!
     @IBAction func saveButton(_ sender: RoundedButton) {
-        let user = User(name: namaTextField.text, ttl: ttlTextField.text, alamat: alamatTextField.text, noHP: noHPTextField.text, noKTP: noKTPTextField.text, noSIM: noSIMTextField.text)
-        DatabaseHandler.saveUserData(user: user) {
-            self.performSegue(withIdentifier: "toKategori", sender: self)
-        }
+        let ktpImage = UserDefaults.standard.object(forKey: "imageKTP") as! Data
+        let simImage = UserDefaults.standard.object(forKey: "imageSIM") as! Data
+        let profileImage = UserDefaults.standard.object(forKey: "imageProfile") as! Data
+        savePhoto(ktpImage: ktpImage, simImage: simImage, profileImage: profileImage)
+    }
+    
+    func savePhoto(ktpImage: Data, simImage: Data, profileImage: Data) {
+        let storage = Storage.storage()
+        let storageRef = storage.reference()
+        let ktpRef = storageRef.child("ktp/\(self.noKTPTextField.text!).png")
+        let simRef = storageRef.child("sim/\(self.noKTPTextField.text!).png")
+        let profileRef = storageRef.child("profile/\(self.noKTPTextField.text!).png")
+        _ = ktpRef.putData(ktpImage, metadata: nil, completion: { (metadata, error) in
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+            print("upload ktp photo success")
+            ktpRef.downloadURL { (urlKTP, error) in
+                if let error = error {
+                    print(error.localizedDescription)
+                    return
+                }
+                
+                simRef.putData(simImage, metadata: nil) { (metadata, error) in
+                    simRef.downloadURL { (urlSIM, error) in
+                        if let error = error {
+                            print(error.localizedDescription)
+                            return
+                        }
+                        profileRef.putData(profileImage, metadata: nil) { (metadata, error) in
+                            profileRef.downloadURL { (url, error) in
+                                if let error = error {
+                                    print(error.localizedDescription)
+                                    return
+                                }
+                                let user = User(name: self.namaTextField.text, ttl: self.ttlTextField.text, alamat: self.alamatTextField.text, noHP: self.noHPTextField.text, noKTP: self.noKTPTextField.text, noSIM: self.noSIMTextField.text, urlKTP: urlKTP?.absoluteString, urlSIM: urlSIM?.absoluteString, urlProfile: urlKTP?.absoluteString)
+                                
+                                DatabaseHandler.saveUserData(user: user) {
+                                    self.performSegue(withIdentifier: "toKategori", sender: self)
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        })
     }
     
     func updateDataAutoComplete() {
