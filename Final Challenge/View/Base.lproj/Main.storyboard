@@ -1226,14 +1226,14 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                         <rect key="frame" x="0.0" y="0.0" width="161" height="168"/>
                                         <state key="normal" image="rem"/>
                                         <connections>
-                                            <action selector="pedalRemTapped:" destination="ufY-XR-IbW" eventType="touchUpInside" id="coV-V8-m0p"/>
+                                            <action selector="pedalGasTapped:" destination="ufY-XR-IbW" eventType="touchUpInside" id="l5Y-3b-tod"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4N-TK-Wuy">
                                         <rect key="frame" x="203" y="0.0" width="74" height="168"/>
                                         <state key="normal" image="gas"/>
                                         <connections>
-                                            <action selector="pedalGasTapped:" destination="ufY-XR-IbW" eventType="touchUpInside" id="QVW-VC-kQa"/>
+                                            <action selector="pedalRemTapped:" destination="ufY-XR-IbW" eventType="touchUpInside" id="c1u-F3-nPL"/>
                                         </connections>
                                     </button>
                                 </subviews>
