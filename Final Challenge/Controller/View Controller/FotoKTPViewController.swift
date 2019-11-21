@@ -53,6 +53,7 @@ class FotoKTPViewController: UIViewController {
         if setupSession() {
             setupPreview()
             startSession()
+            self.ulangiOutlet.isHidden = true
         }
     }
     @IBOutlet weak var ulangiOutlet: UIButton!
@@ -71,6 +72,11 @@ class FotoKTPViewController: UIViewController {
         }
         
         self.resultImageView.isHidden = true
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.previewLayer.frame = self.cameraView.layer.bounds
     }
 }
 

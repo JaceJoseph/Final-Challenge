@@ -30,6 +30,12 @@ class InstruksiViewController: UIViewController {
         }
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.previewLayer.frame = self.cameraView.layer.bounds
+    }
+    
+    
     func setupSession() -> Bool {
         captureSession.sessionPreset = AVCaptureSession.Preset.high
         // Setup Camera

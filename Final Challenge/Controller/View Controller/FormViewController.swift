@@ -14,7 +14,11 @@ class FormViewController: UIViewController {
     
     var activeTextField = UITextField()
     var scroll = Bool()
+    var alreadyMoveUp = false
     @IBOutlet weak var formView: UIView!
+    @IBOutlet weak var loadingView: UIView!
+    
+    var keyboardHeight = CGFloat()
     
     @IBOutlet weak var inputStack: UIStackView!
     @IBOutlet weak var namaTextField: RoundedTextField!
@@ -24,6 +28,7 @@ class FormViewController: UIViewController {
     @IBOutlet weak var noKTPTextField: RoundedTextField!
     @IBOutlet weak var noSIMTextField: RoundedTextField!
     @IBAction func saveButton(_ sender: RoundedButton) {
+        self.view.isUserInteractionEnabled = false
         let ktpImage = UserDefaults.standard.object(forKey: "imageKTP") as! Data
         let simImage = UserDefaults.standard.object(forKey: "imageSIM") as! Data
         let profileImage = UserDefaults.standard.object(forKey: "imageProfile") as! Data
@@ -31,6 +36,7 @@ class FormViewController: UIViewController {
     }
     
     func savePhoto(ktpImage: Data, simImage: Data, profileImage: Data) {
+        loadingView.isHidden = false
         let storage = Storage.storage()
         let storageRef = storage.reference()
         let ktpRef = storageRef.child("ktp/\(self.noKTPTextField.text!).png")
@@ -64,6 +70,7 @@ class FormViewController: UIViewController {
                                 
                                 DatabaseHandler.saveUserData(user: user) {
                                     self.performSegue(withIdentifier: "toKategori", sender: self)
+                                    self.loadingView.isHidden = true
                                 }
                             }
                             
@@ -92,6 +99,10 @@ class FormViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
+    @objc func keyboardWillChangeFrame(notification: Notification) {
+        print("typing")
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.activeTextField.resignFirstResponder()
     }
@@ -103,7 +114,8 @@ class FormViewController: UIViewController {
             if self.scroll {
                 if let keyboardHeight = keyboardRect?.height as? CGFloat {
                     UIView.animate(withDuration: 1) {
-                        self.formView.frame.origin.y += keyboardHeight-30
+                        self.view.frame.origin.y += keyboardHeight-30
+                        self.alreadyMoveUp = false
                     }
                 }
             }
@@ -119,13 +131,22 @@ class FormViewController: UIViewController {
                 print("text field y: \(yTextField)")
                 print("view height: \(self.view.frame.height)")
                 print("keyboard height: \(keyboardHeight)")
-                if yTextField >= (self.view.frame.height - keyboardHeight) {
+                if yTextField >= (self.view.frame.height - keyboardHeight), !alreadyMoveUp {
                     self.scroll = true
                     UIView.animate(withDuration: 1) {
-                        self.formView.frame.origin.y -= keyboardHeight-30
+                        self.view.frame.origin.y -= keyboardHeight-30
+                        self.alreadyMoveUp = true
                     }
+                } else if yTextField >= (self.view.frame.height - keyboardHeight), alreadyMoveUp {
+                    self.scroll = true
+                    print("textfield ketutupan keyboard")
+                    //self.scroll = false
+                    //self.alreadyMoveUp = false
+                } else if alreadyMoveUp, yTextField <= (self.view.frame.height - keyboardHeight){
+                    //do nothing
                 } else {
                     self.scroll = false
+                    self.alreadyMoveUp = false
                 }
             }
         }

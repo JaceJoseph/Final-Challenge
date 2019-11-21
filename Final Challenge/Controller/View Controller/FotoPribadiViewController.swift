@@ -28,6 +28,12 @@ class FotoPribadiViewController: UIViewController {
         self.photoOutput.capturePhoto(with: settings, delegate: self)
     }
     @IBAction func ulangiButton(_ sender: UIButton) {
+        self.resultImageView.isHidden = true
+        if setupSession() {
+            setupPreview()
+            startSession()
+            self.ulangiOutlet.isHidden = true
+        }
     }
     @IBOutlet weak var ulangiOutlet: UIButton!
     @IBOutlet weak var lanjutOutlet: UIButton!
@@ -45,6 +51,11 @@ class FotoPribadiViewController: UIViewController {
         }
         
         self.resultImageView.isHidden = true
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.previewLayer.frame = self.cameraView.layer.bounds
     }
 }
 
@@ -109,6 +120,7 @@ extension FotoPribadiViewController: AVCapturePhotoCaptureDelegate {
         let image = UIImage(data: imageData)
         resultImageView.image = image
         self.captureSession.stopRunning()
+        UserDefaults.standard.set(imageData, forKey: "imageProfile")
         self.resultImageView.isHidden = false
         self.lanjutOutlet.isHidden = false
         self.ulangiOutlet.isHidden = false

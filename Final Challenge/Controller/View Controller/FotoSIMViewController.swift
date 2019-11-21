@@ -57,7 +57,13 @@ class FotoSIMViewController: UIViewController {
         if setupSession() {
             setupPreview()
             startSession()
+            self.ulangiOutlet.isHidden = true
         }
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.previewLayer.frame = self.cameraView.layer.bounds
     }
     
     @IBAction func takePhotoButton(_ sender: UIButton) {
