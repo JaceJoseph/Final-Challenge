@@ -35,8 +35,8 @@ class Case3ViewController: UIViewController {
     }
     
     func showAlert() {
-        let alert = UIAlertController(title: "Are you sure you want to finish?", message: "You can't go back after finishing this test", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (action) in
+        let alert = UIAlertController(title: "Apakah anda yakin untuk menyelesaikan tes ini?", message: "Anda tidak dapat kembali ke tes setelah menyelesaikan tes", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ya", style: .default, handler: { (action) in
             
 //            let currentScore = UserDefaults.standard.integer(forKey: "scoreSection2")
             UserDefaults.standard.set(self.score, forKey: "scoreSection2Question5")
@@ -47,7 +47,7 @@ class Case3ViewController: UIViewController {
             
             self.performSegue(withIdentifier: "testSegue3", sender: self)
         }))
-        alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: { (action) in
+        alert.addAction(UIAlertAction(title: "Tidak", style: .cancel, handler: { (action) in
             //do nothing
         }))
         self.present(alert, animated: true) {
