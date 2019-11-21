@@ -58,6 +58,7 @@ class FotoSIMViewController: UIViewController {
             setupPreview()
             startSession()
             self.ulangiOutlet.isHidden = true
+            self.lanjutOutlet.isHidden = true
         }
     }
     

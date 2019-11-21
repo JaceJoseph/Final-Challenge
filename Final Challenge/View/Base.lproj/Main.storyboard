@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2p1-MJ-kep">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad10_5" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -166,7 +166,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="omd-v0-BiB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="772" y="804"/>
+            <point key="canvasLocation" x="2115" y="118"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Kc6-Uf-mAh">
@@ -582,7 +582,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hnz-Wf-uft" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="772" y="1547"/>
+            <point key="canvasLocation" x="114" y="1904"/>
         </scene>
         <!--Instruksi View Controller-->
         <scene sceneID="GfJ-zY-Ave">
@@ -1003,7 +1003,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jF3-nB-qfA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2061" y="118"/>
+            <point key="canvasLocation" x="114" y="832"/>
         </scene>
         <!--caseBanKempes-->
         <scene sceneID="aXC-S3-9pZ">
@@ -1216,20 +1216,20 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scene5-1" translatesAutoresizingMaskIntoConstraints="NO" id="V5Y-92-1TZ">
-                                <rect key="frame" x="0.0" y="0.0" width="1364" height="469"/>
+                                <rect key="frame" x="0.0" y="0.0" width="2728" height="469"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="jQY-Og-Rkd">
-                                <rect key="frame" x="417.5" y="456" width="277" height="168"/>
+                                <rect key="frame" x="300" y="288" width="512" height="336"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEX-Xj-8iO">
-                                        <rect key="frame" x="0.0" y="0.0" width="161" height="168"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="322" height="336"/>
                                         <state key="normal" image="rem"/>
                                         <connections>
                                             <action selector="pedalGasTapped:" destination="ufY-XR-IbW" eventType="touchUpInside" id="l5Y-3b-tod"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4N-TK-Wuy">
-                                        <rect key="frame" x="203" y="0.0" width="74" height="168"/>
+                                        <rect key="frame" x="364" y="0.0" width="148" height="336"/>
                                         <state key="normal" image="gas"/>
                                         <connections>
                                             <action selector="pedalRemTapped:" destination="ufY-XR-IbW" eventType="touchUpInside" id="c1u-F3-nPL"/>
@@ -1241,7 +1241,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 <rect key="frame" x="450" y="0.0" width="662" height="258.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blW-Kz-NTe">
-                                        <rect key="frame" x="0.0" y="98.5" width="93.5" height="62"/>
+                                        <rect key="frame" x="0.0" y="67.5" width="93.5" height="124"/>
                                         <state key="normal" image="back"/>
                                         <connections>
                                             <segue destination="NKK-wN-dDl" kind="unwind" unwindAction="toCaseCuciMobil:" id="MwA-Ar-ZB7"/>
@@ -1831,7 +1831,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 <rect key="frame" x="130" y="76.5" width="852" height="491.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="garisputus2" translatesAutoresizingMaskIntoConstraints="NO" id="eaJ-Yh-nZG">
-                                        <rect key="frame" x="208" y="0.0" width="436" height="206.00000000000006"/>
+                                        <rect key="frame" x="208" y="0.0" width="436" height="206"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="206" id="OuG-Cr-p2i"/>
                                             <constraint firstAttribute="width" constant="436" id="TEP-i4-zHM"/>
@@ -2591,7 +2591,7 @@ Pastikan wajah Anda terlihat dengan jelas pada kamera</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BW2-xB-5Jn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="122" y="971"/>
+            <point key="canvasLocation" x="772" y="971"/>
         </scene>
     </scenes>
     <resources>

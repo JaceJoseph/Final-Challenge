@@ -54,6 +54,7 @@ class FotoKTPViewController: UIViewController {
             setupPreview()
             startSession()
             self.ulangiOutlet.isHidden = true
+            self.lanjutOutlet.isHidden = true
         }
     }
     @IBOutlet weak var ulangiOutlet: UIButton!
