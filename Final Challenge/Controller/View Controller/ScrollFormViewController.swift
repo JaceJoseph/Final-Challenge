@@ -63,7 +63,7 @@ class ScrollFormViewController: UIViewController {
                                    let user = User(name: self.namaTextField.text, ttl: self.ttlTextField.text, alamat: self.alamatTextField.text, noHP: self.noHPTextField.text, noKTP: self.noKTPTextField.text, noSIM: self.noSIMTextField.text, urlKTP: urlKTP?.absoluteString, urlSIM: urlSIM?.absoluteString, urlProfile: urlKTP?.absoluteString)
                                    
                                    DatabaseHandler.saveUserData(user: user) {
-                                       self.performSegue(withIdentifier: "toKategori", sender: self)
+                                       self.performSegue(withIdentifier: "toInstruksi", sender: self)
                                        self.loadingView.isHidden = true
                                    }
                                }

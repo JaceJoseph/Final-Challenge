@@ -21,11 +21,15 @@ class FotoPribadiViewController: UIViewController {
     
     var photoOutput = AVCapturePhotoOutput()
 
+    @IBOutlet weak var photoButton: UIButton!
     @IBOutlet weak var resultImageView: UIImageView!
     @IBOutlet weak var cameraView: UIView!
+    
     @IBAction func takePhotoButton(_ sender: UIButton) {
         let settings = AVCapturePhotoSettings(format: [AVVideoCodecKey: AVVideoCodecType.jpeg])
         self.photoOutput.capturePhoto(with: settings, delegate: self)
+        photoButton.isHidden = true
+        
     }
     @IBAction func ulangiButton(_ sender: UIButton) {
         self.resultImageView.isHidden = true
@@ -34,6 +38,7 @@ class FotoPribadiViewController: UIViewController {
             startSession()
             self.ulangiOutlet.isHidden = true
             self.lanjutOutlet.isHidden = true
+            self.photoButton.isHidden = false
         }
     }
     @IBOutlet weak var ulangiOutlet: UIButton!

@@ -41,7 +41,7 @@ extension CategoryPickerViewController:UICollectionViewDelegate,UICollectionView
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath.row == 0{
-            performSegue(withIdentifier: "toInstruksi", sender: self)
+            performSegue(withIdentifier: "toIntroFotoDiri", sender: self)
         }
     }
     

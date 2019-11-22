@@ -42,11 +42,13 @@ class FotoKTPViewController: UIViewController {
     var tempatUser: String?
     var tanggalLahirUser: String?
 
+    @IBOutlet weak var photoButton: UIButton!
     @IBOutlet weak var resultImageView: UIImageView!
     @IBOutlet weak var cameraView: UIView!
     @IBAction func takePhotoButton(_ sender: UIButton) {
         let settings = AVCapturePhotoSettings(format: [AVVideoCodecKey: AVVideoCodecType.jpeg])
         self.photoOutput.capturePhoto(with: settings, delegate: self)
+        self.photoButton.isHidden = true
     }
     @IBAction func ulangiButton(_ sender: UIButton) {
         self.resultImageView.isHidden = true
@@ -55,12 +57,13 @@ class FotoKTPViewController: UIViewController {
             startSession()
             self.ulangiOutlet.isHidden = true
             self.lanjutOutlet.isHidden = true
+            self.photoButton.isHidden = false
         }
     }
     @IBOutlet weak var ulangiOutlet: UIButton!
     @IBOutlet weak var lanjutOutlet: UIButton!
     @IBAction func lanjutButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "segueToFotoSIM", sender: self)
+        performSegue(withIdentifier: "toIntroFotoSIM", sender: self)
     }
     
     

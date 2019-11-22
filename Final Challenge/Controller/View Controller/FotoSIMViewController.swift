@@ -43,6 +43,7 @@ class FotoSIMViewController: UIViewController {
     var berlaku: String?
     var bufferText: String?
     
+    @IBOutlet weak var photoButton: UIButton!
     @IBOutlet weak var resultImageView: UIImageView!
     @IBOutlet weak var ulangiOutlet: UIButton!
     @IBOutlet weak var lanjutOutlet: UIButton!
@@ -59,6 +60,7 @@ class FotoSIMViewController: UIViewController {
             startSession()
             self.ulangiOutlet.isHidden = true
             self.lanjutOutlet.isHidden = true
+            self.photoButton.isHidden = false
         }
     }
     
@@ -70,6 +72,7 @@ class FotoSIMViewController: UIViewController {
     @IBAction func takePhotoButton(_ sender: UIButton) {
         let settings = AVCapturePhotoSettings(format: [AVVideoCodecKey: AVVideoCodecType.jpeg])
         self.photoOutput.capturePhoto(with: settings, delegate: self)
+        self.photoButton.isHidden = true
     }
     override func viewDidLoad() {
         super.viewDidLoad()

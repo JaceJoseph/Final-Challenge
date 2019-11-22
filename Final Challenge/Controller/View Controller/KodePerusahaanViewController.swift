@@ -21,7 +21,7 @@ class KodePerusahaanViewController: UIViewController {
     
     @IBAction func masukButtonTouched(_ sender: UIButton) {
         //NOTE: Function to check the code
-        performSegue(withIdentifier: "toIntroFotoDiri", sender: self)
+        performSegue(withIdentifier: "toKategori", sender: self)
     }
     
     @IBAction func toKodePerusahaan(_ unwindSegue: UIStoryboardSegue) {
