@@ -12,7 +12,8 @@ class KodePerusahaanViewController: UIViewController {
     
     @IBAction func backToOrigin(_ sender: UIStoryboardSegue) {
     }
-
+    @IBOutlet weak var kodePerusahanTextField: RoundedTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("update")
@@ -21,6 +22,8 @@ class KodePerusahaanViewController: UIViewController {
     
     @IBAction func masukButtonTouched(_ sender: UIButton) {
         //NOTE: Function to check the code
+        
+        UserDefaults.standard.set(kodePerusahanTextField.text, forKey: "kodePerusahaan")
         performSegue(withIdentifier: "toKategori", sender: self)
     }
     

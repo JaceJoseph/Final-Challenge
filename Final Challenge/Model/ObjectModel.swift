@@ -28,6 +28,7 @@ struct Question {
     var option4: String?
     var correct: Int16?
     var image: String?
+    var level: String?
 }
 
 struct Score {

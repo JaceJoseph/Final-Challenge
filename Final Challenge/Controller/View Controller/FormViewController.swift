@@ -28,14 +28,11 @@ class FormViewController: UIViewController {
     @IBOutlet weak var noKTPTextField: RoundedTextField!
     @IBOutlet weak var noSIMTextField: RoundedTextField!
     @IBAction func saveButton(_ sender: RoundedButton) {
-        self.view.isUserInteractionEnabled = false
-        let ktpImage = UserDefaults.standard.object(forKey: "imageKTP") as! Data
-        let simImage = UserDefaults.standard.object(forKey: "imageSIM") as! Data
-        let profileImage = UserDefaults.standard.object(forKey: "imageProfile") as! Data
-        savePhoto(ktpImage: ktpImage, simImage: simImage, profileImage: profileImage)
+        
     }
     
     func savePhoto(ktpImage: Data, simImage: Data, profileImage: Data) {
+        self.view.isUserInteractionEnabled = false
         loadingView.isHidden = false
         let storage = Storage.storage()
         let storageRef = storage.reference()
@@ -82,13 +79,16 @@ class FormViewController: UIViewController {
     }
     
     func updateDataAutoComplete() {
-        print(UserDefaults.standard.string(forKey: "nama"))
+        print("Nama: \(UserDefaults.standard.string(forKey: "nama"))")
+        print("no sim")
         self.namaTextField.text = UserDefaults.standard.string(forKey: "nama")
         self.noKTPTextField.text = UserDefaults.standard.string(forKey: "NIK")
         self.alamatTextField.text = UserDefaults.standard.string(forKey: "alamat")
+        self.noSIMTextField.text = UserDefaults.standard.string(forKey: "noSIM")
         UserDefaults.standard.removeObject(forKey: "nama")
         UserDefaults.standard.removeObject(forKey: "NIK")
         UserDefaults.standard.removeObject(forKey: "alamat")
+        UserDefaults.standard.removeObject(forKey: "noSIM")
     }
     
     override func viewDidLoad() {
@@ -152,10 +152,4 @@ class FormViewController: UIViewController {
         }
     }
 
-}
-
-extension FormViewController: UITextFieldDelegate {
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        self.activeTextField = textField
-    }
 }

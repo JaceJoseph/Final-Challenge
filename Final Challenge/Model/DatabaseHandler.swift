@@ -14,6 +14,9 @@ class DatabaseHandler {
     class func saveUserData(user: User, completion: @escaping () -> ()) {
         var ref: DatabaseReference!
         ref = Database.database().reference()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy"
+        let tanggalPendaftaran = dateFormatter.string(from: Date())
         ref.child("Users").child(user.noKTP!).setValue([
             "name": user.name!,
             "ttl": user.ttl!,
@@ -23,7 +26,10 @@ class DatabaseHandler {
             "noSIM": user.noSIM!,
             "urlKTP": user.urlKTP!,
             "urlSIM": user.urlSIM!,
-            "urlProfile": user.urlProfile!
+            "urlProfile": user.urlProfile!,
+            "kodePerusahaan": UserDefaults.standard.string(forKey: "kodePerusahaan")!,
+            "tanggalPendaftaran": tanggalPendaftaran,
+            "status": "Waiting"
         ])
         print("account updated to firebase database.")
         UserDefaults.standard.set(user.noKTP, forKey: "idDatabaseCurrent")
@@ -54,6 +60,7 @@ class DatabaseHandler {
 extension TestSection1AViewController {
     func retrieveSoal() {
         var ref: DatabaseReference!
+        var easy = 0, medium = 0, hard = 0
 
         ref = Database.database().reference()
         ref.child("Questions").observeSingleEvent(of: .value) { (snapshot) in
@@ -69,11 +76,72 @@ extension TestSection1AViewController {
                 let option2 = value["option2"] as! String
                 let option3 = value["option3"] as! String
                 let option4 = value["option4"] as! String
+                let level = value["level"] as! String
                 let image = value["image"] as? String
-                self.questions.append(Question(soal: soal, option1: option1, option2: option2, option3: option3, option4: option4, correct: Int16(correct), image: image))
+                /*switch level {
+                case "easy":
+                    easy += 1
+                case "medium":
+                    medium += 1
+                case "hard":
+                    hard += 1
+                default:
+                    print("no level")
+                }*/
+                self.questionsSementara.append(Question(soal: soal, option1: option1, option2: option2, option3: option3, option4: option4, correct: Int16(correct), image: image, level: level))
                 //CoreDataHelper.saveToCoreData(soal: Question(soal: soal, option1: option1, option2: option2, option3: option3, option4: option4, correct: Int16(correct)))
             }
-            //self.retrieveQuestionsFromCoreData()
+            //self.retrieveQuestionsFromCoreData()\
+            //var index = 0
+            var easy = [Question]()
+            var medium = [Question]()
+            var hard = [Question]()
+            var easyCount = 0
+            var mediumCount = 0
+            var hardCount = 0
+            
+            for i in 0..<self.questionsSementara.count {
+                switch self.questionsSementara[i].level {
+                case "easy":
+                    //if easyCount < 5 {
+                        easy.append(self.questionsSementara[i])
+                        print("easy")
+                        easyCount += 1
+                    //}
+                case "medium":
+                    //if mediumCount < 3 {
+                        medium.append(self.questionsSementara[i])
+                        print("medium")
+                        mediumCount += 1
+                    //}
+                case "hard":
+                    //if hardCount < 2 {
+                        hard.append(self.questionsSementara[i])
+                        print("hard")
+                        hardCount += 1
+                    //}
+                default:
+                    print("no level")
+                }
+            }
+            
+            while easy.count != 5 {
+                easy.remove(at: Int.random(in: 0..<easy.count))
+            }
+            
+            while medium.count != 3 {
+                medium.remove(at: Int.random(in: 0..<medium.count))
+            }
+            
+            while hard.count != 2 {
+                hard.remove(at: Int.random(in: 0..<hard.count))
+            }
+            
+            self.questions += easy
+            self.questions += medium
+            self.questions += hard
+            
+            self.questions.shuffle()
             self.showQuestion()
         }
     }

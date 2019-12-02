@@ -12,6 +12,7 @@ class TestSection1AViewController: UIViewController {
     
     var delegate: SegueHandler?
     var questions = [Question]()
+    var questionsSementara = [Question]()
     var counter = 0
 
     @IBOutlet weak var soalImage: UIImageView!
@@ -84,6 +85,7 @@ class TestSection1AViewController: UIViewController {
         [3]: bawah kanan: option4
         */
         print(questions[counter].soal!)
+        print(questions[counter].level!)
         option1ButtonOutlet.setTitle(questions[counter].option1, for: .normal)
         option2ButtonOutlet.setTitle(questions[counter].option2, for: .normal)
         option3ButtonOutlet.setTitle(questions[counter].option3, for: .normal)

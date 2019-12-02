@@ -10,13 +10,12 @@ import UIKit
 
 class Case1ViewController: UIViewController {
 
-    
     @IBOutlet var bendaTersedia: [UIView]!
     @IBOutlet var indikatorAngka: [UIImageView]!
     @IBOutlet weak var caseBackground: UIImageView!
     
-    var posisiAwalBenda:[CGPoint] = []
-    var urutanBenda:[Int]=[]
+    var posisiAwalBenda: [CGPoint] = []
+    var urutanBenda: [Int] = []
     var counterBenda = 1
     
     
@@ -31,7 +30,7 @@ class Case1ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    func addPanView(view:UIView){
+    func addPanView(view:UIView) {
         let pan = UIPanGestureRecognizer(target: self, action: #selector(Case1ViewController.handlePan(sender:)))
         let tap = UITapGestureRecognizer(target: self, action: #selector(Case1ViewController.selectedObject(sender:)))
         view.addGestureRecognizer(tap)
@@ -49,7 +48,7 @@ class Case1ViewController: UIViewController {
         }
     }
     
-    @objc func handlePan(sender:UIPanGestureRecognizer){
+    @objc func handlePan(sender:UIPanGestureRecognizer) {
         let fileView = sender.view
         
         switch sender.state {
@@ -77,19 +76,19 @@ class Case1ViewController: UIViewController {
         }
     }
     
-    func moveViewWithPan(view:UIView,sender:UIPanGestureRecognizer){
+    func moveViewWithPan(view:UIView,sender:UIPanGestureRecognizer) {
         let translation = sender.translation(in:view)
         view.center = CGPoint(x: view.center.x+translation.x, y: view.center.y+translation.y)
         sender.setTranslation(CGPoint.zero, in: view)
     }
     
-    func deleteView(view:UIView){
+    func deleteView(view:UIView) {
         UIView.animate(withDuration: 0.3) {
             view.alpha = 0
         }
     }
     
-    func returnViewToOrigin(view:UIView){
+    func returnViewToOrigin(view:UIView) {
         UIView.animate(withDuration: 0.3) {
             view.frame.origin = self.posisiAwalBenda[view.tag]
         }
@@ -110,7 +109,7 @@ class Case1ViewController: UIViewController {
             plusScore = 25
         }
    
-        for index in urutanBenda.indices{
+        for index in urutanBenda.indices {
             if urutanBenda[index] == kunciJawaban[index]{
                 score += plusScore
             }
@@ -118,7 +117,7 @@ class Case1ViewController: UIViewController {
         
         var score2 = 0
         
-        if self.title == "caseCuciMobil"{
+        if self.title == "caseCuciMobil" {
             for index in urutanBenda.indices{
                 if urutanBenda[index] == kunciJawaban2[index]{
                     score2 += plusScore
@@ -129,7 +128,7 @@ class Case1ViewController: UIViewController {
         print(score)
         print(score2)
         
-        if score2>score{
+        if score2>score {
             score = score2
         }
         

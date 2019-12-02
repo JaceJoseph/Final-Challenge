@@ -12,6 +12,7 @@ import Vision
 
 class FotoSIMViewController: UIViewController {
     
+    @IBOutlet weak var photoButtonOutlet: UIButton!
     let cameraSession = AVCaptureSession()
     let captureSession = AVCaptureSession()
     let movieOutput = AVCaptureMovieFileOutput()
@@ -43,10 +44,11 @@ class FotoSIMViewController: UIViewController {
     var berlaku: String?
     var bufferText: String?
     
-    @IBOutlet weak var photoButton: UIButton!
     @IBOutlet weak var resultImageView: UIImageView!
     @IBOutlet weak var ulangiOutlet: UIButton!
     @IBOutlet weak var lanjutOutlet: UIButton!
+
+    @IBOutlet weak var photoButton: UIButton!
     @IBOutlet weak var cameraView: UIView!
     
     @IBAction func lanjutButton(_ sender: UIButton) {
@@ -54,6 +56,7 @@ class FotoSIMViewController: UIViewController {
     }
     
     @IBAction func ulangiButton(_ sender: UIButton) {
+        photoButton.isEnabled = true
         self.resultImageView.isHidden = true
         if setupSession() {
             setupPreview()
@@ -61,6 +64,7 @@ class FotoSIMViewController: UIViewController {
             self.ulangiOutlet.isHidden = true
             self.lanjutOutlet.isHidden = true
             self.photoButton.isHidden = false
+
         }
     }
     
@@ -70,9 +74,9 @@ class FotoSIMViewController: UIViewController {
     }
     
     @IBAction func takePhotoButton(_ sender: UIButton) {
+        sender.isEnabled = false
         let settings = AVCapturePhotoSettings(format: [AVVideoCodecKey: AVVideoCodecType.jpeg])
         self.photoOutput.capturePhoto(with: settings, delegate: self)
-        self.photoButton.isHidden = true
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -247,7 +251,13 @@ extension FotoSIMViewController {
                         }
                     }
                 } else if text.uppercased().contains("SIM") {
-                    self.noSim = "\(text.suffix(12))"
+                    self.noSim = self.detectedText[counter+1]
+                    var i = 2
+                    while Int(self.noSim!) == nil, counter + i < self.detectedText.count {
+                        self.noSim = self.detectedText[counter+i]
+                        i += 1
+                    }
+                    UserDefaults.standard.set(self.noSim, forKey: "noSIM")
                 }
             }
         }

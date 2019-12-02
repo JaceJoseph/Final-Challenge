@@ -25,7 +25,7 @@ class Case3ViewController: UIViewController {
         showAlert()
     }
     
-    func calculateScore()->Int{
+    func calculateScore() -> Int {
         var score = 0
         for i in 1...5 {
             score += UserDefaults.standard.integer(forKey: "scoreSection2Question\(i)")

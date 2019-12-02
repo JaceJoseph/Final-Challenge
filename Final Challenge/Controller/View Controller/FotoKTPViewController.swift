@@ -42,15 +42,15 @@ class FotoKTPViewController: UIViewController {
     var tempatUser: String?
     var tanggalLahirUser: String?
 
-    @IBOutlet weak var photoButton: UIButton!
     @IBOutlet weak var resultImageView: UIImageView!
     @IBOutlet weak var cameraView: UIView!
     @IBAction func takePhotoButton(_ sender: UIButton) {
+        sender.isEnabled = false
         let settings = AVCapturePhotoSettings(format: [AVVideoCodecKey: AVVideoCodecType.jpeg])
         self.photoOutput.capturePhoto(with: settings, delegate: self)
-        self.photoButton.isHidden = true
     }
     @IBAction func ulangiButton(_ sender: UIButton) {
+        photoButton.isEnabled = true
         self.resultImageView.isHidden = true
         if setupSession() {
             setupPreview()
@@ -62,6 +62,7 @@ class FotoKTPViewController: UIViewController {
     }
     @IBOutlet weak var ulangiOutlet: UIButton!
     @IBOutlet weak var lanjutOutlet: UIButton!
+    @IBOutlet weak var photoButton: UIButton!
     @IBAction func lanjutButton(_ sender: UIButton) {
         performSegue(withIdentifier: "toIntroFotoSIM", sender: self)
     }
@@ -227,13 +228,14 @@ extension FotoKTPViewController {
                     print("namaUser: \(self.namaUser!)")
                     UserDefaults.standard.set(self.namaUser!, forKey: "nama")
                 } else if text.uppercased().contains("ALAMAT") {
-                    self.bufferText = text.replacingOccurrences(of: "Alamat", with: "")
+                    /*self.bufferText = text.replacingOccurrences(of: "Alamat", with: "")
                     self.removeBuffer()
                     self.alamatUser = self.bufferText
                     if (self.alamatUser?.uppercased().contains("alamat"))! || self.alamatUser == "" {
                         self.alamatUser = self.detectedText[counter+1]
                     }
-                    self.alamatUser = "Alamat: \(self.bufferText ?? "")"
+                    self.alamatUser = "Alamat: \(self.bufferText ?? "")"*/
+                    self.alamatUser = self.detectedText[counter+1]
                     UserDefaults.standard.set(self.alamatUser, forKey: "alamat")
                 } else if text.uppercased().contains("JENIS KELAMIN") {
                     self.jenisKelamin = self.detectedText[counter+1]

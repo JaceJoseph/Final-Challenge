@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import Vision
 
 protocol SegueHandler: class {
     func segueToNext(identifier: String)
@@ -21,23 +22,38 @@ class TestSection2ViewController: UIViewController,SegueHandler {
     var activeInput: AVCaptureDeviceInput!
     var outputURL: URL!
     
+    var videoCaptureSession = AVCaptureSession()
+    var videoPreviewLayer = AVCaptureVideoPreviewLayer()
+    
+    private let videoDataOutput = AVCaptureVideoDataOutput()
+    
     var timer = Timer()
     var minutes: Int = 0
     var seconds: Int = 0
+    var noFaceCounter = 0
+    var faceDetected = false
 
     @IBOutlet weak var cameraView: UIView!
     @IBOutlet weak var secondLabel: UILabel!
     @IBOutlet weak var minutesLabel: UILabel!
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.videoCaptureSession.stopRunning()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if setupSession() {
+        self.addCameraInput()
+        self.showCameraFeed()
+        self.getCameraFrames()
+        self.videoCaptureSession.startRunning()
+        setupTimeLimit()
+        
+        /*if setupSession() {
             setupPreview()
             startSession()
         }
-        
-        startRecording()
-        setupTimeLimit()
+        startRecording()*/
     }
 }
 
@@ -45,9 +61,9 @@ class TestSection2ViewController: UIViewController,SegueHandler {
 extension TestSection2ViewController {
     func setupTimeLimit() {
         
-        if self.title == "section1"{
+        if self.title == "section1" {
             minutes = 10
-        }else if self.title == "section2"{
+        } else if self.title == "section2" {
             minutes = 15
         }
         seconds = 0
@@ -84,6 +100,37 @@ extension TestSection2ViewController {
 
 // MARK: SETTING UP THE CAMERA SESSION
 extension TestSection2ViewController {
+    private func addCameraInput() {
+        guard let device = AVCaptureDevice.DiscoverySession(
+            deviceTypes: [.builtInWideAngleCamera],
+            mediaType: .video,
+            position: .front).devices.first else {
+                fatalError("No back camera device found, please make sure to run SimpleLaneDetection in an iOS device and not a simulator")
+        }
+        let cameraInput = try! AVCaptureDeviceInput(device: device)
+        if self.videoCaptureSession.canAddInput(cameraInput) {
+            self.videoCaptureSession.addInput(cameraInput)
+        }
+    }
+    
+    private func showCameraFeed() {
+        self.videoPreviewLayer = AVCaptureVideoPreviewLayer(session: self.videoCaptureSession)
+        self.videoPreviewLayer.videoGravity = .resizeAspectFill
+        videoPreviewLayer.frame = cameraView.bounds
+        videoPreviewLayer.connection?.videoOrientation = self.currentVideoOrientation()
+        cameraView.layer.addSublayer(videoPreviewLayer)
+    }
+    
+    private func getCameraFrames() {
+        self.videoDataOutput.videoSettings = [(kCVPixelBufferPixelFormatTypeKey as NSString) : NSNumber(value: kCVPixelFormatType_32BGRA)] as [String : Any]
+        self.videoDataOutput.alwaysDiscardsLateVideoFrames = true
+        self.videoDataOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "camera_frame_processing_queue"))
+        self.videoCaptureSession.addOutput(self.videoDataOutput)
+        guard let connection = self.videoDataOutput.connection(with: AVMediaType.video),
+            connection.isVideoOrientationSupported else { return }
+        connection.videoOrientation = currentVideoOrientation()
+    }
+    
     func setupSession() -> Bool {
         captureSession.sessionPreset = AVCaptureSession.Preset.high
         // Setup Camera
@@ -214,6 +261,52 @@ extension TestSection2ViewController: AVCaptureFileOutputRecordingDelegate {
             print(error.localizedDescription)
         } else {
             let videoRecorded = outputURL! as URL
+            
         }
+    }
+}
+
+extension TestSection2ViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
+    func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
+        //print("frame received")
+        guard let frame = CMSampleBufferGetImageBuffer(sampleBuffer) else {
+            debugPrint("unable to get image from sample buffer")
+            return
+        }
+        self.detectFace(image: frame)
+    }
+    
+    func detectFace(image: CVPixelBuffer) {
+        let faceDetectionRequest = VNDetectFaceLandmarksRequest { (request, error) in
+            DispatchQueue.main.async {
+                if let results = request.results as? [VNFaceObservation] {
+                    if !results.isEmpty {
+                        self.faceDetected = true
+                        //print("face detected")
+                    } else {
+                        if self.faceDetected {
+                            self.noFaceCounter += 1
+                        }
+                        self.faceDetected = false
+                        //print("no face")
+                        if self.noFaceCounter >= 3 {
+                            self.noFaceAlert()
+                        }
+                    }
+                } else {
+                    print("no results")
+                }
+            }
+        }
+        let imageRequesthandler = VNImageRequestHandler(cvPixelBuffer: image, orientation: .leftMirrored, options: [:])
+        try? imageRequesthandler.perform([faceDetectionRequest])
+    }
+    
+    func noFaceAlert() {
+        let alert = UIAlertController(title: "Tolong posisikan wajah anda pada frame kamera", message: "Proses test ini menggunakan pemindai wajah", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+            
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
 }
