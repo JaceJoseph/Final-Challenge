@@ -22,8 +22,9 @@ class ScrollFormViewController: UIViewController {
     @IBOutlet weak var noKTPTextField: RoundedTextField!
     @IBOutlet weak var noSIMTextField: RoundedTextField!
     @IBOutlet weak var pendidikanTerakhirTextField: RoundedTextField!
-    let pendidikanPicker = UIPickerView()
+    var pendidikanPicker = UIPickerView()
     let datePickerTTL = UIDatePicker()
+    var toolBar = UIToolbar()
     
     var pendidikan = ["SD/Sederajat", "SMP/Sederajat", "SMA/SMK/Sederajat", "S1/Sederajat"]
     
@@ -40,15 +41,12 @@ class ScrollFormViewController: UIViewController {
     }
     
     @objc func datePickerValueChanged(sender:UIDatePicker) {
-         
         let dateFormatter = DateFormatter()
-         
         dateFormatter.dateStyle = .medium
-         
         dateFormatter.timeStyle = .none
-         
         ttlTextField.text = dateFormatter.string(from: sender.date)
     }
+    
     @IBAction func saveButton(_ sender: RoundedButton) {
         self.view.endEditing(true)
         let alert = UIAlertController(title: "Apakah anda yakin data yang ditulis benar?", message: "Data tidak bisa diganti setelah anda mengambil test", preferredStyle: .alert)
@@ -134,6 +132,7 @@ class ScrollFormViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboard), name: UIResponder.keyboardWillShowNotification, object: nil)
         
         updateDataAutoComplete()
+        dismissPickerView()
     }
     
     @objc func handleKeyboard(notification:Notification){
@@ -150,6 +149,22 @@ class ScrollFormViewController: UIViewController {
         }
         
         formScrollView.scrollIndicatorInsets = formScrollView.contentInset
+    }
+    
+    func dismissPickerView() {
+        let toolBar = UIToolbar()
+        toolBar.sizeToFit()
+        let button = UIBarButtonItem(title:"Selesai", style: .plain, target: self, action: #selector(self.action))
+        let spacer = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
+        button.tintColor = .white
+        toolBar.setItems([spacer, button], animated: true)
+        toolBar.isUserInteractionEnabled = true
+        pendidikanTerakhirTextField.inputAccessoryView = toolBar
+        ttlTextField.inputAccessoryView = toolBar
+    }
+    
+    @objc func action() {
+          view.endEditing(true)
     }
 
 }
@@ -170,5 +185,4 @@ extension ScrollFormViewController: UIPickerViewDelegate, UIPickerViewDataSource
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         self.pendidikanTerakhirTextField.text = pendidikan[row]
     }
-    
 }

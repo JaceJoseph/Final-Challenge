@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseDatabase
+import FirebaseAuth
 import CoreData
 
 class DatabaseHandler {
@@ -17,7 +18,10 @@ class DatabaseHandler {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MM/dd/yyyy"
         let tanggalPendaftaran = dateFormatter.string(from: Date())
-        ref.child("Users").child(user.noKTP!).setValue([
+        let userRef = ref.child("Users").childByAutoId()
+        let key = userRef.key
+        UserDefaults.standard.set(key, forKey: "uid")
+        ref.child("Users").child(key!).setValue([
             "name": user.name!,
             "ttl": user.ttl!,
             "alamat": user.alamat!,
@@ -32,14 +36,13 @@ class DatabaseHandler {
             "status": "Waiting"
         ])
         print("account updated to firebase database.")
-        UserDefaults.standard.set(user.noKTP, forKey: "idDatabaseCurrent")
         completion()
     }
     
     class func updateScoreSection1Data(scoreSection1: Int) {
         var ref: DatabaseReference!
         ref = Database.database().reference()
-        let uid = UserDefaults.standard.string(forKey: "idDatabaseCurrent")
+        let uid = UserDefaults.standard.string(forKey: "uid")
         ref.child("Users").child(uid!).updateChildValues([
             "scoreSection1": scoreSection1
         ])
@@ -49,11 +52,21 @@ class DatabaseHandler {
     class func updateScoreSection2Data(scoreSection2: Int) {
         var ref: DatabaseReference!
         ref = Database.database().reference()
-        let uid = UserDefaults.standard.string(forKey: "idDatabaseCurrent")
+        let uid = UserDefaults.standard.string(forKey: "uid")
         ref.child("Users").child(uid!).updateChildValues([
             "scoreSection2": scoreSection2
         ])
         UserDefaults.standard.set(0, forKey: "scoreSection2")
+    }
+    
+    class func updateScoreSection3Data(scoreSection3: Int) {
+        var ref: DatabaseReference!
+        ref = Database.database().reference()
+        let uid = UserDefaults.standard.string(forKey: "uid")
+        ref.child("Users").child(uid!).updateChildValues([
+            "scoreSection3": scoreSection3
+        ])
+        UserDefaults.standard.set(0, forKey: "scoreSection3")
     }
 }
 

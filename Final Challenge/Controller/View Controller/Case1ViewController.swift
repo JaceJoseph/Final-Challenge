@@ -31,7 +31,7 @@ class Case1ViewController: UIViewController {
     }
     
     func addPanView(view:UIView) {
-        let pan = UIPanGestureRecognizer(target: self, action: #selector(Case1ViewController.handlePan(sender:)))
+//        let pan = UIPanGestureRecognizer(target: self, action: #selector(Case1ViewController.handlePan(sender:)))
         let tap = UITapGestureRecognizer(target: self, action: #selector(Case1ViewController.selectedObject(sender:)))
         view.addGestureRecognizer(tap)
     }

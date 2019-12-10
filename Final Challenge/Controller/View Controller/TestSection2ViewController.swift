@@ -65,6 +65,8 @@ extension TestSection2ViewController {
             minutes = 10
         } else if self.title == "section2" {
             minutes = 15
+        } else if self.title == "section3" {
+            minutes = 10
         }
         seconds = 0
         updateLabel()
@@ -83,14 +85,17 @@ extension TestSection2ViewController {
     }
     
     func updateTimer() {
-        if seconds == 0 {
+        if seconds == 0, minutes == 0 {
+            print("test done")
+            self.timer.invalidate()
+            if self.title == "section1" {
+                self.performSegue(withIdentifier: "goToSection2", sender: self)
+                }
+        } else if seconds == 0 {
             minutes -= 1
             seconds = 59
         } else if seconds != 0 {
             seconds -= 1
-        } else if seconds == 0, minutes == 0 {
-            print("test done")
-            self.timer.invalidate()
         } else {
             print("wait, whut?")
         }
@@ -268,12 +273,14 @@ extension TestSection2ViewController: AVCaptureFileOutputRecordingDelegate {
 
 extension TestSection2ViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-        //print("frame received")
-        guard let frame = CMSampleBufferGetImageBuffer(sampleBuffer) else {
-            debugPrint("unable to get image from sample buffer")
-            return
+        if self.title != "section3" {
+            print("frame received")
+            guard let frame = CMSampleBufferGetImageBuffer(sampleBuffer) else {
+                debugPrint("unable to get image from sample buffer")
+                return
+            }
+            self.detectFace(image: frame)
         }
-        self.detectFace(image: frame)
     }
     
     func detectFace(image: CVPixelBuffer) {
@@ -282,13 +289,14 @@ extension TestSection2ViewController: AVCaptureVideoDataOutputSampleBufferDelega
                 if let results = request.results as? [VNFaceObservation] {
                     if !results.isEmpty {
                         self.faceDetected = true
-                        //print("face detected")
+                        print("face detected")
                     } else {
                         if self.faceDetected {
                             self.noFaceCounter += 1
                         }
                         self.faceDetected = false
-                        //print("no face")
+                        //MARK: JANGAN DIHAPUS PRINT NYA!! GAMAU JALAN NTR
+                        print("no face")
                         if self.noFaceCounter >= 3 {
                             self.noFaceAlert()
                         }

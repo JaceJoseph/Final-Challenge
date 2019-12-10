@@ -46,6 +46,7 @@ class Case3ViewController: UIViewController {
             DatabaseHandler.updateScoreSection2Data(scoreSection2: totalScore)
             
             self.performSegue(withIdentifier: "testSegue3", sender: self)
+            
         }))
         alert.addAction(UIAlertAction(title: "Tidak", style: .cancel, handler: { (action) in
             //do nothing
@@ -62,7 +63,6 @@ class Case3ViewController: UIViewController {
     @IBAction func platNomorSalahTapped(_ sender: Any) {
         print("Wrong")
         showAlert()
-        performSegue(withIdentifier: "testSegue3", sender: self)
     }
     
     @IBAction func toNomorMobil(_ unwindSegue: UIStoryboardSegue) {}

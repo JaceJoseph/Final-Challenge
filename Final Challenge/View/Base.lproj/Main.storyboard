@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oOD-Pu-6vQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xGk-jj-OJH">
     <device id="ipad10_5" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -31,7 +31,6 @@
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Masukkan Kode Perusahaan" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aLL-pl-DFp" customClass="RoundedTextField" customModule="Siap_Kerja" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="451" height="89"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="89" id="r0C-DX-QZd"/>
                                                 </constraints>
@@ -79,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-888" y="-123"/>
+            <point key="canvasLocation" x="-650" y="-617"/>
         </scene>
         <!--Category Picker View Controller-->
         <scene sceneID="Jvc-8I-1RK">
@@ -167,7 +166,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="omd-v0-BiB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-81" y="-123"/>
+            <point key="canvasLocation" x="63" y="-617"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Kc6-Uf-mAh">
@@ -241,7 +240,7 @@ Pastikan KTP yang Anda bawa asli bukan fotokopi</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J7l-lH-tZp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="772.62079062957537" y="117.77343749999999"/>
+            <point key="canvasLocation" x="2115" y="-617"/>
         </scene>
         <!--FotoKTP View Controller-->
         <scene sceneID="fxe-Jr-4F8">
@@ -348,7 +347,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YdB-xH-Ngo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1423.3812949640287" y="117.26618705035972"/>
+            <point key="canvasLocation" x="2797" y="-617"/>
         </scene>
         <!--Form View Controller-->
         <scene sceneID="MXn-Bq-CuF">
@@ -584,7 +583,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hnz-Wf-uft" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="114" y="1904"/>
+            <point key="canvasLocation" x="-1512" y="542"/>
         </scene>
         <!--Instruksi View Controller-->
         <scene sceneID="GfJ-zY-Ave">
@@ -699,7 +698,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1QL-gu-2Ip" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1410" y="832"/>
+            <point key="canvasLocation" x="1410" y="98"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mFk-r8-N9g">
@@ -817,7 +816,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jx2-X2-1hS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2115" y="832"/>
+            <point key="canvasLocation" x="2115" y="97"/>
         </scene>
         <!--section1-->
         <scene sceneID="oGe-mc-KJl">
@@ -899,7 +898,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wfE-xN-CkJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2114.5683453237411" y="1546.7625899280577"/>
+            <point key="canvasLocation" x="2797" y="96"/>
         </scene>
         <!--FotoSIM View Controller-->
         <scene sceneID="L6g-at-6hA">
@@ -1006,7 +1005,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jF3-nB-qfA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="114" y="832"/>
+            <point key="canvasLocation" x="63" y="98"/>
         </scene>
         <!--caseBanKempes-->
         <scene sceneID="aXC-S3-9pZ">
@@ -1208,7 +1207,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ed-x9-jnV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="417" y="2997"/>
+            <point key="canvasLocation" x="745" y="1155"/>
         </scene>
         <!--Case2 View Controller-->
         <scene sceneID="4x5-NF-XHe">
@@ -1219,20 +1218,20 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scene5-1" translatesAutoresizingMaskIntoConstraints="NO" id="V5Y-92-1TZ">
-                                <rect key="frame" x="0.0" y="0.0" width="2728" height="469"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1364" height="469"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="jQY-Og-Rkd">
-                                <rect key="frame" x="300" y="288" width="512" height="336"/>
+                                <rect key="frame" x="417.5" y="456" width="277" height="168"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEX-Xj-8iO">
-                                        <rect key="frame" x="0.0" y="0.0" width="322" height="336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="161" height="168"/>
                                         <state key="normal" image="rem"/>
                                         <connections>
                                             <action selector="pedalGasTapped:" destination="ufY-XR-IbW" eventType="touchUpInside" id="l5Y-3b-tod"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4N-TK-Wuy">
-                                        <rect key="frame" x="364" y="0.0" width="148" height="336"/>
+                                        <rect key="frame" x="203" y="0.0" width="74" height="168"/>
                                         <state key="normal" image="gas"/>
                                         <connections>
                                             <action selector="pedalRemTapped:" destination="ufY-XR-IbW" eventType="touchUpInside" id="c1u-F3-nPL"/>
@@ -1244,7 +1243,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                 <rect key="frame" x="450" y="0.0" width="662" height="258.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blW-Kz-NTe">
-                                        <rect key="frame" x="0.0" y="67.5" width="93.5" height="124"/>
+                                        <rect key="frame" x="0.0" y="98.5" width="93.5" height="62"/>
                                         <state key="normal" image="back"/>
                                         <connections>
                                             <segue destination="NKK-wN-dDl" kind="unwind" unwindAction="toCaseCuciMobil:" id="MwA-Ar-ZB7"/>
@@ -1304,7 +1303,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uh0-xV-Beo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="NKK-wN-dDl" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1089" y="2996"/>
+            <point key="canvasLocation" x="1370" y="1155"/>
         </scene>
         <!--Case4 View Controller-->
         <scene sceneID="hxH-G5-Z42">
@@ -1421,17 +1420,47 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8LF-qf-Rrv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="g5P-Op-xnB" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2471" y="2996"/>
+            <point key="canvasLocation" x="2638" y="1155"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="vjt-aJ-cYH">
+            <objects>
+                <viewController id="B4l-ER-u8H" customClass="GameViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fYv-Gm-46C">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="454"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <skView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AAz-UH-A5Q">
+                                <rect key="frame" x="0.0" y="0.0" width="1112" height="454"/>
+                            </skView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="AAz-UH-A5Q" firstAttribute="top" secondItem="VW9-aD-7JP" secondAttribute="top" id="8ro-2E-wef"/>
+                            <constraint firstItem="VW9-aD-7JP" firstAttribute="bottom" secondItem="AAz-UH-A5Q" secondAttribute="bottom" id="Q2H-56-L9j"/>
+                            <constraint firstItem="AAz-UH-A5Q" firstAttribute="leading" secondItem="VW9-aD-7JP" secondAttribute="leading" id="Ylr-O6-lJH"/>
+                            <constraint firstItem="VW9-aD-7JP" firstAttribute="trailing" secondItem="AAz-UH-A5Q" secondAttribute="trailing" id="iyU-C5-zHW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VW9-aD-7JP"/>
+                    </view>
+                    <connections>
+                        <outlet property="gameView" destination="AAz-UH-A5Q" id="UN4-vR-9uF"/>
+                        <segue destination="aCq-jN-50t" kind="presentation" identifier="toFinish" modalPresentationStyle="fullScreen" id="0sE-E0-z6G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bon-1f-6UF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="745" y="1878"/>
         </scene>
         <!--Case3 View Controller-->
         <scene sceneID="aCR-hw-aCD">
             <objects>
-                <viewController definesPresentationContext="YES" id="sVo-pB-ee9" customClass="Case3ViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sVo-pB-ee9" customClass="Case3ViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="679-hc-OEs">
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="644"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Scene14" translatesAutoresizingMaskIntoConstraints="NO" id="Dwj-FG-Mb7">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scene13" translatesAutoresizingMaskIntoConstraints="NO" id="Dwj-FG-Mb7">
                                 <rect key="frame" x="0.0" y="0.0" width="1112" height="499"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="t9L-bg-yNa">
@@ -1543,13 +1572,13 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                         <viewLayoutGuide key="safeArea" id="5yh-xU-2vN"/>
                     </view>
                     <connections>
-                        <segue destination="aCq-jN-50t" kind="presentation" identifier="testSegue3" modalPresentationStyle="fullScreen" id="9LI-2l-XDb"/>
+                        <segue destination="gLT-9W-5NO" kind="presentation" identifier="testSegue3" animates="NO" modalPresentationStyle="formSheet" id="jIk-FM-Ux7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g1n-yc-TQw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="oWT-M8-nYs" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3171" y="2996"/>
+            <point key="canvasLocation" x="3274" y="1155"/>
         </scene>
         <!--caseCuciMobil-->
         <scene sceneID="MYz-Ks-kCH">
@@ -1749,21 +1778,21 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WGg-uy-YuD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="PCb-xk-9G3" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1795" y="2996"/>
+            <point key="canvasLocation" x="2002" y="1155"/>
         </scene>
         <!--End View Controller-->
         <scene sceneID="cRp-2n-fsy">
             <objects>
                 <viewController id="aCq-jN-50t" customClass="EndViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GFm-yn-hmW">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="644"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="454"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="artwork" translatesAutoresizingMaskIntoConstraints="NO" id="5Sg-qv-Vnh">
-                                <rect key="frame" x="0.0" y="0.0" width="1112" height="644"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1112" height="454"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="erI-lp-j3d">
-                                <rect key="frame" x="200" y="210.5" width="712" height="223.5"/>
+                                <rect key="frame" x="200" y="115.5" width="712" height="223.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="q7I-bK-Se3">
                                         <rect key="frame" x="64.5" y="0.0" width="583.5" height="94.5"/>
@@ -1820,7 +1849,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yfs-cJ-UNS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Nn7-Mi-TMT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3171" y="3660"/>
+            <point key="canvasLocation" x="1370" y="1878"/>
         </scene>
         <!--Test Section1A View Controller-->
         <scene sceneID="c64-vg-uUy">
@@ -1831,29 +1860,29 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="evn-dB-nmZ">
-                                <rect key="frame" x="130" y="76.5" width="852" height="491.5"/>
+                                <rect key="frame" x="80" y="76.5" width="952" height="491.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="garisputus2" translatesAutoresizingMaskIntoConstraints="NO" id="eaJ-Yh-nZG">
-                                        <rect key="frame" x="208" y="0.0" width="436" height="206"/>
+                                        <rect key="frame" x="258" y="0.0" width="436" height="206.00000000000006"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="206" id="OuG-Cr-p2i"/>
                                             <constraint firstAttribute="width" constant="436" id="TEP-i4-zHM"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pertanyaan yang akan diajukan" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eet-Va-qQR">
-                                        <rect key="frame" x="30" y="256" width="792" height="33.5"/>
+                                        <rect key="frame" x="30" y="256" width="892" height="33.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="jF0-mJ-hpB">
-                                        <rect key="frame" x="0.0" y="339.5" width="852" height="152"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="jF0-mJ-hpB">
+                                        <rect key="frame" x="0.0" y="339.5" width="952" height="152"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="aLS-9o-qD4">
-                                                <rect key="frame" x="0.0" y="0.0" width="391" height="152"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="458.5" height="152"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cB5-Rv-Qah" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="391" height="60"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="458.5" height="60"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="kIb-Jd-0tC"/>
@@ -1867,7 +1896,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9Y-FU-SDy" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="92" width="391" height="60"/>
+                                                        <rect key="frame" x="0.0" y="92" width="458.5" height="60"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="sfm-SU-zS2"/>
@@ -1883,10 +1912,10 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="Df6-YU-qZH">
-                                                <rect key="frame" x="461" y="0.0" width="391" height="152"/>
+                                                <rect key="frame" x="493.5" y="0.0" width="458.5" height="152"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYO-Ca-14Q" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="391" height="60"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="458.5" height="60"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="zQp-6d-dLp"/>
@@ -1900,7 +1929,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfD-uu-NXa" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="92" width="391" height="60"/>
+                                                        <rect key="frame" x="0.0" y="92" width="458.5" height="60"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="9jC-Tc-xfX"/>
@@ -1929,8 +1958,8 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                         <color key="backgroundColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="evn-dB-nmZ" firstAttribute="centerY" secondItem="5cQ-hE-dDt" secondAttribute="centerY" id="1eI-qw-uLx"/>
-                            <constraint firstItem="evn-dB-nmZ" firstAttribute="leading" secondItem="qeV-8Z-kPX" secondAttribute="leading" constant="130" id="Rbr-wI-LVU"/>
-                            <constraint firstItem="qeV-8Z-kPX" firstAttribute="trailing" secondItem="evn-dB-nmZ" secondAttribute="trailing" constant="130" id="qZv-Lx-k8f"/>
+                            <constraint firstItem="evn-dB-nmZ" firstAttribute="leading" secondItem="qeV-8Z-kPX" secondAttribute="leading" constant="80" id="Rbr-wI-LVU"/>
+                            <constraint firstItem="qeV-8Z-kPX" firstAttribute="trailing" secondItem="evn-dB-nmZ" secondAttribute="trailing" constant="80" id="qZv-Lx-k8f"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qeV-8Z-kPX"/>
                     </view>
@@ -1945,7 +1974,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l4O-m1-vVZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2797" y="1547"/>
+            <point key="canvasLocation" x="3461" y="96"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ceB-SR-6Vb">
@@ -2069,7 +2098,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KFw-m7-lhh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1423" y="1547"/>
+            <point key="canvasLocation" x="-650" y="871"/>
         </scene>
         <!--section2-->
         <scene sceneID="0I8-IP-hfF">
@@ -2089,7 +2118,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gc8-hc-iyf">
                                 <rect key="frame" x="0.0" y="190" width="1112" height="644"/>
                                 <connections>
-                                    <segue destination="d1z-H2-dXz" kind="embed" id="242-AM-eNq"/>
+                                    <segue destination="d1z-H2-dXz" kind="embed" identifier="" id="242-AM-eNq"/>
                                 </connections>
                             </containerView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="qfb-kA-Q4Z">
@@ -2152,7 +2181,7 @@ dan informasi di dalamnya dapat terbaca dengan jelas</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZqN-tB-j97" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1423" y="2271"/>
+            <point key="canvasLocation" x="63" y="1155"/>
         </scene>
         <!--Foto Pribadi View Controller-->
         <scene sceneID="jJb-v3-0LM">
@@ -2602,7 +2631,7 @@ Pastikan wajah Anda terlihat dengan jelas pada kamera</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BW2-xB-5Jn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="771.58273381294964" y="970.50359712230227"/>
+            <point key="canvasLocation" x="745" y="265"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="e1m-Es-Voe">
@@ -2676,7 +2705,218 @@ Pastikan SIM yang Anda bawa asli bukan fotokopi</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7uc-v3-SzS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-526" y="832"/>
+            <point key="canvasLocation" x="-650" y="98"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TBt-8V-g1f">
+            <objects>
+                <viewController id="gLT-9W-5NO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jlw-mk-9iM">
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="604"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Urn-Lw-wBj">
+                                <rect key="frame" x="0.0" y="0.0" width="540" height="240"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 7" translatesAutoresizingMaskIntoConstraints="NO" id="gE9-nI-EbI">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="Xss-Vu-vOM"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="K4d-GU-CeJ">
+                                        <rect key="frame" x="293" y="42.5" width="217" height="155"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Section3" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ni-g5-kHS">
+                                                <rect key="frame" x="78.5" y="0.0" width="138.5" height="41"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="34"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simulasi Kerja" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQe-CS-s1R">
+                                                <rect key="frame" x="0.0" y="42" width="217" height="113"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="217" id="H4R-VH-P52"/>
+                                                    <constraint firstAttribute="height" constant="113" id="xGs-Nm-P8J"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="gE9-nI-EbI" firstAttribute="leading" secondItem="Urn-Lw-wBj" secondAttribute="leading" id="Czp-YG-Vr9"/>
+                                    <constraint firstItem="gE9-nI-EbI" firstAttribute="top" secondItem="Urn-Lw-wBj" secondAttribute="top" id="Dfu-sc-3pT"/>
+                                    <constraint firstAttribute="bottom" secondItem="gE9-nI-EbI" secondAttribute="bottom" id="RwI-Fz-O3x"/>
+                                    <constraint firstAttribute="height" constant="240" id="XTS-xF-Mea"/>
+                                    <constraint firstAttribute="trailing" secondItem="K4d-GU-CeJ" secondAttribute="trailing" constant="30" id="bAM-Ko-Nxd"/>
+                                    <constraint firstItem="K4d-GU-CeJ" firstAttribute="centerY" secondItem="Urn-Lw-wBj" secondAttribute="centerY" id="kUL-jl-7mN"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pD7-HK-YTa" customClass="RoundedButton" customModule="Siap_Kerja" customModuleProvider="target">
+                                <rect key="frame" x="30" y="519" width="480" height="55"/>
+                                <color key="backgroundColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="z7O-OM-Omo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <state key="normal" title="Mulai Sekarang">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="PCc-ns-XO5" kind="presentation" modalPresentationStyle="fullScreen" id="g5h-pd-qUY"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="h7t-hF-F7m">
+                                <rect key="frame" x="30" y="270" width="480" height="190"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="F4A-kc-3gm">
+                                        <rect key="frame" x="0.0" y="0.0" width="477" height="106"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Instruksi Tes: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBk-Os-N2R">
+                                                <rect key="frame" x="0.0" y="0.0" width="124.5" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anda sedang mengantarkan seseorang demgam mobil ke lokasi tujuan. Atasan anda menegaskan untuk MENGEMUDI DENGAN BIJAK." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23k-Pq-b5S">
+                                                <rect key="frame" x="0.0" y="34" width="477" height="72"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="sES-qT-iEa">
+                                        <rect key="frame" x="0.0" y="114" width="361.5" height="76"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Ikuti cara penggunaan simulasi tersebut" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tgo-8J-eTy">
+                                                <rect key="frame" x="0.0" y="0.0" width="361.5" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Ikuti peraturan rambu lalu lintas" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUV-oj-5y0">
+                                                <rect key="frame" x="0.0" y="26" width="290.5" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. Mobil berjalan dari bawah ke atas" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7n-Hc-fIG">
+                                                <rect key="frame" x="0.0" y="52" width="308.5" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="h7t-hF-F7m" firstAttribute="leading" secondItem="8WC-Uq-NwK" secondAttribute="leading" constant="30" id="4sO-ly-Qo0"/>
+                            <constraint firstItem="Urn-Lw-wBj" firstAttribute="leading" secondItem="8WC-Uq-NwK" secondAttribute="leading" id="8gm-TV-ZK4"/>
+                            <constraint firstItem="Urn-Lw-wBj" firstAttribute="trailing" secondItem="8WC-Uq-NwK" secondAttribute="trailing" id="JI7-in-mpv"/>
+                            <constraint firstItem="pD7-HK-YTa" firstAttribute="leading" secondItem="8WC-Uq-NwK" secondAttribute="leading" constant="30" id="Mnj-qD-ecK"/>
+                            <constraint firstItem="8WC-Uq-NwK" firstAttribute="trailing" secondItem="pD7-HK-YTa" secondAttribute="trailing" constant="30" id="WNy-t8-bQo"/>
+                            <constraint firstAttribute="trailing" secondItem="h7t-hF-F7m" secondAttribute="trailing" constant="30" id="buf-9h-9W8"/>
+                            <constraint firstItem="h7t-hF-F7m" firstAttribute="top" secondItem="Urn-Lw-wBj" secondAttribute="bottom" constant="30" id="iWr-7Y-mcw"/>
+                            <constraint firstItem="8WC-Uq-NwK" firstAttribute="bottom" secondItem="pD7-HK-YTa" secondAttribute="bottom" constant="30" id="n6B-3S-86n"/>
+                            <constraint firstItem="Urn-Lw-wBj" firstAttribute="top" secondItem="8WC-Uq-NwK" secondAttribute="top" id="tZd-42-COE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8WC-Uq-NwK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vY2-Rj-kGD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-650" y="1879"/>
+        </scene>
+        <!--section3-->
+        <scene sceneID="mHN-64-cNf">
+            <objects>
+                <viewController title="section3" id="PCc-ns-XO5" customClass="TestSection2ViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I8p-gH-9vt">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="644"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vGj-oj-iBi">
+                                <rect key="frame" x="20" y="10" width="300" height="170"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="UYr-lQ-OIR"/>
+                                </constraints>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OPU-xt-psS">
+                                <rect key="frame" x="0.0" y="190" width="1112" height="454"/>
+                                <connections>
+                                    <segue destination="B4l-ER-u8H" kind="embed" identifier="" id="Ggh-CG-sOl"/>
+                                </connections>
+                            </containerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="df3-29-7UB">
+                                <rect key="frame" x="758" y="50" width="304" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Section 3 | Simulasi Kerja" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJJ-td-yVx">
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="33.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="p9h-GF-6ub">
+                                        <rect key="frame" x="125.5" y="33.5" width="178.5" height="56.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ds-29-pzX">
+                                                <rect key="frame" x="0.0" y="0.0" width="58" height="56.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4k-dv-jDG">
+                                                <rect key="frame" x="83" y="0.0" width="12.5" height="56.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srK-qV-ij8">
+                                                <rect key="frame" x="120.5" y="0.0" width="58" height="56.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0025027303489999998" green="0.22714132070000001" blue="0.35295593739999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="OPU-xt-psS" firstAttribute="leading" secondItem="Wfe-KJ-0gW" secondAttribute="leading" id="5g1-BK-yvC"/>
+                            <constraint firstItem="OPU-xt-psS" firstAttribute="bottom" secondItem="Wfe-KJ-0gW" secondAttribute="bottom" id="Gj3-hv-SRu"/>
+                            <constraint firstItem="vGj-oj-iBi" firstAttribute="top" secondItem="Wfe-KJ-0gW" secondAttribute="top" constant="10" id="Gs1-BO-QVV"/>
+                            <constraint firstItem="OPU-xt-psS" firstAttribute="trailing" secondItem="Wfe-KJ-0gW" secondAttribute="trailing" id="QMv-li-6sv"/>
+                            <constraint firstItem="Wfe-KJ-0gW" firstAttribute="trailing" secondItem="df3-29-7UB" secondAttribute="trailing" constant="50" id="Ql4-Bb-W2Y"/>
+                            <constraint firstItem="OPU-xt-psS" firstAttribute="bottom" secondItem="Wfe-KJ-0gW" secondAttribute="bottom" id="Xbx-1O-sgY"/>
+                            <constraint firstItem="OPU-xt-psS" firstAttribute="top" secondItem="Wfe-KJ-0gW" secondAttribute="top" constant="190" id="a5n-2c-cE8"/>
+                            <constraint firstItem="vGj-oj-iBi" firstAttribute="leading" secondItem="Wfe-KJ-0gW" secondAttribute="leading" constant="20" id="aCc-ue-Uyj"/>
+                            <constraint firstItem="OPU-xt-psS" firstAttribute="bottom" secondItem="Wfe-KJ-0gW" secondAttribute="bottom" id="cFt-7Q-ePI"/>
+                            <constraint firstItem="OPU-xt-psS" firstAttribute="top" secondItem="vGj-oj-iBi" secondAttribute="bottom" constant="10" id="hly-W7-NMS"/>
+                            <constraint firstItem="df3-29-7UB" firstAttribute="top" secondItem="Wfe-KJ-0gW" secondAttribute="top" constant="50" id="vGW-CU-sKJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wfe-KJ-0gW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FTy-k4-CHv"/>
+                    <connections>
+                        <outlet property="cameraView" destination="vGj-oj-iBi" id="WRy-XL-VyW"/>
+                        <outlet property="minutesLabel" destination="2ds-29-pzX" id="1TY-SM-6jE"/>
+                        <outlet property="secondLabel" destination="srK-qV-ij8" id="07Y-sg-fNc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ju-86-kUt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63" y="1878"/>
         </scene>
     </scenes>
     <resources>
@@ -2685,7 +2925,6 @@ Pastikan SIM yang Anda bawa asli bukan fotokopi</string>
         <image name="Group 7" width="495" height="495"/>
         <image name="Kunci" width="147" height="161"/>
         <image name="Lap" width="168" height="165"/>
-        <image name="Scene14" width="682.5" height="388.5"/>
         <image name="Semprotan" width="155" height="303"/>
         <image name="Shadows" width="1366" height="1024"/>
         <image name="artwork" width="1366" height="570"/>
@@ -2704,6 +2943,7 @@ Pastikan SIM yang Anda bawa asli bukan fotokopi</string>
         <image name="maps" width="1313" height="687"/>
         <image name="mobilkotor" width="1366" height="609"/>
         <image name="rem" width="161" height="141"/>
+        <image name="scene13" width="682.5" height="388.5"/>
         <image name="scene5-1" width="1364" height="604"/>
         <image name="segitiga" width="208" height="132"/>
         <image name="ulangi" width="47" height="67"/>
