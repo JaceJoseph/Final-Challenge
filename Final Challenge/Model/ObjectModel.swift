@@ -18,6 +18,7 @@ struct User {
     var urlKTP: String?
     var urlSIM: String?
     var urlProfile: String?
+    var pendidikanTerakhir: String?
 }
 
 struct Question {

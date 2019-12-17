@@ -214,11 +214,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
              
             motionManager.startAccelerometerUpdates(to: .main) {
                 (data, error) in
-//                guard let data = data, error == nil else {
-//                    return
-//                }
-//                let currentX = self.airplane.position.x
-//                self.destX = currentX - CGFloat(data.acceleration.y * 300)
                 guard let data = self.motionManager.accelerometerData else { return }
                 if UIDevice.current.orientation == UIDeviceOrientation.landscapeLeft {
                     self.airplane.physicsBody?.applyForce(CGVector(dx: -100 * CGFloat(data.acceleration.y), dy: 0))
@@ -266,18 +261,18 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
             someCounter = 0
         }
         
-        if !(airplane.physicsBody?.velocity.dy.isLessThanOrEqualTo(10))!{
+        if !(airplane.physicsBody?.velocity.dy.isLessThanOrEqualTo(20))!{
             guard let data = motionManager.accelerometerData else { return }
-            if UIDevice.current.orientation == UIDeviceOrientation.landscapeLeft {
-                if (airplane.physicsBody?.velocity.dx)! < CGFloat(-50){
-                    airplane.physicsBody?.applyForce(CGVector(dx: 150 * CGFloat(data.acceleration.y), dy: -3))
+            if UIDevice.current.orientation == UIDeviceOrientation.landscapeRight {
+                if (airplane.physicsBody?.velocity.dx)! > CGFloat(30) || (airplane.physicsBody?.velocity.dx)! < CGFloat(-30) {
+                    airplane.physicsBody?.applyForce(CGVector(dx: 150 * CGFloat(data.acceleration.y), dy: -2))
                 }
-                airplane.physicsBody?.applyForce(CGVector(dx: 90 * CGFloat(data.acceleration.y), dy: -3))
+                airplane.physicsBody?.applyForce(CGVector(dx: 90 * CGFloat(data.acceleration.y), dy: -2))
              } else {
-                if (airplane.physicsBody?.velocity.dx)! > CGFloat(50){
-                    airplane.physicsBody?.applyForce(CGVector(dx: -150 * CGFloat(data.acceleration.y), dy: -3))
+                if (airplane.physicsBody?.velocity.dx)! > CGFloat(30) || (airplane.physicsBody?.velocity.dx)! < CGFloat(-30) {
+                    airplane.physicsBody?.applyForce(CGVector(dx: -150 * CGFloat(data.acceleration.y), dy: -2))
                 }
-                airplane.physicsBody?.applyForce(CGVector(dx: -90 * CGFloat(data.acceleration.y), dy: -3))
+                airplane.physicsBody?.applyForce(CGVector(dx: -90 * CGFloat(data.acceleration.y), dy: -2))
              }
         }
     

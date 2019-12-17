@@ -33,7 +33,9 @@ class DatabaseHandler {
             "urlProfile": user.urlProfile!,
             "kodePerusahaan": UserDefaults.standard.string(forKey: "kodePerusahaan")!,
             "tanggalPendaftaran": tanggalPendaftaran,
-            "status": "Waiting"
+            "status": "Waiting",
+            "pendidikanTerakhir": user.pendidikanTerakhir!,
+            "job": UserDefaults.standard.string(forKey: "job")!
         ])
         print("account updated to firebase database.")
         completion()
@@ -70,7 +72,7 @@ class DatabaseHandler {
     }
 }
 
-extension TestSection1AViewController {
+extension QuestionContainerViewController {
     func retrieveSoal() {
         var ref: DatabaseReference!
         var easy = 0, medium = 0, hard = 0
