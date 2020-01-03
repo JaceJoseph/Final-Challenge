@@ -22,6 +22,9 @@
 		4D51A26C7F430FFBB9F98930 /* Pods_Final_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9BC2C71D507C22D965226D6 /* Pods_Final_Challenge.framework */; };
 		700828462379681100F102B0 /* LampuMerahViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700828452379681100F102B0 /* LampuMerahViewController.swift */; };
 		700828482379682000F102B0 /* PlatMobilCaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700828472379682000F102B0 /* PlatMobilCaseViewController.swift */; };
+		700F710A23B05F0900814719 /* PersonalitySection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 700F710923B05F0900814719 /* PersonalitySection.storyboard */; };
+		700F710D23B05F7500814719 /* PersonalitySectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700F710C23B05F7500814719 /* PersonalitySectionViewController.swift */; };
+		700F710F23B05F8D00814719 /* PersonalityAnswers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700F710E23B05F8D00814719 /* PersonalityAnswers.swift */; };
 		701276DC2384F3A1006BD0E7 /* FotoPribadiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701276DB2384F3A1006BD0E7 /* FotoPribadiViewController.swift */; };
 		701276DE23851AC2006BD0E7 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701276DD23851AC2006BD0E7 /* CategoryCollectionViewCell.swift */; };
 		701276E023851B56006BD0E7 /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701276DF23851B56006BD0E7 /* CategoryPickerViewController.swift */; };
@@ -59,6 +62,9 @@
 		16CEC229237EBB8100A4CF34 /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
 		700828452379681100F102B0 /* LampuMerahViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampuMerahViewController.swift; sourceTree = "<group>"; };
 		700828472379682000F102B0 /* PlatMobilCaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatMobilCaseViewController.swift; sourceTree = "<group>"; };
+		700F710923B05F0900814719 /* PersonalitySection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalitySection.storyboard; sourceTree = "<group>"; };
+		700F710C23B05F7500814719 /* PersonalitySectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalitySectionViewController.swift; sourceTree = "<group>"; };
+		700F710E23B05F8D00814719 /* PersonalityAnswers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityAnswers.swift; sourceTree = "<group>"; };
 		701276DB2384F3A1006BD0E7 /* FotoPribadiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoPribadiViewController.swift; sourceTree = "<group>"; };
 		701276DD23851AC2006BD0E7 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		701276DF23851B56006BD0E7 /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +107,7 @@
 		1608E755237505860060156B /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				700F710B23B05F3F00814719 /* Personality Section */,
 				70A7F592239F774500E6CE01 /* End Test */,
 				70A7F591239F773400E6CE01 /* Kode Perusahaan */,
 				70A7F590239F772200E6CE01 /* Form */,
@@ -136,6 +143,7 @@
 				70A7F59A239F7B2200E6CE01 /* DriverSection2.storyboard */,
 				70A7F59C239F7B8800E6CE01 /* DriverSection3.storyboard */,
 				70362D342373B48600928516 /* Main.storyboard */,
+				700F710923B05F0900814719 /* PersonalitySection.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -148,6 +156,15 @@
 				1608E755237505860060156B /* View Controller */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		700F710B23B05F3F00814719 /* Personality Section */ = {
+			isa = PBXGroup;
+			children = (
+				700F710C23B05F7500814719 /* PersonalitySectionViewController.swift */,
+				700F710E23B05F8D00814719 /* PersonalityAnswers.swift */,
+			);
+			path = "Personality Section";
 			sourceTree = "<group>";
 		};
 		70362D222373B48600928516 = {
@@ -394,6 +411,7 @@
 				70A7F597239F791B00E6CE01 /* DriverSection1.storyboard in Resources */,
 				70362D382373B48700928516 /* Assets.xcassets in Resources */,
 				70A7F56323961C5900E6CE01 /* GameScene.sks in Resources */,
+				700F710A23B05F0900814719 /* PersonalitySection.storyboard in Resources */,
 				70A7F59F239F7E5600E6CE01 /* DriverForm.storyboard in Resources */,
 				70362D362373B48600928516 /* Main.storyboard in Resources */,
 			);
@@ -461,11 +479,13 @@
 				70A7F56423961C5900E6CE01 /* GameScene.swift in Sources */,
 				1608E75B237505EF0060156B /* FormViewController.swift in Sources */,
 				168E6E0B237D6E5300B90358 /* QuestionContainerViewController.swift in Sources */,
+				700F710D23B05F7500814719 /* PersonalitySectionViewController.swift in Sources */,
 				700828482379682000F102B0 /* PlatMobilCaseViewController.swift in Sources */,
 				1608E75D237506180060156B /* InstruksiViewController.swift in Sources */,
 				70362D2F2373B48600928516 /* AppDelegate.swift in Sources */,
 				70362D312373B48600928516 /* SceneDelegate.swift in Sources */,
 				1608E759237505D40060156B /* FotoSIMViewController.swift in Sources */,
+				700F710F23B05F8D00814719 /* PersonalityAnswers.swift in Sources */,
 				168E6E04237D421A00B90358 /* DatabaseHandler.swift in Sources */,
 				70362D432373B4B100928516 /* UIExtension.swift in Sources */,
 				700828462379681100F102B0 /* LampuMerahViewController.swift in Sources */,

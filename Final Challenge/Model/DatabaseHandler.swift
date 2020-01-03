@@ -70,6 +70,19 @@ class DatabaseHandler {
         ])
         UserDefaults.standard.set(0, forKey: "scoreSection3")
     }
+    
+    class func updatePersonalityTestData(personality: [String]) {
+        var ref: DatabaseReference!
+        ref = Database.database().reference()
+        let uid = "-LvODtLedwCCrgq5Hvu1" //UserDefaults.standard.string(forKey: "uid")
+        DispatchQueue.main.async {
+            for i in 0..<personality.count {
+                ref.child("Users").child(uid).updateChildValues([
+                    "personality\(i)": personality[i]
+                ])
+            }
+        }
+    }
 }
 
 extension QuestionContainerViewController {

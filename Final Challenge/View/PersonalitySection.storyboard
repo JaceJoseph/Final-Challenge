@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0W9-3R-Q9n">
+    <device id="ipad10_5" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Personality Section View Controller-->
+        <scene sceneID="PaK-UO-SXe">
+            <objects>
+                <viewController definesPresentationContext="YES" modalPresentationStyle="currentContext" id="0W9-3R-Q9n" customClass="PersonalitySectionViewController" customModule="Siap_Kerja" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s86-cm-VJF">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="e9Z-aI-ddQ">
+                                <rect key="frame" x="80" y="299.5" width="952" height="235.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pilih kata-kata yang paling merepresentasikan diri anda" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6o-aR-a1B">
+                                        <rect key="frame" x="30" y="0.0" width="892" height="33.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="mwh-EY-kyQ">
+                                        <rect key="frame" x="0.0" y="83.5" width="952" height="152"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="5JF-rc-4af">
+                                                <rect key="frame" x="0.0" y="0.0" width="458.5" height="152"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duQ-wL-YoD" customClass="RoundedButton" customModule="ContainerViewSegue">
+                                                        <rect key="frame" x="0.0" y="0.0" width="458.5" height="60"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="R9T-Yh-1g5"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <state key="normal" title="Option 1">
+                                                            <color key="titleColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="answerButtonTapped:" destination="0W9-3R-Q9n" eventType="touchUpInside" id="WTf-sJ-sDI"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cu8-z2-HxP" customClass="RoundedButton" customModule="ContainerViewSegue">
+                                                        <rect key="frame" x="0.0" y="92" width="458.5" height="60"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="SAW-TL-zcb"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <state key="normal" title="Option 3">
+                                                            <color key="titleColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="answerButtonTapped:" destination="0W9-3R-Q9n" eventType="touchUpInside" id="P7M-qI-pWx"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="0GS-8A-I8T">
+                                                <rect key="frame" x="493.5" y="0.0" width="458.5" height="152"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Lg-Li-kxo" customClass="RoundedButton" customModule="ContainerViewSegue">
+                                                        <rect key="frame" x="0.0" y="0.0" width="458.5" height="60"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="3lY-LM-0Ii"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <state key="normal" title="Option 2">
+                                                            <color key="titleColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="answerButtonTapped:" destination="0W9-3R-Q9n" eventType="touchUpInside" id="UPK-YS-8VV"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czL-Bw-d6c" customClass="RoundedButton" customModule="ContainerViewSegue">
+                                                        <rect key="frame" x="0.0" y="92" width="458.5" height="60"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="whj-W0-TGz"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <state key="normal" title="Option 4">
+                                                            <color key="titleColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="answerButtonTapped:" destination="0W9-3R-Q9n" eventType="touchUpInside" id="mq2-9O-HyA"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="D6o-aR-a1B" secondAttribute="trailing" constant="30" id="SKu-yc-eNd"/>
+                                    <constraint firstAttribute="trailing" secondItem="mwh-EY-kyQ" secondAttribute="trailing" id="TGe-VC-YGd"/>
+                                    <constraint firstItem="D6o-aR-a1B" firstAttribute="leading" secondItem="e9Z-aI-ddQ" secondAttribute="leading" constant="30" id="dl8-mG-5tG"/>
+                                    <constraint firstItem="mwh-EY-kyQ" firstAttribute="leading" secondItem="e9Z-aI-ddQ" secondAttribute="leading" id="zHD-VY-5Hr"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.079243250190000003" green="0.2248699069" blue="0.34119045730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="e9Z-aI-ddQ" firstAttribute="leading" secondItem="aEJ-KK-DqY" secondAttribute="leading" constant="80" id="SER-XT-5rN"/>
+                            <constraint firstItem="aEJ-KK-DqY" firstAttribute="trailing" secondItem="e9Z-aI-ddQ" secondAttribute="trailing" constant="80" id="WGb-fr-A8v"/>
+                            <constraint firstItem="e9Z-aI-ddQ" firstAttribute="centerY" secondItem="s86-cm-VJF" secondAttribute="centerY" id="c22-a2-zUE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aEJ-KK-DqY"/>
+                    </view>
+                    <connections>
+                        <outlet property="answer1Button" destination="duQ-wL-YoD" id="cKP-r6-wzm"/>
+                        <outlet property="answer2Button" destination="6Lg-Li-kxo" id="wv8-l4-Wwz"/>
+                        <outlet property="answer3Button" destination="cu8-z2-HxP" id="stW-Fh-fb8"/>
+                        <outlet property="answer4Button" destination="czL-Bw-d6c" id="oYl-kZ-gOb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ytt-bK-gzi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3632" y="171"/>
+        </scene>
+    </scenes>
+</document>
