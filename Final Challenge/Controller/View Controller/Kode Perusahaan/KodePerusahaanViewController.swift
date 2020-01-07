@@ -22,9 +22,20 @@ class KodePerusahaanViewController: UIViewController {
     
     @IBAction func masukButtonTouched(_ sender: UIButton) {
         //NOTE: Function to check the code
+        let companyCode = kodePerusahanTextField.text!
+        DatabaseHandler.checkCompanyCode(code: companyCode, codeExist: {
+            UserDefaults.standard.set(self.kodePerusahanTextField.text, forKey: "kodePerusahaan")
+            self.performSegue(withIdentifier: "toKategori", sender: self)
+        }) {
+            let alert = UIAlertController(title: "Company Code Not found!", message: "Please make sure you entered a valid code", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+                //nothing
+            }))
+            self.present(alert, animated: true) {
+                
+            }
+        }
         
-        UserDefaults.standard.set(kodePerusahanTextField.text, forKey: "kodePerusahaan")
-        performSegue(withIdentifier: "toKategori", sender: self)
     }
     
     @IBAction func toKodePerusahaan(_ unwindSegue: UIStoryboardSegue) {

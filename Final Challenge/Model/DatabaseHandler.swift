@@ -12,6 +12,18 @@ import FirebaseAuth
 import CoreData
 
 class DatabaseHandler {
+    class func checkCompanyCode(code: String, codeExist: @escaping() -> (), codeNotFound: @escaping() -> ()) {
+        var ref: DatabaseReference!
+        ref = Database.database().reference()
+        ref.child("Company").queryOrdered(byChild: "kodePerusahaan").queryEqual(toValue: code).observe(.value) { (snapshot) in
+            if snapshot.exists() {
+                codeExist()
+            } else {
+                codeNotFound()
+            }
+        }
+    }
+    
     class func saveUserData(user: User, completion: @escaping () -> ()) {
         var ref: DatabaseReference!
         ref = Database.database().reference()
